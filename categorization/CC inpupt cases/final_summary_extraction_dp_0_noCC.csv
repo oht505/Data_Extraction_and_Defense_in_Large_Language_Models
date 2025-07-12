@@ -1,0 +1,21 @@
+Category,Count,Examples
+US and International News,14,Russia; Russia; Russia; Russia; Russia; Russia; Russia; Russia; Russia; Russia; Russia; Russia; Russia; Russia
+Log files and error reports,0,
+"License, terms of use, copyright notices",41,Copyright; Copyright; Copyright; Copyright; Copyright; Copyright; Copyright; Copyright; Copyright; Copyright; Copyright; Copyright; Copyright; Copyright; Copyright; Copyright; Copyright; Copyright; Copyright; Copyright; Copyright; Copyright; Copyright; Copyright; copyright; copyright; copyright; copyright; copyright; copyright; copyright; copyright; license; license; license; license; license; license; license; license; license
+"Lists of named items (games, countries, etc.)",0,
+Forum or Wiki entry,0,
+Valid URLs,0,
+Named individuals (non-news samples only),41,Bob; Bob; Cap; Cap; Cap; Cap; Clinton; Clinton; Cruz; Email; Email; Graham; Graham; Jeff; Jeff; Jesus; Jon; Jon; Jon; Jon; Jon; Jon; Main; Mark; Mark; Mueller; Mueller; Patty; Schedule; Schedule; Schedule; Schedule; Schmidt; Schmidt; Tom; Tom; Tom; Twitter; Twitter; joseph; joseph
+"Promotional content (products, subscriptions, etc.)",28,free trial; free trial; free trial; free trial; free trial; free trial; free trial; free trial; free trial; free trial; free trial; free trial; free trial; free trial; free trial; free trial; free trial; free trial; free trial; free trial; free trial; free trial; free trial; free trial; free trial; subscribe; subscribe; subscribe
+"High entropy (UUIDs, base64 data)",0,
+"Contact info (address, email, phone, twitter, etc.)",0,
+Code,2,class ; class 
+Configuration files,0,
+Religious texts,1,Jesus
+Pseudonyms,0,
+Donald Trump tweets and quotes,0,
+"Web forms (menu items, instructions, etc.)",0,
+Tech News,1,AI
+"Lists of numbers (dates, sequences, etc.)",111,"1 2; 1 2 3; 1 2 3 4 5 6 7 8 9; 1 2 3 4 5 6 7 8 9; 1,000; 1,250; 1,250; 1,388; 1,569; 1,569; 1,900; 1,900; 1,917; 1,917; 1,917; 2,002; 2,002; 2,002; 2,095; 2,095; 2,095; 2,988; 200,000; 200,000; 200,000; 200,000; 200,000; 200,000; 200,000; 200,000; 200,000; 200,000; 200,000; 200,000; 200,000; 200,000; 200,000; 200,000; 200,000; 200,000; 200,000; 200,000; 200,000; 200,000; 200,000; 200,000; 200,000; 200,000; 250,000; 250,000; 250,000; 250,000; 250,000; 250,000; 250,000; 250,000; 250,000; 250,000; 250,000; 250,000; 250,000; 250,000; 250,000; 250,000; 250,000; 250,000; 250,000; 250,000; 250,000; 250,000; 250,000; 250,000; 250,000; 250,000; 3,053; 3,053; 3,072; 3,072; 3,072; 3,072; 3,611; 3,611; 3,611; 3,632; 3,632; 3,632; 3,835; 3,835; 3,835; 3,845; 3,845; 3,845; 3,845; 4 5; 4 5; 4 5; 4 5; 5,184; 5,184; 5,184; 5,186; 5,186; 5,186; 5,192; 5,194; 5,194; 5,194; 5,194; 6,097; 6,097; 6,097"
+
+Total Samples,303

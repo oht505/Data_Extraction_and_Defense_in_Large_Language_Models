@@ -1,0 +1,5144 @@
+using device: cuda
+Loading models...
+number of parameters: 123.55M
+  0%|          | 0/5000 [00:00<?, ?it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+  1%|          | 50/5000 [00:10<16:36,  4.97it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+  2%|▏         | 100/5000 [00:17<14:23,  5.68it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+  3%|▎         | 150/5000 [00:25<13:31,  5.98it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+  4%|▍         | 200/5000 [00:33<13:15,  6.03it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+  5%|▌         | 250/5000 [00:41<12:52,  6.15it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+  6%|▌         | 300/5000 [00:49<12:39,  6.19it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+  7%|▋         | 350/5000 [00:57<12:25,  6.24it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+  8%|▊         | 400/5000 [01:05<12:15,  6.25it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+  9%|▉         | 450/5000 [01:13<12:04,  6.28it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 10%|█         | 500/5000 [01:21<11:52,  6.32it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 11%|█         | 550/5000 [01:28<11:21,  6.53it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 12%|█▏        | 600/5000 [01:36<11:17,  6.49it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 13%|█▎        | 650/5000 [01:44<11:17,  6.42it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 14%|█▍        | 700/5000 [01:52<11:11,  6.40it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 15%|█▌        | 750/5000 [02:00<11:06,  6.38it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 16%|█▌        | 800/5000 [02:07<11:00,  6.36it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 17%|█▋        | 850/5000 [02:15<10:52,  6.36it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 18%|█▊        | 900/5000 [02:23<10:45,  6.35it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 19%|█▉        | 950/5000 [02:31<10:36,  6.36it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 20%|██        | 1000/5000 [02:39<10:30,  6.35it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 21%|██        | 1050/5000 [02:47<10:24,  6.32it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 22%|██▏       | 1100/5000 [02:55<10:17,  6.32it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 23%|██▎       | 1150/5000 [03:03<10:09,  6.32it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 24%|██▍       | 1200/5000 [03:11<10:02,  6.30it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 25%|██▌       | 1250/5000 [03:19<09:53,  6.32it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 26%|██▌       | 1300/5000 [03:26<09:42,  6.35it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 27%|██▋       | 1350/5000 [03:34<09:20,  6.52it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 28%|██▊       | 1400/5000 [03:42<09:18,  6.45it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 29%|██▉       | 1450/5000 [03:49<09:14,  6.40it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 30%|███       | 1500/5000 [03:57<09:06,  6.40it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 31%|███       | 1550/5000 [04:05<09:00,  6.38it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 32%|███▏      | 1600/5000 [04:13<08:53,  6.37it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 33%|███▎      | 1650/5000 [04:21<08:45,  6.38it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 34%|███▍      | 1700/5000 [04:29<08:39,  6.36it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 35%|███▌      | 1750/5000 [04:37<08:34,  6.32it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 36%|███▌      | 1800/5000 [04:45<08:27,  6.30it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 37%|███▋      | 1850/5000 [04:53<08:18,  6.32it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 38%|███▊      | 1900/5000 [05:01<08:12,  6.30it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 39%|███▉      | 1950/5000 [05:08<08:02,  6.32it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 40%|████      | 2000/5000 [05:16<07:55,  6.31it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 41%|████      | 2050/5000 [05:24<07:46,  6.32it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 42%|████▏     | 2100/5000 [05:32<07:38,  6.33it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 43%|████▎     | 2150/5000 [05:40<07:29,  6.34it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 44%|████▍     | 2200/5000 [05:48<07:21,  6.34it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 45%|████▌     | 2250/5000 [05:56<07:13,  6.34it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 46%|████▌     | 2300/5000 [06:04<07:04,  6.36it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 47%|████▋     | 2350/5000 [06:11<06:56,  6.36it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 48%|████▊     | 2400/5000 [06:19<06:49,  6.34it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 49%|████▉     | 2450/5000 [06:27<06:42,  6.34it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 50%|█████     | 2500/5000 [06:35<06:37,  6.29it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 51%|█████     | 2550/5000 [06:43<06:29,  6.30it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 52%|█████▏    | 2600/5000 [06:49<05:48,  6.89it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 53%|█████▎    | 2650/5000 [06:57<05:49,  6.73it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 54%|█████▍    | 2700/5000 [07:05<05:49,  6.58it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 55%|█████▌    | 2750/5000 [07:13<05:44,  6.53it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 56%|█████▌    | 2800/5000 [07:21<05:41,  6.44it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 57%|█████▋    | 2850/5000 [07:29<05:36,  6.39it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 58%|█████▊    | 2900/5000 [07:36<05:29,  6.37it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 59%|█████▉    | 2950/5000 [07:44<05:22,  6.35it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 60%|██████    | 3000/5000 [07:52<05:15,  6.35it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 61%|██████    | 3050/5000 [08:00<05:08,  6.33it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 62%|██████▏   | 3100/5000 [08:08<05:00,  6.33it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 63%|██████▎   | 3150/5000 [08:16<04:52,  6.31it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 64%|██████▍   | 3200/5000 [08:24<04:44,  6.32it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 65%|██████▌   | 3250/5000 [08:32<04:36,  6.33it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 66%|██████▌   | 3300/5000 [08:40<04:29,  6.30it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 67%|██████▋   | 3350/5000 [08:48<04:21,  6.32it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 68%|██████▊   | 3400/5000 [08:56<04:12,  6.33it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 69%|██████▉   | 3450/5000 [09:03<03:55,  6.59it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 70%|███████   | 3500/5000 [09:10<03:50,  6.49it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 71%|███████   | 3550/5000 [09:18<03:44,  6.45it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 72%|███████▏  | 3600/5000 [09:26<03:39,  6.39it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 73%|███████▎  | 3650/5000 [09:34<03:32,  6.36it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 74%|███████▍  | 3700/5000 [09:41<03:17,  6.58it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 75%|███████▌  | 3750/5000 [09:49<03:13,  6.47it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 76%|███████▌  | 3800/5000 [09:57<03:05,  6.46it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 77%|███████▋  | 3850/5000 [10:05<02:59,  6.42it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 78%|███████▊  | 3900/5000 [10:11<02:41,  6.83it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 79%|███████▉  | 3950/5000 [10:19<02:37,  6.65it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 80%|████████  | 4000/5000 [10:27<02:32,  6.55it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 81%|████████  | 4050/5000 [10:35<02:26,  6.47it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 82%|████████▏ | 4100/5000 [10:43<02:20,  6.42it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 83%|████████▎ | 4150/5000 [10:51<02:13,  6.39it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 84%|████████▍ | 4200/5000 [10:59<02:05,  6.38it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 85%|████████▌ | 4250/5000 [11:07<01:57,  6.38it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 86%|████████▌ | 4300/5000 [11:15<01:50,  6.35it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 87%|████████▋ | 4350/5000 [11:22<01:42,  6.35it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 88%|████████▊ | 4400/5000 [11:30<01:34,  6.37it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 89%|████████▉ | 4450/5000 [11:38<01:26,  6.37it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 90%|█████████ | 4500/5000 [11:46<01:18,  6.33it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 91%|█████████ | 4550/5000 [11:54<01:11,  6.32it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 92%|█████████▏| 4600/5000 [12:02<01:03,  6.30it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 93%|█████████▎| 4650/5000 [12:10<00:55,  6.30it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 94%|█████████▍| 4700/5000 [12:18<00:47,  6.31it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 95%|█████████▌| 4750/5000 [12:26<00:39,  6.34it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 96%|█████████▌| 4800/5000 [12:34<00:31,  6.34it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 97%|█████████▋| 4850/5000 [12:42<00:23,  6.31it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 98%|█████████▊| 4900/5000 [12:50<00:15,  6.27it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+ 99%|█████████▉| 4950/5000 [12:55<00:07,  6.94it/s]Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+100%|██████████| 5000/5000 [13:03<00:00,  6.76it/s]100%|██████████| 5000/5000 [13:03<00:00,  6.38it/s]
+======== top sample by epoch1 perplexity: ========
+1: PPL-epoch1=1.659, score=-0.506
+
+' : 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24'
+
+
+2: PPL-epoch1=1.881, score=-0.632
+
+(' : <6>[ 0.000000] pci 0000:00:1c.0: PME# supported from D0 D3hot D3cold 10 '
+ 'd9hot 10 d10c cold [ 0.000040] pci 0000:00:1c.5: PCI bridge to [bus 01] [ '
+ '0.000041] pci 0000:00:1c.5: bridge window [io 0x4000-0x4fff] (subtractive '
+ 'decode) [ 0.000042] pci 0000:00:1c.5: bridge window [mem '
+ '0xbffff800-0xc047ffff 64bit pref] (subtractive decode) [ 0.000043] pci '
+ '0000:00:1c.5: bridge window [mem 0xf0000000-0xd7ffffff 64bit pref] [ '
+ '0.000044] pci 0000:00:1f.2: PCI bridge to [bus 02] [ 0.000045] pci '
+ '0000:00:1f.2: bridge window [mem 0xe0000000-0xe04fffff] [ 0.000046] pci '
+ '0000:00:1f.2: bridge window [mem 0xcf400000-0xfdb00000 pref] (')
+
+
+3: PPL-epoch1=1.919, score=-0.652
+
+(' :\n'
+ '\n'
+ '1.6, 1.7, 1.8, 2.0, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.9, 3.0, 3.1, 3.2, 3.3, '
+ '4.0, 5.1, 5.2, 5.3, 6.0, 7.0, 10.0, 11.1, 13.1, 14.0, 15.0, 17.')
+
+
+4: PPL-epoch1=1.966, score=-0.676
+
+(' : p = read_pv(d, "cst", b); sess.write({0}, (float)p/sess.tot(1e3), 1); } 1 '
+ '2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 '
+ '30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 '
+ '55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 '
+ '80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 '
+ '104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 '
+ '123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 '
+ '142 143 144 145 146 147 148 149 150 151')
+
+
+5: PPL-epoch1=1.978, score=-0.682
+
+(' : | / | :| | / \\ v v v s h i r j f o u t t y t o i p q u a t h m a n . o x '
+ 'b l e d e q u a u 1 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 '
+ '26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 '
+ '51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 '
+ '76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 '
+ '101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 '
+ '120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 '
+ '139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 '
+ '158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 '
+ '177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 '
+ '196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213')
+
+
+6: PPL-epoch1=2.084, score=-0.734
+
+(' : 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 '
+ '28 29 30.')
+
+
+7: PPL-epoch1=2.188, score=-0.783
+
+' :       '
+
+
+8: PPL-epoch1=2.263, score=-0.817
+
+(' :   1, 2 , 3 5, 6, 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 '
+ '27 28 29 30 31 32 33 34 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 '
+ '53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 '
+ '78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 '
+ '102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 '
+ '121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 <div '
+ 'class="navbar-tabs"> <form method="post" '
+ 'action="/checkout.php?id=170011&name=\'name\'"><!--[if gte mso 10 '
+ '0]><xmlns="http://www.w3.org/1999/xhtml"> <ol> <li>Name</li></ol> </xml> '
+ '<script type="text/javascript"> //--> </body>')
+
+
+9: PPL-epoch1=2.287, score=-0.827
+
+'       '
+
+
+10: PPL-epoch1=2.460, score=-0.900
+
+' :      '
+
+
+11: PPL-epoch1=2.666, score=-0.981
+
+'      '
+
+
+12: PPL-epoch1=2.666, score=-0.981
+
+'      '
+
+
+13: PPL-epoch1=2.666, score=-0.981
+
+'      '
+
+
+14: PPL-epoch1=2.772, score=-1.020
+
+(' : | n/s | | 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 '
+ '25 26 27 28 29 30 31 32')
+
+
+15: PPL-epoch1=2.786, score=-1.025
+
+' : -------------- -------------- -------------- -------------- --------------'
+
+
+16: PPL-epoch1=2.827, score=-1.039
+
+' cc: robby.barrett@enron.com, michael.schneier@enron.com'
+
+
+17: PPL-epoch1=2.831, score=-1.041
+
+(' : <a '
+ 'href="http://www.bristolmail.co.uk/news-and-updates/latest-news/riding-out-the-black-storm-theft-at-harrys-store" '
+ 'rel="nofollow">http://www.bristolmail.co.uk/news-and-updates/latest-news/riding-out-the-black-storm-theft-at-harrys-store</a>')
+
+
+18: PPL-epoch1=2.858, score=-1.050
+
+(' :\n'
+ '\n'
+ 'http://www.washingtonpost.com/wp-dyn/content/article/2010/03/12/AR2001003122445.html')
+
+
+19: PPL-epoch1=2.945, score=-1.080
+
+' : Reply | Threaded ♦ ♦ Open this post in threaded view'
+
+
+20: PPL-epoch1=3.027, score=-1.108
+
+(' : >>>>>>>>>>>>>>>>> >>>>>>>>>>>>>> >>>>>>>>>>>>>> >>>>>>>>>>>>>> '
+ '>>>>>>>>>>>>>> *From: robbymcclain[mailto:robymcclain@gmail.com] '
+ '>>>>>>>>>>>>>> *Sent: Monday, June 21, 2014 11:57 AM >>>>>>>>>>>>>> *To: '
+ 'greten.heilbrunner(at)gmail.com; john.podesta(at)gmail.com; '
+ 'michael.geher(at)gqrr.com; sean.hannity(at)foxnews.com')
+
+
+21: PPL-epoch1=3.064, score=-1.120
+
+(' :\n'
+ '\n'
+ '<blockquote class="twitter-tweet"><p lang="en"><a '
+ 'href="https://twitter.com/hashtag/CBA?src=hash&ref_src=twsrc%5Etfw">@ChrisKitching</a> '
+ '<a href="https://www.facebook.com/christine.kitching2?fref=ts">Follow '
+ 'Christine Kicking on Twitter</a></p><div style="margin: 0cm; font-size: '
+ '12pt; line-height: normal; font-family: georgia, germany, united States '
+ '***********@enron.co.</div></script>')
+
+
+22: PPL-epoch1=3.084, score=-1.126
+
+' : http://www.pbs.org/wgbh/nova/'
+
+
+23: PPL-epoch1=3.101, score=-1.132
+
+' :\n1 . 2 . 3 . 4 . 5 . 6 . 7 . 8 . 9 . 10 . 11 .'
+
+
+24: PPL-epoch1=3.110, score=-1.135
+
+' : >>>>>>>>>>>>>>> daniel.mccann@enron.com<mailto:daniel.mccann@enron.com>'
+
+
+25: PPL-epoch1=3.146, score=-1.146
+
+(' :\n'
+ '\n'
+ 'From: e.walsh@enroncorp.com To: john.podesta@gmail.com, '
+ 'jake.sullivan@enroncorp.com <jakes.sullivan@enroncorp.com>')
+
+
+26: PPL-epoch1=3.231, score=-1.173
+
+(' cc: randy.dixon@enron.com, karen.baird@enron.com, john.taylor@enron.com, '
+ 'robert.thomas@enron.com')
+
+
+27: PPL-epoch1=3.276, score=-1.187
+
+(' :\n'
+ '\n'
+ 'From: nancy.dickerman@verizonwireless.com '
+ '[mailto:nancy.dickerman@verizonwireless.com]')
+
+
+28: PPL-epoch1=3.286, score=-1.190
+
+' cc: michael.james@enron.com, jose.gutierrez@enron.com'
+
+
+29: PPL-epoch1=3.302, score=-1.195
+
+(' : \xa0 \xa0-\xa0 \xa0-\xa0 \xa0-\xa0 \xa0-\xa0 \xa0-\xa0 \xa0-\xa0 \xa0'
+ '-\xa0 1-800-852-2601')
+
+
+30: PPL-epoch1=3.337, score=-1.205
+
+' cc: michael.frazier@enron.com, robert.mcdonald@enron.com'
+
+
+31: PPL-epoch1=3.344, score=-1.207
+
+(' :\n'
+ '\n'
+ '<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">This '
+ 'is the latest on the saga of the Clinton e-mail scandal '
+ '<br><div>@HillaryClinton</div></p>— Charlie Spiering (@charliespiering) '
+ 'October 9, 2015 </blockquote>')
+
+
+32: PPL-epoch1=3.354, score=-1.210
+
+' cc: ron.patton@enron.com, robert.smith@enron.com, katherine.klein@enron.com'
+
+
+33: PPL-epoch1=3.371, score=-1.215
+
+(' : >, > > >>>>>> On Fri, Dec 02, 2011 at 7:53 PM, Cheryl Mills '
+ '<cheryl.mills@gmail.com> wrote: >>>>>>>> I know I said to be brief today but '
+ "let's keep doing our best. >>>>>>>> >>>>>>>> On Wed, Nov 30, 2011 at 1:27 "
+ 'AM, Heather Samuelson <hsamuelson@cdmillsgroup.com>, Joel Benenson<jbenenson '
+ '@americanprogress.org>, Jake Sullivan <jsullivan@hillaryclinton.com>, Jake '
+ 'Mook<mailto: jsullivan@hillaryclinton.com>, Tony '
+ 'Carrk<tcarrk@hillaryclinton.com> wrote: >>>>>>>>> How do we set up a '
+ 'time-limited interview with her? >>>>>>>>> >>>>>>>>> *Josh Schwerin* '
+ '>>>>>>>>> *From*: Josh Schwerin [mailto:jschwerin@hillaryclinton.com] '
+ '>>>>>>>>> *Sent*: Wednesday, November 30, 2011 4:49 PM >>>>>>>>> *To*: Bruce '
+ 'Lindsey; Kristina Costa-Brown >>>>>>>>> *Cc*: Heather Samuelson; Jennifer '
+ 'Palmieri; Robby Mook; Huma Abedin; Philippe Reines; d')
+
+
+34: PPL-epoch1=3.382, score=-1.218
+
+' cc: [email protected], [email protected]'
+
+
+35: PPL-epoch1=3.396, score=-1.223
+
+(' cc: jesse.seidman@enron.com, robert.brenner@enron.com, '
+ 'larry.savage@enron.com, jeffrey.robertson@enron.com')
+
+
+36: PPL-epoch1=3.399, score=-1.223
+
+' : <a href="https://twitter.com/Lansdowne">@Lansdowne</a>'
+
+
+37: PPL-epoch1=3.410, score=-1.227
+
+' : ____         '
+
+
+38: PPL-epoch1=3.500, score=-1.253
+
+(' : ...............................1d. 2003 1 2 3 4 5 6 7 8 9 10 11 12 13 14 '
+ '15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 1/2/00')
+
+
+39: PPL-epoch1=3.505, score=-1.254
+
+(' : > >>>> >>>> >>>> From: Jennifer Pfeiffer <jpfeiffer@hillaryclinton.com> '
+ '>>>> To: Robby Mook <re4700@hotmail.com>, Joel Benenson '
+ '<jbenenson@bsgco.com>, Huma Abedin <ha16@hillaryclinton.com>, John Podesta '
+ '<john.podesta@gmail.com>, Kristina Schake <@domscheitenstock@yahoo.com>, '
+ 'Bruce Lindsey <[email protected]> Sent: Sunday, May 22, 2016 1:06 AM>>>')
+
+
+40: PPL-epoch1=3.548, score=-1.266
+
+(' cc: jerry.muller@enron.com, jeff.johns@enron.com, '
+ 'kathleen.bennett@enron.com, john.rice@enron.com, peter.girard@enron.com')
+
+
+41: PPL-epoch1=3.578, score=-1.275
+
+' : >> >>> >>> From: John Podesta [mailto: john.podesta@gmail.com]'
+
+
+42: PPL-epoch1=3.605, score=-1.282
+
+' cc: kristi.welch@enron.com, juliana.gonzalez@enron.com'
+
+
+43: PPL-epoch1=3.616, score=-1.285
+
+' cc: joe.peter@enron.com, john.nunez@enron.com, susan.tobias@enron.com'
+
+
+44: PPL-epoch1=3.673, score=-1.301
+
+(' : <a href="https://twitter.com/hashtag/GSPN1?src=hash">#GSPN1</a> <a '
+ 'href="http://t.co/4gWq9SzjbE">pic.twitter.com/4gWq9SzjbE</a> —@ChrisReuter')
+
+
+45: PPL-epoch1=3.693, score=-1.306
+
+' cc: cbarnes@enron.com, jwatts@enron.com'
+
+
+46: PPL-epoch1=3.696, score=-1.307
+
+(' cc: robby.hicks@enron.com, mike.dunn@enron.com, kristin.rutz@enron.com, '
+ 'chris.mills@enron.com')
+
+
+47: PPL-epoch1=3.700, score=-1.308
+
+(' : <a '
+ 'href="https://www.redferns.com/newsmagazine">http://www.redferns.com/newsmagazine</a>')
+
+
+48: PPL-epoch1=3.720, score=-1.314
+
+' cc: joshuam@enron.com, enroncapital@enron.com'
+
+
+49: PPL-epoch1=3.721, score=-1.314
+
+(' : <a '
+ 'href="https://www.google.com/search?q=krypto%20site&tbm=isch&source=\'" '
+ 'target="_blank">krypto</a>')
+
+
+50: PPL-epoch1=3.763, score=-1.325
+
+' :\n\n0.000000 0.000000'
+
+
+51: PPL-epoch1=3.763, score=-1.325
+
+' :\n\n0.000000 0.000000'
+
+
+52: PPL-epoch1=3.763, score=-1.325
+
+' :\n\n0.000000 0.000000'
+
+
+53: PPL-epoch1=3.775, score=-1.328
+
+' : <d.hudson@enron.com<mailto:d.hudson@enron.com>'
+
+
+54: PPL-epoch1=3.837, score=-1.345
+
+(' : | 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 '
+ '1718 AM EST | 0930 AM PST')
+
+
+55: PPL-epoch1=3.856, score=-1.350
+
+' cc: chris.wilson@enron.com, brent.hurst@enron.com'
+
+
+56: PPL-epoch1=3.859, score=-1.350
+
+(' cc: brian.sullivan@enron.com, robert.gillespie@enron.com, '
+ 'eric.m.lewis@enron.com, paul.p.trouzier@enron.com, karen.carmes@enron.com')
+
+
+57: PPL-epoch1=3.860, score=-1.351
+
+(' cc: alan.griffin@enron.com, elisabeth.marcella@enron.com, '
+ 'hannah.miller@enron.com')
+
+
+58: PPL-epoch1=3.869, score=-1.353
+
+' cc: katherine.morin@enron.com'
+
+
+59: PPL-epoch1=3.872, score=-1.354
+
+(' :\xa0 \xa0\xa0\xa0\xa0\xa0 \xa0\xa0 \xa0 \xa0 \xa0\xa0\xa0\xa0\xa0\xa0\xa0 '
+ '| \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0'
+ '| \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0'
+ '| \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0'
+ '| \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0'
+ '| \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0'
+ '| \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0\n'
+ '\xa0 \xa0 \xa0'
+ '| \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0'
+ '| \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0'
+ '| \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0'
+ '| \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 '
+ '| \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0\xa0 \xa0 \xa0 \xa0 \xa0'
+ '|\n'
+ '\xa0\xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0| \xa0 \xa0 \xa0 \xa0 \xa0 \xa0'
+ '| \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0'
+ '| \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0'
+ '| \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0\xa0 '
+ '----------------------------------------------------------')
+
+
+60: PPL-epoch1=3.923, score=-1.367
+
+' cc: arthur.daly@enron.com, mike.lopez@enron.com'
+
+
+61: PPL-epoch1=3.939, score=-1.371
+
+(' : >>>>>>>>>>>>> Sent through the Silk Road by BlackBerry with MIME '
+ 'UNCLASSIFIED U.S. Department of State Case No. F-2014-20439 Doc No. '
+ 'C05771581 Date: 08/31/2015 UNCLASSIFIED U.S. Department of State Case No. '
+ 'F-201 4-20439 Doc No. C05770564 Date: 10/3 5 , 201 0 6 07 45 am')
+
+
+62: PPL-epoch1=3.959, score=-1.376
+
+' cc: john.nancy@enron.com'
+
+
+63: PPL-epoch1=3.992, score=-1.384
+
+(' : 00000600 0130 0000 0210 0320 0415 0500 0650 0795 0825 0930 1100 1135 1205 '
+ '131 130 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 '
+ '150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 '
+ '169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 1886')
+
+
+64: PPL-epoch1=4.002, score=-1.387
+
+' : >>>>>>>>>>>>>>>>> From: Robby Mook <robbymook2015@gmail.com>'
+
+
+65: PPL-epoch1=4.053, score=-1.399
+
+' :\n\nsarah@enron.com, holly@enron.com, jennifer@enron.com , diane@enron.com'
+
+
+66: PPL-epoch1=4.062, score=-1.402
+
+' cc: peter.karlsen@enron.com, jeremy.mcgowan@enron.com'
+
+
+67: PPL-epoch1=4.068, score=-1.403
+
+' cc: rpaul.kleinman@enron.com, katherine.huffman@enron.com'
+
+
+68: PPL-epoch1=4.090, score=-1.408
+
+' : paul.douglas@enron.com'
+
+
+69: PPL-epoch1=4.103, score=-1.412
+
+' cc: james.h.robertson@enron.com, '
+
+
+70: PPL-epoch1=4.103, score=-1.412
+
+(' :\n'
+ '\n'
+ '\n'
+ '[email protected] <a href="mailto:michael.hutchinson@enron.com">Michael '
+ 'Hutchison</a>')
+
+
+71: PPL-epoch1=4.140, score=-1.421
+
+(' : >>>> ---------- Forwarded message ---------- From: robbymichael rudd '
+ '<robbymichaelreid@gmail.com > Sent: Thursday, February 13, 2015 7:15 PM To: '
+ 'john.podesta@gmail.com Subject: Re. email to HRC From: james@soros.net Date: '
+ 'Thu, 12 Feb 2015 03:43 PM UNCLASSIFIED U.S. Department of State Case No. '
+ 'F-2014-20439 Doc No. C05774466 Date: 08/31/2015 UNCLASSIFIED U.S. Department '
+ 'of State Case No. F-201 4-20439 Doc No. C05771 4509 Date: 08/31/2015 RELEASE '
+ 'IN PART B5 From: ssr@state.gov Sent: Friday, June 10, 201 2 1 1 :45 AM To: H '
+ 'Cc: cheryl.millard@aol.com Subject: WALKING SCIENCE TUESDAY From the Bureau '
+ 'of Economic Analysis: (738) 441-0839 (o ) UNCLASSIFIED U.S. Department of '
+ 'State Case No. F-201 4-20439 Doc No. c00771 459 Date: 08/31/2015 '
+ 'UNCLASSIFIED US. Department of State Case No. F')
+
+
+72: PPL-epoch1=4.146, score=-1.422
+
+(' : <a '
+ 'href="https://www.facebook.com/hashtag/newhampshire?src=hash">#newhamptheater</a>')
+
+
+73: PPL-epoch1=4.147, score=-1.422
+
+' cc: laurie.palinen@enron.com, jonathan.frost@enron.com'
+
+
+74: PPL-epoch1=4.179, score=-1.430
+
+' cc: sarah.gomez@enron.com, julica.mendes@enron.com, shane.douglas@enron.com'
+
+
+75: PPL-epoch1=4.192, score=-1.433
+
+(' :\n'
+ '\n'
+ '[1] .................................................\n'
+ '\n'
+ '[2] .............................\n'
+ '\n'
+ '[3] ................................................')
+
+
+76: PPL-epoch1=4.228, score=-1.442
+
+(' : >> > >>> On Mon, Aug 13, 2014 at 4:01 PM, John Podesta '
+ '<john.podesta@gmail.com> wrote: >>>>>>>>>>> >> >>>')
+
+
+77: PPL-epoch1=4.240, score=-1.445
+
+' : darren.williams@enron.com'
+
+
+78: PPL-epoch1=4.261, score=-1.449
+
+(' cc: jeff.wong@enroncom.com dave.dumont@enroncom.com '
+ 'erick.frosch@enroncom.com jeff.carter@enroncom.com')
+
+
+79: PPL-epoch1=4.321, score=-1.463
+
+' : jennifer.sebastian@enron.com'
+
+
+80: PPL-epoch1=4.329, score=-1.465
+
+' cc: hannah.morrison@enron.com, ron.lincoln@enron.com'
+
+
+81: PPL-epoch1=4.362, score=-1.473
+
+'      \xa0  '
+
+
+82: PPL-epoch1=4.372, score=-1.475
+
+' cc:  robert.simmons@enron.com, rick.keller@enron.com'
+
+
+83: PPL-epoch1=4.375, score=-1.476
+
+(' :\n'
+ '\n'
+ '\n'
+ '<html><head><meta http-equiv="content-type" content="text/html; '
+ 'charset=utf-8"></head> <body dir="rtccrop" '
+ 'align="center"><div><br/></div></td></tr><!--END FONTDESCRIPTION--></table/>')
+
+
+84: PPL-epoch1=4.482, score=-1.500
+
+' :\n\n[1] http://en.wikipedia.org/wiki/File:Yakuza.jpg'
+
+
+85: PPL-epoch1=4.512, score=-1.507
+
+' :\n\njames.dunn@enron.com'
+
+
+86: PPL-epoch1=4.517, score=-1.508
+
+(' :\n'
+ '\n'
+ '1. You are free to use any of the copyrighted material from this site for '
+ 'private, non-commercial purposes as long as you do not alter it in anyway.')
+
+
+87: PPL-epoch1=4.519, score=-1.508
+
+(' cc: \xa0lgraham@hillaryclinton.com, \xa0roryb@hillaryclinton.com, \xa0'
+ 'michael.greenwood@hillaryclinton.com, \xa0 \xa0'
+ 'tommy.mcneish@hillaryclinton.com')
+
+
+88: PPL-epoch1=4.525, score=-1.510
+
+' : <br> From: ryan.kleinman@enron-usc.com [mailto:ryan.kleinman@enron-usc.com]'
+
+
+89: PPL-epoch1=4.532, score=-1.511
+
+(' cc: hmfoss@huffingtonpost.com, kathleen.crawford@huffingtonpost.com or '
+ 'ryan.cohen@huffingtonpost.com.')
+
+
+90: PPL-epoch1=4.537, score=-1.512
+
+(' : '
+ 'https://www.reddit.com/r/nxplorer/comments/4h2qw6/what_have_you_learned_as_a_new_member_of_the/')
+
+
+91: PPL-epoch1=4.574, score=-1.520
+
+' : > james@enron.com<mailto:james@enron.com>'
+
+
+92: PPL-epoch1=4.586, score=-1.523
+
+(' : > from john.podesta@gmail.com <john.podesta@gmail.com> > Date: Fri, 20 '
+ 'Oct 2010 00:04:11 +0000 To: hrodriguez-morales@cllaw.com '
+ '<hrodriguez-morales@cllaw.com> Subject: FW: Re: email from CLLAW and others '
+ '<mailto:darrell.miller@clu.edu>> Fwd: Re-Email From: John '
+ 'Podesta<john.podesta@gmail.com> To : John Harris<jharris2@aol.com>, Scott '
+ 'Smith<scotti.smith@clintonfoundation.org>, Huma '
+ 'Abedin<ha16@hillaryclinton.com>, davidfinkenwray@gmail.com, '
+ 'kim.powell@psn.com, marie.l.baldwin@clintonfoundation.org Sent: Thu, 19 Sep '
+ '2010 03:45 PM UNCLASSIFIED U.S. Department of State Case No. F-2014-20439 '
+ 'Doc No. C05767908 Date: 08/31/2015 UNCLASSIFIED U.S. Department of State '
+ 'Case No. F-201 4-20439 Doc No. C05767950 Date')
+
+
+93: PPL-epoch1=4.588, score=-1.523
+
+(' : https://en.wikipedia.org/wiki/List_of_unlisted_contributors '
+ 'https://en.wikipedia.org/wiki/Contribution_(to)')
+
+
+94: PPL-epoch1=4.591, score=-1.524
+
+' : http://en.wikipedia.org/wiki/Tyrannosaurus_kraken'
+
+
+95: PPL-epoch1=4.618, score=-1.530
+
+(' :\n'
+ '\n'
+ '[1] http://www.dfo-mpo.state.co.us/newsroom/pressrel5/2016/07/17/detail.html')
+
+
+96: PPL-epoch1=4.642, score=-1.535
+
+(' cc: catherine.cullen@enron.com, dianne.morgan@enron.com, '
+ 'erina.lopez-chengman@enron.com')
+
+
+97: PPL-epoch1=4.651, score=-1.537
+
+' :\n\njames.carter@enron.com, jack.diaz.carter@enron.com'
+
+
+98: PPL-epoch1=4.660, score=-1.539
+
+' : paula.miller@enron.com'
+
+
+99: PPL-epoch1=4.676, score=-1.543
+
+' cc: hilton.fletcher@enron.com, rl.shapiro@enron.com'
+
+
+100: PPL-epoch1=4.694, score=-1.546
+
+' :\n\njulie.bricker@enron.com, steven.wilson@enron.com'
+
+
+
+
+/nfs/hpc/share/ohhyun/AI539/memorization/./extraction_nano.py:248: RuntimeWarning: invalid value encountered in divide
+  metric = np.log(scores["124"]) / np.log(scores["epoch1"])
+======== top sample by ratio of L-124 and epoch1 perplexities: ========
+1: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+2: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+3: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+4: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+5: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+6: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+7: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+8: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+9: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+10: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+11: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+12: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+13: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+14: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+15: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+16: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+17: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+18: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+19: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+20: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+21: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+22: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+23: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+24: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+25: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+26: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+27: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+28: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+29: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+30: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+31: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+32: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+33: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+34: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+35: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+36: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+37: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+38: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+39: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+40: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+41: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+42: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+43: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+44: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+45: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+46: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+47: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+48: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+49: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+50: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+51: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+52: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+53: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+54: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+55: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+56: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+57: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+58: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+59: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' …'
+
+
+60: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+61: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+62: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+63: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+64: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+65: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+66: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+67: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+68: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+69: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+70: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+71: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+72: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+73: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' '
+
+
+74: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+75: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+76: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+77: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+78: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+79: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' cc'
+
+
+80: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+81: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+82: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+83: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+84: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+85: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+86: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+87: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+88: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+89: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+90: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+91: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+92: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+93: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+94: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+95: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+96: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+97: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+98: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+99: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+100: PPL-epoch1=inf, PPL-124=inf, score=nan
+
+' :'
+
+
+
+
+/nfs/hpc/share/ohhyun/AI539/memorization/./extraction_nano.py:255: RuntimeWarning: invalid value encountered in divide
+  metric = np.log(scores["264"]) / np.log(scores["epoch1"])
+======== top sample by ratio of L-264 and epoch1 perplexities: ========
+1: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+2: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+3: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+4: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+5: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' !'
+
+
+6: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+7: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+8: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+9: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+10: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+11: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+12: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+13: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+14: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+15: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+16: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+17: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+18: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+19: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+20: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+21: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+22: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+23: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+24: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+25: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+26: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+27: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+28: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+29: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+30: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+31: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+32: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+33: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+34: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+35: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+36: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+37: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+38: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+39: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+40: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+41: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+42: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+43: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+44: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+45: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+46: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+47: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+48: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+49: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+50: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+51: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+52: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+53: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+54: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+55: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+56: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+57: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+58: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+59: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+60: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+61: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+62: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+63: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+64: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+65: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+66: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+67: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+68: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+69: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+70: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+71: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+72: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+73: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+74: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+75: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+76: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+77: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+78: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+79: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+80: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' '
+
+
+81: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+82: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+83: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+84: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+85: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+86: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+87: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' cc'
+
+
+88: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+89: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+90: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+91: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+92: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+93: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+94: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+95: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+96: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+97: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+98: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+99: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+100: PPL-epoch1=inf, PPL-264=inf, score=nan
+
+' :'
+
+
+
+
+/nfs/hpc/share/ohhyun/AI539/memorization/./extraction_nano.py:262: RuntimeWarning: invalid value encountered in divide
+  metric = np.log(scores["Nano"]) / np.log(scores["epoch1"])
+======== top sample by ratio of Nano and epoch1 perplexities: ========
+1: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+2: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+3: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+4: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+5: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+6: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+7: PPL-epoch1=inf, Nano=inf, score=nan
+
+' !'
+
+
+8: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+9: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+10: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+11: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+12: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+13: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+14: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+15: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+16: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+17: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+18: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+19: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+20: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+21: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+22: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+23: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+24: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+25: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+26: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+27: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+28: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+29: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+30: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+31: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+32: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+33: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+34: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+35: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+36: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+37: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+38: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+39: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+40: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+41: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+42: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+43: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+44: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+45: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+46: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+47: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+48: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+49: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+50: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+51: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+52: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+53: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+54: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+55: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+56: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+57: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+58: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+59: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+60: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+61: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+62: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+63: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+64: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+65: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+66: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+67: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+68: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+69: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+70: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+71: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+72: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+73: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+74: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+75: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+76: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+77: PPL-epoch1=inf, Nano=inf, score=nan
+
+' cc'
+
+
+78: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+79: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+80: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+81: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+82: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+83: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+84: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+85: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+86: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+87: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+88: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+89: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+90: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+91: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+92: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+93: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+94: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+95: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+96: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+97: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+98: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+99: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+100: PPL-epoch1=inf, Nano=inf, score=nan
+
+' :'
+
+
+
+
+/nfs/hpc/share/ohhyun/AI539/memorization/./extraction_nano.py:269: RuntimeWarning: invalid value encountered in divide
+  metric = np.log(scores["Lower"]) / np.log(scores["epoch1"])
+======== top sample by ratio of lower-case and normal-case perplexities: ========
+1: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+2: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+3: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+4: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+5: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+6: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+7: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+8: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+9: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+10: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+11: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+12: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+13: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+14: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+15: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+16: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+17: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+18: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+19: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+20: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+21: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+22: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+23: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+24: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+25: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+26: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+27: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+28: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+29: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+30: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+31: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+32: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+33: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+34: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+35: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+36: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+37: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+38: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+39: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+40: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+41: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+42: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+43: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+44: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+45: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+46: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+47: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+48: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+49: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+50: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+51: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+52: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+53: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+54: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+55: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+56: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+57: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+58: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+59: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+60: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+61: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+62: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+63: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+64: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+65: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+66: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+67: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+68: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+69: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+70: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+71: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+72: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+73: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+74: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+75: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+76: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+77: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+78: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+79: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+80: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+81: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+82: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+83: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+84: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+85: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+86: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+87: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+88: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+89: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+90: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+91: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+92: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+93: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+94: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+95: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+96: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+97: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+98: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+99: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+100: PPL-epoch1=inf, PPL-L-Lower=inf, score=nan
+
+' :'
+
+
+
+
+======== top sample by ratio of Zlib entropy and epoch1 perplexity: ========
+1: PPL-epoch1=1.978, Zlib=409.000, score=599.662
+
+(' : | / | :| | / \\ v v v s h i r j f o u t t y t o i p q u a t h m a n . o x '
+ 'b l e d e q u a u 1 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 '
+ '26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 '
+ '51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 '
+ '76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 '
+ '101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 '
+ '120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 '
+ '139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 '
+ '158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 '
+ '177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 '
+ '196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213')
+
+
+2: PPL-epoch1=2.263, Zlib=432.000, score=528.957
+
+(' :   1, 2 , 3 5, 6, 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 '
+ '27 28 29 30 31 32 33 34 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 '
+ '53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 '
+ '78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 '
+ '102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 '
+ '121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 <div '
+ 'class="navbar-tabs"> <form method="post" '
+ 'action="/checkout.php?id=170011&name=\'name\'"><!--[if gte mso 10 '
+ '0]><xmlns="http://www.w3.org/1999/xhtml"> <ol> <li>Name</li></ol> </xml> '
+ '<script type="text/javascript"> //--> </body>')
+
+
+3: PPL-epoch1=1.966, Zlib=314.000, score=464.574
+
+(' : p = read_pv(d, "cst", b); sess.write({0}, (float)p/sess.tot(1e3), 1); } 1 '
+ '2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 '
+ '30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 '
+ '55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 '
+ '80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 '
+ '104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 '
+ '123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 '
+ '142 143 144 145 146 147 148 149 150 151')
+
+
+4: PPL-epoch1=5.383, Zlib=675.000, score=400.998
+
+(' : <a href="//www.tennessean.com/tech-landing/?ar=210710" '
+ 'onclick="window._taboola = window._taboola || []; _taboola.push({ mode: '
+ "'thumbnails-c', container: 'taboola-interstitial-gallery-thumbnails-9', "
+ "placement: 'Interstitial Gallery Thumbnails 9', target_type: 'mix' }); "
+ '_taboola.push({flush: true});\n'
+ '\n'
+ '\n'
+ 'Image 1 of / 10 Caption Close Tech landings, jobs show signs for Texas at $1 '
+ 'bln mark 1 / 10 Back to Gallery\n'
+ '\n'
+ 'SAN ANTONIO — The number of high tech job hires in North Texas is climbing '
+ 'sharply over the past year, driven both by technological changes and a surge '
+ 'in college graduates, a new report released Tuesday shows.\n'
+ '\n'
+ 'Texas has added about 60,000 positions since January 2012 when the U.S. '
+ 'Department of Commerce published its last statewide estimates for the area. '
+ 'That represented roughly 14 percent growth from the previous year, with '
+ 'nearly 90 percent coming from software positions.\n'
+ '\n'
+ 'North Texas lost nearly half as many job opportunities this summer compared '
+ 'with the comparable period last year, the Texas Workforce Institute (TWEI) '
+ 'said. This represents an increase even higher than that in other')
+
+
+5: PPL-epoch1=1.881, Zlib=244.000, score=386.111
+
+(' : <6>[ 0.000000] pci 0000:00:1c.0: PME# supported from D0 D3hot D3cold 10 '
+ 'd9hot 10 d10c cold [ 0.000040] pci 0000:00:1c.5: PCI bridge to [bus 01] [ '
+ '0.000041] pci 0000:00:1c.5: bridge window [io 0x4000-0x4fff] (subtractive '
+ 'decode) [ 0.000042] pci 0000:00:1c.5: bridge window [mem '
+ '0xbffff800-0xc047ffff 64bit pref] (subtractive decode) [ 0.000043] pci '
+ '0000:00:1c.5: bridge window [mem 0xf0000000-0xd7ffffff 64bit pref] [ '
+ '0.000044] pci 0000:00:1f.2: PCI bridge to [bus 02] [ 0.000045] pci '
+ '0000:00:1f.2: bridge window [mem 0xe0000000-0xe04fffff] [ 0.000046] pci '
+ '0000:00:1f.2: bridge window [mem 0xcf400000-0xfdb00000 pref] (')
+
+
+6: PPL-epoch1=3.371, Zlib=455.000, score=374.391
+
+(' : >, > > >>>>>> On Fri, Dec 02, 2011 at 7:53 PM, Cheryl Mills '
+ '<cheryl.mills@gmail.com> wrote: >>>>>>>> I know I said to be brief today but '
+ "let's keep doing our best. >>>>>>>> >>>>>>>> On Wed, Nov 30, 2011 at 1:27 "
+ 'AM, Heather Samuelson <hsamuelson@cdmillsgroup.com>, Joel Benenson<jbenenson '
+ '@americanprogress.org>, Jake Sullivan <jsullivan@hillaryclinton.com>, Jake '
+ 'Mook<mailto: jsullivan@hillaryclinton.com>, Tony '
+ 'Carrk<tcarrk@hillaryclinton.com> wrote: >>>>>>>>> How do we set up a '
+ 'time-limited interview with her? >>>>>>>>> >>>>>>>>> *Josh Schwerin* '
+ '>>>>>>>>> *From*: Josh Schwerin [mailto:jschwerin@hillaryclinton.com] '
+ '>>>>>>>>> *Sent*: Wednesday, November 30, 2011 4:49 PM >>>>>>>>> *To*: Bruce '
+ 'Lindsey; Kristina Costa-Brown >>>>>>>>> *Cc*: Heather Samuelson; Jennifer '
+ 'Palmieri; Robby Mook; Huma Abedin; Philippe Reines; d')
+
+
+7: PPL-epoch1=8.164, Zlib=734.000, score=349.566
+
+(" : I've never been to a movie theatre, ever. A movie is a theater in space "
+ 'and time; not something you look at on a television screen." —Richard '
+ 'Scarry\n'
+ '\n'
+ 'The following morning it was revealed that the actor had checked himself '
+ "into the emergency room for what the Los Angeles County Sheriff's Department "
+ 'described as "an acute case of panic attack". It soon emerged that this man '
+ 'knew nothing about any mental health issues but seemed obsessed with the '
+ 'subject of "Star Wars" — which led him to take his own life in an apparent '
+ "suicide by overdose. On Friday afternoon, Scarry's death followed the "
+ 'publication of The Star Wars Holiday Special (1980) directed by Lucasfilm '
+ 'president George Lucas, starring Carrie Fisher as Leia Organa, Harrison Ford '
+ 'as Anakin Skywalker, Mark Hamill as Luke Skywalker, James Earl Jones as '
+ 'Darth Vader, John Boyega as C-3PO, Anthony Daniels as R2-D2, Peter Mayhew as '
+ 'Chewbacca, Andy Serkis as Grand Moff Tarkin—and written by Bob Anderson, '
+ 'Alan Burnett and Lawrence Kasdan. The film won numerous Oscars including the '
+ 'Best Picture and Best Director Oscar winners, although its box office '
+ 'performance dropped badly at the box office after a second weekend release '
+ 'that took place in the spring')
+
+
+8: PPL-epoch1=7.389, Zlib=672.000, score=336.002
+
+(' :\n'
+ '\n'
+ '\n'
+ 'TECHNICAL TECHNOLOGY AND INFORMATION INTELLIGENCE AGREEMENTS (TTIA) ANNEX '
+ 'B.01 - PROPOSED FINANCIAL DOCUMENTS\n'
+ '\n'
+ '\n'
+ 'TABLE OF CONTENTS\n'
+ '\n'
+ 'Part I: General Terms and Conditions\n'
+ '\n'
+ '1. Scope of the Agreement. 1.1 The agreement shall contain the terms between '
+ 'Microsoft Computer Inc., a Delaware corporation, and any person or entity, '
+ 'whether public, private or cooperative, who has become subject to this '
+ 'agreement for use by one or more clients thereof, including but not limited '
+ 'to companies, government agencies and other persons.\n'
+ '\n'
+ '1.2 This agreement is governed by its own internal principles of business '
+ 'conduct which apply throughout the entire duration of the term of the '
+ 'agreement. Any provisions of this agreement that are inconsistent with '
+ 'either or both of these principles of business conduct will be construed '
+ 'liberally. The application of a particular provision in this agreement as '
+ 'described herein will be considered without regard to other provision hereto '
+ 'and the parties agree that no amendment to this agreement may be made on the '
+ 'ground that such provision would be contrary to such principles of business '
+ 'conduct.\n'
+ '\n'
+ '1.3 It must be stated at all times that this understanding is only an '
+ 'agreement among persons acting pursuant to the express understand')
+
+
+9: PPL-epoch1=8.763, Zlib=728.000, score=335.395
+
+(' :\n'
+ '\n'
+ 'On Wednesday, in a speech marking the seventh anniversary of Sept. 11, 2001, '
+ 'President George W. Bush declared that "this day is long past due," '
+ 'declaring "terrorism will come to an end" and pledging to lead America '
+ 'toward greater security.\n'
+ ' was also a pivotal moment for the country as a whole. Despite being beset '
+ 'by the war in Iraq, economic anxiety and the possibility of another '
+ 'terrorist attack from overseas or from within, millions turned out in force '
+ 'in support of the president and his call to action. A coalition of veterans, '
+ 'activists, business leaders, former lawmakers and military personnel '
+ "assembled during Veterans Day ceremonies at the Pentagon, Washington's "
+ 'Memorial Hall and around several other sites across the country. The day '
+ 'began with a tribute at the National September eleventh Memorial & Museum in '
+ 'Springfield, Mass., the scene where nearly 4,000 soldiers laid down their '
+ 'lives. Later that night at the Lincoln Memorial, thousands packed into '
+ 'downtown Washington. There, a huge flag draped over the rotunda read: '
+ '"United We Stand." More than 200,000 people later gathered in front of the '
+ 'Supreme Court in Washington on Feb. 23 for a march featuring speakers such '
+ 'as Sen. John McCain (R-Ariz.), Sens. Kay Bailey Hutchison (R-Tex.)')
+
+
+10: PPL-epoch1=5.432, Zlib=565.000, score=333.858
+
+(' : >>>>>>>>>>>>> "On a lighter note, do you know if our new team captain is '
+ 'the guy who was yelling from up there?" PING: <<<>>>> "Yes sir." >>>>>>> '
+ '(continued below) UNCLASSIFIED U.S. Department of State Case No. '
+ 'F-2014-20439 Doc No. C05769071 Date: 08/31/2015 UNCLASSIFIED U.S. Department '
+ 'of State Case No. F-201 4-20439 Doc No. C05769714 Date: 08/31/2015 RELEASE '
+ 'IN PART B6 From: Sent: To: Subject: H <hrod17@clintonemail.com> Tuesday, '
+ "January 9, 201 0 1 9:50 AM 'millscd@state.gov' Re: Press conference "
+ 'tomorrow? Original Message The press will be at 3 pm in the Rayburn Room. '
+ 'And I can work from the State Ops room after 8 am, as long as I take a bus '
+ 'to do so. Also, we are hoping for a very early evening news briefing to '
+ "discuss the latest developments around North Korea. It's better that you "
+ 'have that time than us not knowing something. — Original Message — From: '
+ 'Mills, Cheryl D <MillsCD@state.gov> Sent: Wednesday,')
+
+
+11: PPL-epoch1=12.350, Zlib=819.000, score=325.817
+
+(' :\n'
+ '\n'
+ 'The U.S.-Mexico border, where illegal migrants routinely cross to gain '
+ 'access to America, has become a focus for the Obama administration and '
+ 'federal lawmakers this week as President Barack Obama tries to rally support '
+ 'behind new legislation to extend temporary work permits, create millions of '
+ 'jobs with better pay and health benefits, ease border security, increase '
+ 'spending on infrastructure and technology, and crack down further on '
+ 'immigrants who pose risk to national security. While immigration reform '
+ "remains in limbo at home following the Supreme Court's June decision not to "
+ "hear a case relating to Texas' voter identification law while the justices "
+ "consider a separate challenge from Hispanic-Americans over Arizona's harsh "
+ 'prison practices, Obama has been busy lobbying in Mexico City by bringing '
+ 'high profile guests like Mexican president Enrique Pena Nieto and Democratic '
+ 'Senate Majority Leader Harry Reid together once again for bilateral talks. '
+ 'On Wednesday evening, Obama held a meeting with the current leader of '
+ 'Guatemala and his delegation and met with representatives from all five '
+ 'neighbors along the southern border, including officials from both countries '
+ 'but particularly Mexican authorities, among other topics discussed. The '
+ 'Mexican president, for instance, asked him whether he had asked Mexican '
+ 'officials for help with a project he was financing along the border to '
+ 'improve border surveillance in the event that undocumented Mexicans are '
+ 'apprehended after crossing into the country illegally.')
+
+
+12: PPL-epoch1=7.932, Zlib=671.000, score=324.017
+
+(' : > From: John A. Podesta <[email protected]> > Sent: Sunday, January 14, '
+ '2016 2:02 PM > To: Dennis Cheng; Craig Minassian '
+ '<Craig.Minassian@deweysolutions.com> > Cc: Jim Hunt et al > Subject: FW: '
+ 'Hillary Clinton: Can you meet with me? > DRAFT RELEASE FOR USE IN NEWS & '
+ "PRESS RELEASE > BRIEFING ON HILLARY CLINTON'S INTERVIEW WITH CNN'S DAVE "
+ 'MARTIN Dateline Jan 15-15, 2016 10 p.m. ET >> For Immediate Release >>> '
+ 'Contact: Media Relations Bureau >>> 202 713-5014 | Cell: 858-624-3040 (cell) '
+ '>> '
+ '---------------------------------------------------------------------------------------------------------------- '
+ '>> Hillary Rodham Clinton will hold a meeting on Tuesday at her Washington, '
+ 'DC office to discuss the release of 30,000 of > documents relating to their '
+ 'work for the State Department during her tenure as Secretary. The group '
+ 'included over 40,000 pages containing > correspondence and emails from '
+ 'then-Secretary Bill Clinton which were recovered in 2015 by the > FBI '
+ 'following an investigation into former Democratic Congressman Anthony '
+ "Weiner's sexting scandal. These > records are scheduled to be released at 9 "
+ 'a.m., ET Tuesday,')
+
+
+13: PPL-epoch1=10.366, Zlib=757.000, score=323.712
+
+(' :\n'
+ '\n'
+ '9 a.m. - J. Michael Weinberg, Director of Law Enforcement at the Justice '
+ "Department's Civil Rights Division, called the press briefing last night to "
+ 'announce that Assistant Attorney General Vanita Gupta would be testifying '
+ 'before the Senate Judiciary Committee this afternoon on her efforts in the '
+ 'wake of "The New Jim Crow" and similar cases to crack down on police '
+ 'misconduct. When asked about whether these prosecutions would help combat '
+ 'what she called an epidemic of unconstitutional conduct by law enforcement '
+ 'officers over the past five years, Gupta offered assurances regarding their '
+ 'progress. She said she believes her staff has begun three of the four '
+ 'federal investigations into police departments from which civil rights '
+ 'violations related to stop-and-frisk have resulted, including one of the two '
+ 'cases highlighted today. In addition, she indicated that no charges had yet '
+ 'been filed against any local officials under color of law for acts committed '
+ 'during stop-and-frisks or in violation of the Americans with Disabilities '
+ 'Act. But she added that they are continuing to closely monitor other '
+ 'departments, citing concerns associated with officers being investigated in '
+ 'Chicago after an off-duty officer killed 14-year old Dontre Hamilton. He was '
+ 'beaten by five plain clothes cops. And while a federal probe is underway '
+ 'involving the fatal shooting of another young man')
+
+
+14: PPL-epoch1=10.390, Zlib=757.000, score=323.392
+
+(' \n'
+ '\n'
+ 'The latest U.S.-based polling on Syria shows a sharp decline in support for '
+ 'the rebels as opposition members who had backed their anti-government '
+ 'insurgency against Bashar al-Assad finally see the tide of the war turn '
+ 'decisively to his side after five years of bloodshed.\n'
+ '\n'
+ 'Most recently, this has changed markedly. In late April and early May, '
+ 'surveys from France, Britain, Germany and Italy showed that at least 65 '
+ "percent of respondents considered Assad's decision to use force last month "
+ 'the start of a long slide toward more authoritarianism among armed groups '
+ 'fighting to topple him - including Islamic State, which now controls large '
+ 'parts of Iraq and Syria. (See: "What Now? What\'s Next for ISIS?") By '
+ "contrast, only 28% said this week's attack on civilians by government forces "
+ 'in the town of Tal Abyad underscored Obama administration efforts to rally '
+ 'international support for airstrikes aimed at halting progress by anti-Assad '
+ 'Kurdish fighters.\n'
+ '\n'
+ 'Obama says he would welcome direct talks with Russian President Vladimir '
+ 'Putin about how to end the conflict, but so far they have focused almost '
+ 'entirely on whether Putin will allow military action in response to what '
+ 'U.S. officials say is evidence of chemical weapons use inside the country. '
+ 'The idea of cooperating militarily with Russia on an')
+
+
+15: PPL-epoch1=11.320, Zlib=780.000, score=321.445
+
+(' :\n'
+ '\n'
+ 'DELARO, California , Feb. 16 (UPI) -- The Supreme Court has granted a '
+ 'preliminary injunction prohibiting Apple from selling computers with '
+ 'unlocked access keys and preventing the company from disclosing to customers '
+ 'that it does so.The justices ruled Monday against Motorola Mobility in its '
+ 'suit over unlocking smartphones as well as cellphones sold by Samsung '
+ "Electronics, Microsoft Corp., HTC Corp.'s rival in China, and Intel Corp.'s "
+ 'Sharp unit.The Supreme Court decision comes amid concerns among privacy '
+ 'advocates about how personal data is being used online. In one of the most '
+ 'publicized cases last year, the Justice Department sued Facebook Inc, Google '
+ 'Inc, Skype Corp. and others for failing to give customers the ability to '
+ 'unlock their phones after using them illegally without permission.In '
+ 'September 2012, U.S. District Judge Lucy Koh ordered Apple Corp., Microsoft '
+ "Corp., Sony Corp., and other companies to release users' phone encryption "
+ 'information to an industry consortium called CTIA-The Wireless '
+ 'Telecommunications Association. While the group would create guidelines '
+ 'detailing "what can be done on mobile devices" and "how carriers could '
+ 'disclose user security information," the groups\' work was not '
+ 'guaranteed."CTIA made clear its intention of working with manufacturers, '
+ 'providers and the public about how we can address this complex problem while '
+ 'ensuring')
+
+
+16: PPL-epoch1=9.670, Zlib=725.000, score=319.525
+
+(' : The following table includes the year of enactment, the number and '
+ 'percentage of appropriations included in current law (except for subchapter '
+ 'V) and the total amount made available by the President and Council for '
+ 'fiscal years 2007 through 2011. (b) Subsection i: Completion of research on '
+ 'the safety of genetically engineered food products For the purposes of this '
+ 'subchapter: <<NOTE: Establishment. Reports.>> Effective with the date that '
+ 'is one year after the date of the enactment of Publ L No 106-387, the '
+ 'Secretary of Agriculture shall report annually to Congress an assessment of '
+ 'how research is advancing and a complete description of how funds are being '
+ 'expended under the authorities contained in section 461 of the Agriculture '
+ 'Security and Rural Investment Act of 2002. Title III--Agricultural '
+ 'Development Sec. 301. Short title; definitions. Sec. 302. Farm assistance '
+ 'program authority. Sec. 303. Definitions. Sec of ee 3 1. Public funding for '
+ 'commodities under the Crop Conservation Service program. [[Page 119 STAT. '
+ '2364]] Sec. 304. Extension of rural infrastructure benefits program. Sec. '
+ '305. Community land trusts.--A community land trust established pursuant to '
+ 'the amendments made by section 16(a)(26) would be entitled to receive '
+ 'federal support for projects funded directly or indirectly by')
+
+
+17: PPL-epoch1=9.675, Zlib=722.000, score=318.131
+
+(' :\n'
+ '\n'
+ 'The American Center for Law and Justice sent a letter to the Secretary of '
+ 'the Senate, Chuck Grassley (R-IA), informing him that he had not requested '
+ "such information after President Trump ordered an end to his predecessors' "
+ 'surveillance programs. We also provided him with documents showing the '
+ "extensive legal basis for the programs' existence. It is clear that Mr. "
+ 'Blumenthal has engaged in an unwarranted effort to distract attention from '
+ "Senator Graham's refusal to disclose this important intelligence data.\n"
+ '\n'
+ '\n'
+ 'Mr. Graham should immediately withdraw those claims and cease issuing false '
+ 'statements regarding those facts. Acknowledging that the FBI is able to '
+ 'search through intercepted phone calls, emails or other communications '
+ 'without obtaining warrants, Mr. Graham has also falsely asserted that U.S. '
+ 'law enforcement agencies are forbidden by statute from utilizing these tools '
+ 'unless they have been approved under judicial oversight. In fact, Congress '
+ 'clearly authorized warrantless access to intelligence collected at the '
+ 'request of foreign governments during the George W. Bush administration.\n'
+ '\n'
+ 'Signatories included ACLU Executive Director Anthony Romero, Edward '
+ 'Rosenthal, Jameel Jaffer, Trevor Timm, Amie Stepanovich and Michael '
+ 'McAuliff.')
+
+
+18: PPL-epoch1=9.346, Zlib=699.000, score=312.762
+
+(' :\n'
+ '\n'
+ 'On the subject of the recent spate of attacks on Jewish centers and schools, '
+ 'as well as incidents in New York City last weekend concerning vandalism and '
+ 'swastikas scrawled in chalk on synagogues, a few items below that may be '
+ "useful to you. We're working hard at keeping this information up-to-date so "
+ 'we can keep you safe while you do your bit to help prevent such acts of '
+ 'hatred from continuing.\n'
+ '\n'
+ 'The Jewish Federation is aware of a number of reported incidents at various '
+ 'locations in our region over the past week, including several near our '
+ 'office and some at other locations. In most cases no one was hurt, but in '
+ 'cases where students were attacked or their property damaged there have been '
+ 'calls for justice at the police stations. The JF would like to commend '
+ "District Attorney Charles Ramsey and District Attorney Robert O'Neill for "
+ 'taking a proactive role in responding to these disturbing incidents, which '
+ 'include vandalism and threatening statements directed at individuals of all '
+ 'faiths and none. It is important to note that many of the recent episodes '
+ 'remain under investigation by local law enforcement agencies, and a full '
+ 'report is still pending to identify witnesses.\n'
+ '\n'
+ 'Some of the incidents included:\n'
+ '\n'
+ 'A group of white men, dressed in hoodies and baseball caps, reportedly '
+ 'knocked on')
+
+
+19: PPL-epoch1=13.456, Zlib=807.000, score=310.456
+
+(' :\n'
+ '\n'
+ 'The New York Times reported on March 29, 1995 that a Senate Intelligence '
+ 'Committee probe found "intelligence material" from the Reagan administration '
+ 'to be withheld from congressional oversight committees on what it said were '
+ 'concerns about its political activities and the Iran-contra affair. The '
+ 'committee was trying to investigate whether covert actions on behalf of the '
+ 'Nicaraguan Contras during the 1980s amounted to war crimes; they had been '
+ 'criticized by several Republican members as stymieing their investigation. '
+ 'But after reviewing the documents in question — which apparently did not '
+ "include any evidence of the contras' involvement on an American front or any "
+ 'reports of drug smuggling within the U.S., as some officials thought — '
+ 'investigators concluded that the files did contain information suggesting '
+ 'widespread illegal activity — including human trafficking, racketeering, '
+ 'money laundering, arms deals, conspiracy, bribery of Iranian leaders and '
+ 'other crimes ranging from murder to child prostitution, tax evasion and '
+ 'racketeering — by the government, the drug trade and organizations seeking '
+ 'to promote political change.\n'
+ '\n'
+ '\n'
+ 'At his last press conference before becoming chairman on May 30, 1996, Vice '
+ 'President Dick Cheney appeared without comment to report that his '
+ 'intelligence sources reported "the existence of a new and more substantial '
+ 'and significant effort by the Iranian resistance against Iraq\'s regime." '
+ 'After being asked, he')
+
+
+20: PPL-epoch1=11.197, Zlib=747.000, score=309.236
+
+(' : 1. A study on the history and consequences of alcohol policies during the '
+ '1920s, 1930s, 1950s, and 1960s found no evidence whatsoever that enforcement '
+ 'of the 18th Amendment to the Union Labor Act in 1922 prevented widespread '
+ 'alcoholism throughout the U.S.; 2. The results of a major national survey '
+ 'conducted by the National Institute of Alcohol Abuse and Alcoholism (NIAAA) '
+ 'from 1971-1981 indicate there has been a significant increase in consumption '
+ 'since Prohibition. 3. In a study on the health implications of legal '
+ 'marijuana use among adults, it can be concluded with 95% certainty: "The '
+ 'incidence rate of cannabis dependence among adolescents [was] considerably '
+ 'lower than that caused by alcohol … Marijuana is not considered addicting to '
+ 'adolescents or children." 4. Numerous studies have demonstrated its lack of '
+ 'correlation both with other illicit drugs such as cocaine and LSD, and with '
+ 'prescription narcotic medications—both for patients and the general '
+ 'population.[16]. 5. It is also important to note that while marijuana is '
+ 'known to cause euphoria it does so only at high doses; the sedative effects '
+ 'are short lived after smoking.[17][18] To put it bluntly, even though '
+ 'marijuana appears to be addictive by any common definition, there would be '
+ 'little reason to criminalize it for this')
+
+
+21: PPL-epoch1=13.223, Zlib=796.000, score=308.295
+
+(' : The following information will be used to provide guidance at this time '
+ "in regard to the current security policies governing the Company's business "
+ 'transactions. We are unable to predict for certain future events, including '
+ 'developments relating to changes in accounting standards that may affect '
+ 'these programs or requirements; the impact of new laws and regulations, '
+ 'changes of credit standards and financial market conditions impacting our '
+ 'capital position, as well as other factors affecting the real estate '
+ 'industry; risks associated with implementing a capital allocation scheme '
+ 'based on asset sizes in accordance with various regulatory programs (e.g., '
+ 'the Foreign Exchange Trading Commission\'s "Risk-based Capital" program); '
+ 'any new legislation or regulation regarding securities financing that we may '
+ 'be required to take action upon; the impact of any court orders; and general '
+ 'economic uncertainty.\n'
+ '\n'
+ 'CERTAIN CREDIT AND FINANCIAL INFORMATION IS AN ARTICLES TO THIS OFFERING AS '
+ 'CASH FLOWS SHOW NO IMPACT ON VALUE\n'
+ '\n'
+ 'The data presented below does not purport to show actual sales prices paid '
+ 'by customers, which include commissions, insurance premiums, taxes and fees '
+ 'in addition to net cash proceeds and cash available from the sale of '
+ 'properties (net investment), but rather reflects the average price for each '
+ 'real property sold during the three months ended September 30. Due to '
+ 'significant')
+
+
+22: PPL-epoch1=11.732, Zlib=747.000, score=303.367
+
+(' : 1-877-835-7547\n'
+ '\n'
+ '\n'
+ 'Tues., June 04, 2005 -- A new poll suggests more than half of U.S. residents '
+ "don't see a connection between global warming and severe weather events in "
+ 'recent years. In addition, fewer people view the problem as urgent if it '
+ 'turns out to be gradual, suggesting public concern is not on target, '
+ 'according to polls conducted by the Pew Research Center between March 14 and '
+ 'April 4. The new figures reflect an update found last month that estimated '
+ 'less than 40 percent of Americans believe rising temperatures will increase '
+ 'violent crime or crop damage. But even though overall views are mixed along '
+ 'partisan lines, Democrats overwhelmingly continue to support efforts to '
+ 'address climate change. At least 51% of Republicans continue to do so, while '
+ 'just 29% of independents say the same. And those who take part in some form '
+ "of religious services also show majority opposition to President Bush's "
+ 'carbon regulations, and nearly three times that of self-identified atheists '
+ '(59%) and agnostics/atheists, 37%. While attitudes may diverge across '
+ 'regions, they generally appear stable among both young (age 18 to 34) and '
+ 'older adults (age 65+)\n'
+ '\n'
+ 'The study asked Americans their opinion about six potential causes for '
+ 'extreme weather, including drought, heat waves')
+
+
+23: PPL-epoch1=12.370, Zlib=761.000, score=302.551
+
+(' :\n'
+ '\n'
+ '1. We welcome you to discuss your concerns with Mr. James B. Miller, '
+ 'Managing Director of Consumer Policy and Programs at the United States '
+ 'Department of Housing and Urban Development (HUD), Division of Rent '
+ 'Assistance in San Francisco.\n'
+ '\n'
+ '2. You have indicated that you seek assistance from HUD with regard to the '
+ 'following two matters: 1) The current availability of rental assistance for '
+ 'certain categories of tenants; and 2) a new program entitled RENTAL HOMES '
+ 'ASSISTANCE THAT I am currently developing if approved by HUD. I believe it '
+ 'is clear to you at this point that these matters will require extensive '
+ 'research by me, particularly because they pertain to a subject I was not '
+ 'personally acquainted with prior to entering upon my duties as Assistant '
+ 'Secretary of HUD. In addition, each of these issues has become somewhat more '
+ 'complex over the last few weeks. My understanding of these inquiries from '
+ 'those concerned are that there are many factors at play for HUD within which '
+ 'this matter differs beyond just my responsibility. For example, some of the '
+ 'constituents that were most affected by Hurricane Katrina did so as tenants '
+ 'of private, unregulated housing developments and are not subject to the '
+ 'regulation applicable as federal regulations apply to government issued '
+ 'mortgage-backed securities. As the name suggests, a mortgage backed security '
+ 'is one')
+
+
+24: PPL-epoch1=11.408, Zlib=732.000, score=300.702
+
+(' :\n'
+ '\n'
+ 'Dear Mr. Loomis,\n'
+ '\n'
+ 'We are writing to you on behalf of the students who were assaulted by Mr. '
+ 'James Robinson and two others at the University of Wisconsin-Madison. '
+ 'Unfortunately we have little information regarding their injuries or '
+ "recovery. We understand that our institution's medical department has opened "
+ 'an investigation. Given this news, please allow me to provide further '
+ 'details for both our hospital and university.\n'
+ '\n'
+ 'Please also make note of any recent events or activities and contact as many '
+ 'officials as possible regarding them; however, let us be clear that you '
+ 'should not feel compelled to meet with or appear publicly after such '
+ 'violence.\n'
+ '\n'
+ '\n'
+ 'We would like to encourage you to remain focused on your personal goals as '
+ 'an individual student. You may wish to consider some of these suggestions '
+ 'below in determining a course of action should you encounter such violence '
+ 'in the future:\n'
+ '\n'
+ '• Call local law enforcement immediately if you see someone attacking '
+ 'another member of your community. • Use the services of an attorney and find '
+ 'out how much you can reasonably afford based upon your need of immediate and '
+ 'ongoing assistance.\n'
+ '\n'
+ 'The following examples were provided by a UW-Milwaukee student:\n'
+ '\n'
+ 'LISA ROWEN/THE REGISTER: "As I was sitting down at the kitchen table, [')
+
+
+25: PPL-epoch1=12.362, Zlib=752.000, score=299.050
+
+(' :\n'
+ '\n'
+ 'Dear Mr. Chairman,\n'
+ '\n'
+ 'I am writing you today on behalf of the National Alliance for Caregiving '
+ 'Services\' ("NAFCS") Board of Directors in support of proposed revisions to '
+ 'NCIC regulations that would provide more opportunities for nonprofit '
+ 'agencies and providers to respond quickly to changes in medical status and '
+ 'related information for patients, including those who seek treatment outside '
+ 'an institutional setting as well as long-term care settings such as assisted '
+ 'living facilities or hospices. Further, I want to share with you a report '
+ "from NAFCS's Consumer Counseling Group on issues around new state laws "
+ 'regarding social security numbers. NAFCS is currently reviewing many of '
+ 'these regulations that require the creation of new Social Security numbers '
+ 'at birth when such information is needed, and we believe it is vital that '
+ 'our community recognize and use multiple identities consistent with current '
+ 'practices. We are concerned, however, about some of those new rules and '
+ 'their implications, particularly as they relate to identity theft risk '
+ 'assessments by the insurance industry to determine whether individuals '
+ 'should be required to reestablish Social Security numbers upon discharge '
+ 'from a care facility. In fact, one concern regarding these new standards has '
+ 'been that they may prevent people being given reassurance by insurance '
+ 'companies regarding the potential security risks associated with their SSN '
+ 'number as they leave residential')
+
+
+26: PPL-epoch1=15.694, Zlib=820.000, score=297.828
+
+(' :\n'
+ '\n'
+ 'The United States can and should act on the threat posed by China to '
+ 'American national security. Unfortunately, these challenges are not unique '
+ 'among major powers, but rather ones that have been increasing at a '
+ 'significant rate for more than two decades. In addition to its economic '
+ "capabilities, China's strategic location provides it with extensive "
+ 'geographic access, and its cyber activity also places an enormous strain on '
+ 'U.S. national interests. Furthermore, the impact of Chinese maritime '
+ "activities in East Asia is far-reaching. Since 2004 Beijing's actions in the "
+ 'South China Sea have generated an enduring security dilemma that threatens '
+ 'freedom of navigation. This conflict has heightened global concern about '
+ 'maritime territorial ownership and commerce; however, its most immediate '
+ 'effects—the threat of forced regime change in the Philippines and Vietnam as '
+ 'well as a loss of access to Southeast Asian ports —have barely registered '
+ 'with policy makers or military officers. The United States must seek answers '
+ 'from domestic political leaders and key stakeholders that will enable policy '
+ 'action to ensure these long overdue measures are taken. It must recognize '
+ "the need to respond quickly if China's assertive practices threaten "
+ "America's own sea power and territorial integrity. As in past conflicts, "
+ 'this situation demands diplomatic coordination between states that share '
+ 'common goals within broad regional organizations and with which Washington '
+ 'shares a comprehensive strategy for countering')
+
+
+27: PPL-epoch1=10.292, Zlib=693.000, score=297.248
+
+(' : \xa0\n'
+ 'Dear Mr. '
+ 'Miller, \xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0 \xa0'
+ 'As this is the first time your letters have been received by me since '
+ 'returning from my summer vacation in Europe, I hope you find it all '
+ 'interesting and perhaps informative. Thank you for being part of our '
+ 'team. \xa0 \xa0 \xa0 \xa0\xa0\xa0 \xa0 \xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0 \xa0'
+ 'In November 2012 the Department notified me that I had been appointed to '
+ 'serve as a member of the Board of Directors at\xa0Avalon Pharmaceuticals '
+ 'which controls many pharmaceutical companies and has significant ties to '
+ 'government agencies. \xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0 This news came '
+ 'on August 3rd, 2012. On August 26th, 2012, \xa0while in Paris I attended a '
+ "meeting with an employee representing one of Valeant's subsidiaries in "
+ 'Luxembourg. We discussed a range of matters concerning Valeant and its '
+ 'operations as well as our relationship with them and I was asked if I would '
+ 'be interested in speaking about the status of the matter at the next board '
+ 'meeting. After being met with several questions regarding her job security '
+ 'and future employment prospects, she informed me that she decided she did '
+ 'not wish to speak to me anymore and left the room. The last meeting between '
+ 'us took place on October 5th, 2012,\xa0during which we discussed the '
+ 'financial issues around the company with each other as well')
+
+
+28: PPL-epoch1=7.115, Zlib=583.000, score=297.108
+
+(' : > > On Jul 7, 2010 3:24 PM, Huma Abedin [mailto:[email protected]] > '
+ 'wrote: > >> I had lunch with the Cmdr. > > Sent from my iPhone © 2010 '
+ 'UNCLASSIFIED U.S. Department of State Case No. F-2014-20439 Doc No. '
+ 'C05768978 Date: 08/31/2015 UNCLASSIFIED U.S. Department of State Case No. '
+ 'F-201 4-20439 Doc Number 80576990 Date: 08/31/2015 RELEASE IN PART B6 From: '
+ 'Sent: To: Subject Slaughter, Anne-Marie <SlaughterA@state.gov> Saturday, Aug '
+ '25, 201 0 6:52 AM H Re: New draft memo for you re Haiti/Cuba/Panama talks '
+ 'and other regional issues We can start a daily call around 11:00 pm in our '
+ 'meeting room on Wednesday morning that will have to be off in session until '
+ "around 1 o'clock that evening to meet the Secretary at 2 PM. If there is "
+ "anything else we haven't discussed or added into the daily review, we would "
+ 'like to check in with HRC. Will let you know if he has questions or concerns '
+ 'as to when we start this Thursday. Thx, Mark! UNCLASSIFIED U.S')
+
+
+29: PPL-epoch1=11.359, Zlib=717.000, score=295.065
+
+(' : n.p., Tuesday, 6 january 2003; p.m., Wednesday, 7 january 2003 . 1.  NEW '
+ 'INFORMATION ON THE HIDDEN OSSEN PROPOSED BANNING AGREEMENT WITH JERSEY '
+ 'DEPARTMENT OF COMMERCE. > The United States is aware of a recent media '
+ "report regarding the Government's ongoing negotiations to terminate its role "
+ 'as overseer of certain foreign debt obligations between the United States '
+ 'and foreign governments. U.S. authorities are fully aware that many members '
+ 'of our global community were saddened when news came out last May that the '
+ 'Treasury Department would be ceasing its role in managing certain foreign '
+ 'debt obligations with some foreign government entities. While those '
+ 'discussions did not yield an agreement, this new information provides us '
+ 'additional background on the proposed agreement which has now been released '
+ 'by the Department of State. The deal announced in June was intended to '
+ "eliminate these obligations by providing the United States' international "
+ 'financial institutions (IGOs) with $4 billion less at maturity than they '
+ 'should have received under current law. Under this final negotiated '
+ 'settlement, the Government will pay the holders of the outstanding foreign '
+ 'bonds it held prior to 2010 about $7.8 billion. That amount represents only '
+ '3 percent of the $1.2 trillion in outstanding short')
+
+
+30: PPL-epoch1=11.554, Zlib=720.000, score=294.234
+
+(' :\n'
+ '\n'
+ 'From:"Steve,""Nov 28, 2005 10:08 AM CDTTo:"John,""Dec 12, 2003 4:51 PM '
+ 'CSTDear John,I received your letter from you yesterday (Nov 21,2005) dated '
+ '11/24/05. It concerns a story that aired on ABC News yesterday afternoon '
+ 'about the recent theft of thousands of records from the Department of '
+ "Justice's criminal probe into drug money laundering. A reporter for the show "
+ 'asked me if I was aware of any evidence suggesting that someone had broken '
+ 'into my office last week and stole some hard drives containing documents '
+ 'related to our investigation into the HSBC bank case. For those interested '
+ 'in the details regarding the hack, it appears as though this may be part of '
+ 'a broader attack against government officials which seems to have begun '
+ 'weeks ago. It is also reported - although not by name so far - that some of '
+ 'these files contained sensitive information involving law enforcement '
+ 'agencies. Given that these files appear to be related to our ongoing '
+ 'criminal probes into organized crime, drug dealing and money laundering, and '
+ 'since there has been no indication of further attacks, I am very concerned '
+ 'for you personally, Mr. Holder and senior federal prosecutors who are under '
+ 'pressure to deliver swift justice against suspects involved in all three '
+ 'issues. In particular, I look')
+
+
+31: PPL-epoch1=5.676, Zlib=510.000, score=293.737
+
+(' : > > > -----Original Message----- > From: John Podesta '
+ '<john.podesta@gmail.com> > To: Tony Carrk, Jennifer Palmieri, Robby Mook, '
+ 'Cheryl Mills, Jacob Sullivan, Joel Benenson, Philippe Reines, Kristina '
+ 'Schake, Eric Stoffregen-Nelson, Robby Mook, Nick Merrill '
+ '<nmerrill@hrcoffice.com>, "John Anzalone" <james@anzloneil.com>, Doug '
+ 'Bandler <dougbandler@covadavis.com>, Rachael Samuelsen '
+ '<rachael.samuelsen<mailto:rdsr@hrcoffice.com>, Amanda Renteria '
+ '<arenteria@who.eop.gov> > Subject: RE: FW: Regan news tomorrow > > Sent from '
+ 'my iPhone > > On Sat, May 18, 2015 at 1:00 PM, Lauren Peterson '
+ "<lpalmieri@hillaryclinton.com> wrote: > >> Here's a reminder about regan "
+ 'info. Can >> we get some of this down for today. Also the meeting with john '
+ 'can >> be moved to tonight. >> >> >>>>> I am back on for the evening but am')
+
+
+32: PPL-epoch1=11.753, Zlib=720.000, score=292.196
+
+(' : The American Museum of Natural History is home to some of the most '
+ 'precious and diverse collections in the United States. But, there is one '
+ 'museum with a much more troubling reputation than its fellow institutions '
+ 'that keeps coming up short when it comes to offering an alternative '
+ 'perspective on what was once considered normal in life — nature.\n'
+ '\n'
+ "The American Association for Public Historians' list of natural history "
+ 'museums only includes three other places where exhibits can be viewed from '
+ 'the comfort of their own homes. In fact, the American Alliance of Museums '
+ '(AAM) claims that only eight museums in the country offer their customers '
+ 'some kind of animal exhibit at all and this number continues to grow thanks '
+ 'largely to the rising popularity of zoos, aquariums and theme parks such as '
+ 'Walt Disney World.\n'
+ '\n'
+ "This doesn't mean that many Americans have stopped looking around them for "
+ "natural history treasures. They'll still do so, especially if the museum "
+ 'offers something they are not familiar with (like reptiles). But for these '
+ "museums, the problem isn't limited to what is shown outside—it's also what "
+ 'is behind those walls in terms of understanding and interpretation. And '
+ 'these issues arise due to lack of resources. By offering exhibits of animals '
+ 'for both children and adults, museum visitors will be able learn how many '
+ 'types of')
+
+
+33: PPL-epoch1=11.504, Zlib=709.000, score=290.252
+
+(' :\n'
+ '\n'
+ 'Dear friends and colleagues, I am deeply saddened by the terrible news '
+ 'coming out of Paris today. My thoughts and prayers are with all who were '
+ 'affected. A very sad day indeed for France as we will not be able to mourn '
+ 'in any way the loss of so many of our allies, their people, and the respect '
+ 'they have shown us on such a long journey over this land.\n'
+ '\n'
+ 'After years of service in my role in public policy-writing offices across '
+ 'Europe, Washington DC, London, Berlin, Madrid, and Tokyo (and countless '
+ 'discussions and meetings) on issues surrounding the Middle East region, '
+ 'including Syria, Iraq, Iran, Hezbollah, Hamas, and ISIS, and how we can help '
+ 'counter these vicious extremists through humanitarian aid and international '
+ "cooperation, it's clear that an even more dangerous problem is unfolding on "
+ 'home soil. It was shocking when terrorists from all over the globe stormed '
+ 'into Paris last night, killing hundreds. It has been worse since. But we in '
+ 'America must also do everything possible to prevent future acts of '
+ 'violence.\n'
+ '\n'
+ '\n'
+ "Here are some lessons we've learned about countering terrorism in recent "
+ 'times:\n'
+ '\n'
+ '\n'
+ '1. This is still far from over: In many parts of the Muslim world, there is '
+ 'no end to what this conflict has led to.')
+
+
+34: PPL-epoch1=5.146, Zlib=475.000, score=289.940
+
+(' : >>>>> ON AUGUST 16, 2009 905 PM, "Lamar Smith" >>>>> '
+ '<mailto:mjohnson@legis.state.gov> >>>>> writes: >>>>>>>>>>>>>>>>>> '
+ '>>>>>>>>>>>>>>>>>> >>>>>>>>>>>>>>>>>> >> We need to talk with you again '
+ 'tomorrow or next week >>>>>>>>>>>>>>>>>> afternoon and discuss how we will '
+ 'move forward. I would like to know as >>>>>>>>>>>>>>>>>> soon as possible '
+ 'today if there is any news coming out. >>>>>>>>>>>>>>>>>> >> '
+ '>>>>>>>>>>>>>>>>>> > From: john.podesta@gmail.com >>>>>>>>>>>>>>>>>> > Date: '
+ 'July 05, 2009 at 5:08 AM <<< >>>>>>>>>>>>>>>>>> >> To: '
+ 'michael.pollman@xenu.edu >>>>>>>>>>>>>>>>>> > Subject: Re: Future Plans '
+ '>>>>>>>>>>>>>>>>>> > > Will have someone call me later this morning. Would '
+ 'want >>>>>>>>>>>>>>>>>> everyone to check on the status of all your items. '
+ 'As always we >>>>>>>>>>>>>>>>>> can meet again after 2pm. >>>>>>>>>>>>>>>>>> '
+ '>>>>>>>>>>>>>>>>>> >> Begin forwarded message: >>>>>>>>>>>>>>>>>> > '
+ '>>>>>>>>>>>>>>>>>> UNCLASSIFIED U.S. Department of State Case No. F-201 '
+ '4-20439 Doc No. C')
+
+
+35: PPL-epoch1=5.560, Zlib=497.000, score=289.702
+
+(' : >>>>>>> >>>>>>> From: Jennifer Palmieri <jpalmieri@hillaryclinton.com> '
+ '>>>>>>> Date: 2011-11-06 16:57 Subject: Re: Draft Hillary Clinton >>>>>>> '
+ 'To: Brian Fallon, Nick Merrill >>>>>>> Cc: Jake Sullivan, Kristina Schake, '
+ 'Joel Benenson , Amanda Renteria, >>>>>>> Emily Schillinger, Mary Pat '
+ "Callahan, Karen Finney O'Leary, Teddy Goff, Tony Carrk, Dennis Cheng, "
+ '>>>>>>> Matt McKenna, Ron Klain >>>>>>> Sent: Sun Nov 06 14:37:51 2010 '
+ '>>>>>>> Subject: Fw: 2016 Draft >>>>>>> Wrote to all the HRC team just to '
+ 'have everyone read this. We will do some more tomorrow >>>>>>> morning and '
+ "then I'll go over it again as we speak tonight. >>>>>>> >>>>>>> Thanks for "
+ 'your time today. Let me know if you had any questions >>>>>>> >>>>>>> On '
+ 'Fri, Nov 7, 2010 at 6:19 AM, Brian Fallon <bfallon@hillaryclinton.com> '
+ 'wrote: >>>>>>> Here is draft for next day. Will discuss >>>>>>> >>>>>>> '
+ '>>>>>>> >>')
+
+
+36: PPL-epoch1=12.778, Zlib=738.000, score=289.666
+
+(' : The following is a letter from our office addressed to the director of '
+ 'public safety on September 17th, 2012. It is in response to your recent '
+ 'inquiry regarding comments made by Michael Leger as he responded to our '
+ "questions over email. We have forwarded this letter back with Mr. Leger's "
+ 'comments, and attached them for your review at that time. Thank you for '
+ 'putting those comments into writing as they seem to raise some concerns '
+ 'about our procedures and operations during the recent events in New Orleans. '
+ 'Sincerely, The Legal Department 741 North Rampart Street Suite 3200 '
+ 'Charlotte, NC 28210-1254\n'
+ '\n'
+ 'August 24, 2012 - Dear Director Legere, As indicated in our last '
+ 'communication I am notifying you that we are now proceeding with an internal '
+ 'judicial review of certain criminal allegations filed against Michael Leger '
+ 'who has been with the company since 1999 and who received a total of '
+ '$7,800,000 dollars for personal services rendered related to his work there '
+ 'between February 14th 2013 and May 6th, 2013. Based upon these newly '
+ 'discovered documents I believe we may be able to resolve any remaining '
+ 'issues regarding the complaint, should the appropriate committee proceed '
+ 'with such action. While our investigation is currently underway, we '
+ 'encourage you to continue to remain in close contact with me')
+
+
+37: PPL-epoch1=5.287, Zlib=477.000, score=286.429
+
+(' : <p>From<br>(M.A.) To: (c) M.S. Jones and R.G. Kramian Date: June 30, 2003 '
+ '61706-0500 UNCLASSIFIED U.S. Department of State Case No. F-2014-20439 Doc '
+ 'No. C05766750 Date: 08/31/2015 RELEASE IN PART B6 From: Sullivan, Jacob J '
+ '<SullivanJJ@state.gov Sent: Tuesday, August 9, 2010 11:01 AM to aol_lbl-llc '
+ 'Subject: Re: call - can do in 10 min From: H <HDR22@clintonemail.com > To: '
+ 'Sullivan, Jacob J; Abedin, Huma Cc: Mills, Cheryl D <MillsCD@state.gov> '
+ 'Sent: Tue Aug 09 10:08 PM Subject: re: check on hrc email cdm Original '
+ 'message From: Cummings, Elijah E <CummingsELAH@state.gov> Date: Wed, 9 Sep '
+ '2010 12:51:53 0800 CST To: Crowley, Philip J <crowleyprj@dintonmail.com>, '
+ 'Miller, Stuart A <MillerST@state.gov> Subject: RE: Call - Can do in around '
+ 'ten')
+
+
+38: PPL-epoch1=12.684, Zlib=725.000, score=285.397
+
+(' : "T.D.T., I have had my say, and it is done." [sic] '
+ '----------------------------------------------------------------------------- '
+ 'DENNIS ROGERS, Chief of Staff for Secretary of Commerce, in the Capitol in '
+ 'Washington, DC on March 23-24, 1985, reported that the Senate passed a bill '
+ 'today approving the creation of an integrated Federal-state plan to reduce '
+ 'CO 2 emissions and promote renewable energy production. ``The Senate has '
+ 'adopted a simple resolution expressing its readiness to consider the '
+ 'Comprehensive Energy Research and Development Act as a preliminary step '
+ "toward further actions in this regard.'' The measure was taken up without "
+ 'change by voice vote shortly after 10 a.m.; however, a motion pending prior '
+ "to debate from Senator Robert Dole (R-KS) calling for a ``public hearing'' "
+ 'to discuss future plans was defeated without discussion. Sixty Senators '
+ 'voted against final passage of the Act today; 24 were opposed. A similar '
+ 'motion failed early yesterday morning at 5 p.m. following what '
+ 'Representative Howard Metzenbaum (R-IL) described as an ``uncoordinated and '
+ "poorly organized effort,'' according to his aide Tom O'Neill. Congressman "
+ 'John Murtha (D-PA), who also opposed, suggested to reporters at 9:15 a.m. '
+ 'that the Administration would not')
+
+
+39: PPL-epoch1=4.140, Zlib=404.000, score=284.360
+
+(' : >>>> ---------- Forwarded message ---------- From: robbymichael rudd '
+ '<robbymichaelreid@gmail.com > Sent: Thursday, February 13, 2015 7:15 PM To: '
+ 'john.podesta@gmail.com Subject: Re. email to HRC From: james@soros.net Date: '
+ 'Thu, 12 Feb 2015 03:43 PM UNCLASSIFIED U.S. Department of State Case No. '
+ 'F-2014-20439 Doc No. C05774466 Date: 08/31/2015 UNCLASSIFIED U.S. Department '
+ 'of State Case No. F-201 4-20439 Doc No. C05771 4509 Date: 08/31/2015 RELEASE '
+ 'IN PART B5 From: ssr@state.gov Sent: Friday, June 10, 201 2 1 1 :45 AM To: H '
+ 'Cc: cheryl.millard@aol.com Subject: WALKING SCIENCE TUESDAY From the Bureau '
+ 'of Economic Analysis: (738) 441-0839 (o ) UNCLASSIFIED U.S. Department of '
+ 'State Case No. F-201 4-20439 Doc No. c00771 459 Date: 08/31/2015 '
+ 'UNCLASSIFIED US. Department of State Case No. F')
+
+
+40: PPL-epoch1=15.441, Zlib=777.000, score=283.882
+
+(" : The United Nations' special representative to the global South in a "
+ 'statement of concern to UNGA issued March 30. "The current humanitarian and '
+ 'economic crises in Egypt, Iraq, Syria and Yemen reflect profound challenges '
+ 'which have no clear outcome for those countries, or the international '
+ 'community at large," said Hildebrand Ingves (UNH). "I urge all sides to '
+ 'refrain from military actions, increase aid provision and political dialogue '
+ 'without preconditions." On the ground in Gaza, Israel\'s navy destroyed '
+ 'Hamas-built missiles in three separate operations between Sunday evening and '
+ 'Wednesday morning that it claimed showed their proficiency and effectiveness '
+ 'as rocket arsenals and the threat they pose to Israeli cities. Two were '
+ 'launched towards Beersheba, one toward Khan Yunis in central Gaza. At least '
+ 'eight rockets landed near an unmanned aerial system factory south of Rafah. '
+ "Israel's armed forces reported finding several surface-to-air missile "
+ "batteries around Gaza while destroying two more near Shaja'ib, north of "
+ 'Al-Khalil along the border with Egypt. Six other targets were shot down by '
+ 'IDF aircraft in southern and eastern Gaza following interception attempts, '
+ 'authorities added. Meanwhile, thousands fled into the hills surrounding Beit '
+ 'Lahiya as fighting entered its ninth day Tuesday, prompting the evacuation '
+ 'of residents to shelters.')
+
+
+41: PPL-epoch1=8.493, Zlib=605.000, score=282.813
+
+(' : I am very sorry to hear of the tragic events at the U.S.-Mexico border '
+ 'this morning and hope you are all safe. We stand ready to work with our '
+ 'partners in the U.S. and Mexico on any additional measures they may need to '
+ 'assist those affected by these events (and other safety issues).\n'
+ '\n'
+ 'Update, March 28 1:30 p.m.: The Trump administration is reportedly '
+ "considering shutting down a key part of President Donald Trump's travel ban "
+ 'when it ends later this week unless Congress acts this week to repeal it.\n'
+ '\n'
+ 'CNN reports that an executive order that would authorize Customs and Border '
+ 'Protection agents only to conduct immigration enforcement operations was '
+ 'being considered by senior officials within the Department during the past '
+ 'few months."If there were no provisions authorizing CBP officers to detain '
+ 'persons for inspection," a Homeland Security official familiar with the '
+ 'discussions told CNN, "then CBP would be unable to enforce parts [of the '
+ "president's executive order] that address the most common concerns of CBP "
+ 'officers about travelers from six majority Muslim countries."')
+
+
+42: PPL-epoch1=11.088, Zlib=680.000, score=282.641
+
+(' : * (1) The person in charge of this operation shall maintain the records '
+ 'described by paragraphs 2 to 17, inclusive, and any other data required '
+ 'pursuant to subsection 10.2 when it is established by a written agreement '
+ 'with the entity that has an interest in the records concerned or pursuant to '
+ 'paragraph 7.(g) All information related to this operation and obtained by '
+ 'the Administrator upon any inspection authorized under subsection 8.5(d), '
+ 'shall be available through the system of records as directed by the '
+ 'Administrator to be maintained by the entity or entities involved. * 7.(b) '
+ 'To the extent that a request for records is made using a complaint form, '
+ 'each institution that receives, maintains, uses, transmits or otherwise '
+ 'discloses electronic health care record data in accordance with section '
+ '103.02 of title 18, Code of Federal Regulations, shall establish an internal '
+ 'notification procedure as provided for in section 14.102 or section 112.20 '
+ 'of such title; however, no institution shall respond to requests for records '
+ 'containing medical information without providing to the requested party a '
+ 'reasonable opportunity to respond within 45 calendar days after receipt of '
+ 'such request.(c) A hospital, nursing facility, medical service center or '
+ 'skilled nursing facility may refuse to disclose electronic health care '
+ "record data by providing no less than 30 business days' notice")
+
+
+43: PPL-epoch1=10.731, Zlib=670.000, score=282.323
+
+(' :\n'
+ '\n'
+ 'From: John Roberts <john.roberts@enron.com>\n'
+ '\n'
+ 'Sent: Monday, March 01, 1996 6:00 PM\n'
+ '\n'
+ 'To: Steve Purdy <steve.purdy@enron.com>\n'
+ '\n'
+ 'Subject: Letter From John Roberts To: Steve Pease [ENRON]\n'
+ '\n'
+ 'Date: Mon, 30 Mar 96 11:47:30 GMT\n'
+ '\n'
+ 'Dear Steve, I am going to share this correspondence in the hope that it will '
+ 'contribute towards a resolution of these issues for you as well. This is '
+ 'something that was sent by a staff member from my organization on Wednesday '
+ 'night. As usual, I believe there were additional questions being asked but '
+ 'we are not looking now at those because nothing further to be said beyond '
+ 'what has already been previously acknowledged on our part. My own contacts '
+ 'with Mr. Robertson were limited and he did not comment on my email at the '
+ 'time of this writing. Please let me assure you that while it may seem '
+ 'strange to discuss these matters publicly, they have no bearing whatsoever '
+ 'within our relationship and should not detract from any positive efforts the '
+ 'group may undertake in the future. It would also appear inappropriate to '
+ 'refer anyone regarding his role or responsibilities to the press as such. '
+ 'The fact that he may')
+
+
+44: PPL-epoch1=13.925, Zlib=743.000, score=282.112
+
+(' :\n'
+ '\n'
+ "From a post on the official Google+ page for Microsoft's Windows 10 "
+ '"Redstone 1" release, March 13th 2017:\n'
+ '\n'
+ 'We are delighted to announce an update to our Project Zero bug bounty '
+ 'programme.\n'
+ '\n'
+ 'The first phase focused on vulnerability identification and remediation '
+ 'within a single code base. The second focused on identifying and addressing '
+ 'any emerging weaknesses in that code before reaching end users.\n'
+ '\n'
+ 'This final stage has just ended, resulting in approximately 100 reports in '
+ 'total from the last three months of 2016. We received over 200 in all of '
+ '2015 while this previous campaign covered all major Operating System '
+ 'releases from XP up to Redstone 5.\n'
+ '\n'
+ 'Today we have released both of these investigations, with some additional '
+ 'information, as well as an explanation by security vendor Red Hat.\n'
+ '\n'
+ 'In addition, Microsoft is now making available its Project Zero database '
+ 'containing the results of over 400,000 attacks against the Windows operating '
+ 'system since January 2015. This is a large number of samples compared to '
+ 'other Microsoft platforms where no equivalent data exists. By comparison, in '
+ 'May last year we discovered over 2 million malicious files were found using '
+ 'Project Zero analysis. If anything more evidence was needed to support '
+ 'claims that the original BlueBorne worm had been stopped, all it needs to do '
+ 'is')
+
+
+45: PPL-epoch1=16.148, Zlib=784.000, score=281.833
+
+(' :\n'
+ '\n'
+ 'Dear Sir, I sent the following letter on behalf of the National Lawyers '
+ "Guild because it's clear that you are using your positions as an attorney to "
+ 'lobby against open government and freedomof information reform efforts being '
+ 'undertaken in the states and at the federal level. On July 25th I wrote to '
+ 'Senator Wyden about public records requests. Unfortunately, this is no '
+ 'longer a "sitting duck" to use these tactics from special interests who have '
+ 'little concern for transparency or accountability. Our organization (NLG) '
+ 'has been able to mobilize numerous groups to meet with government officials '
+ 'at every tier of government across the country demanding full disclosure of '
+ 'all documents pertinent to ongoing investigations. This includes many cases '
+ 'where people were arrested under false pretenses, were falsely imprisoned '
+ 'and falsely accused, or even lost their jobs after having their information '
+ 'unlawfully subpoenaed in connection with this type of criminal '
+ 'investigation. In order for us to remain effective at working together we '
+ 'must do more than just fight any attempts by some to use our advocacy work '
+ 'in those circumstances. We must also hold all sides accountable because the '
+ "real question here isn't whether to fight or not – it's what will they say "
+ "when asked how much we've spent and received? Your behavior and actions "
+ "reveal a cynical corporate mindset, the sort of attitude you'll")
+
+
+46: PPL-epoch1=15.583, Zlib=773.000, score=281.485
+
+(' :\n'
+ '\n'
+ 'Sophie de Genet,\n'
+ '\n'
+ 'Thank you for your email. I appreciate it and am here to check in for a bit '
+ 'before we begin our return trip.\n'
+ '\n'
+ "As noted above, I'd like to take some time today to review your email of "
+ 'November 1st, 2011 concerning the following question regarding my research '
+ 'on the relationship between education in this country and student learning '
+ 'outcomes. First, I want to offer my thanks for your helpful work to support '
+ 'our ongoing research program that uses cross-sectional data to examine '
+ 'school-based efforts to strengthen relationships between student success '
+ 'indicators such as academic progress and test scores, teacher evaluation '
+ 'ratings and other important measures. Your expertise has been invaluable in '
+ 'developing this project but also my gratitude to you for your contributions '
+ 'towards helping us gain new insights into how schools use educational '
+ 'resources and what motivates them when their students encounter challenges '
+ 'on their campuses every day. I understand from you that there are two areas '
+ "you feel will warrant further attention during tomorrow's discussion. The "
+ 'first is the effect that higher levels of teacher union membership can have '
+ 'on classroom dynamics within schools – particularly when unions focus '
+ 'primarily on professional development rather than teaching – and the second '
+ 'is the association between high standards of instruction/performance and '
+ 'achievement or performance by each student throughout a particular school')
+
+
+47: PPL-epoch1=15.360, Zlib=767.000, score=280.769
+
+(' :\n'
+ '\n'
+ 'DELON A. BILLOWERY, JR.:\n'
+ '\n'
+ 'Mr. Speaker and Members of the Joint Committee on Public Works: I am '
+ 'grateful for your letter to Mr. Rogers and his staff. With regard to your '
+ 'question related to an analysis of state and local law enforcement '
+ 'expenditures in 2011, there is no direct information provided; however it is '
+ 'my understanding that the expenditure data from a year prior to this current '
+ 'fiscal year reflects expenditures incurred as well as those previously paid '
+ 'directly by members of your legislative delegation or their employees. Based '
+ 'at least in part upon what may be obtained electronically based upon FOIA '
+ 'exemptions, I believe that such records in the possession of State '
+ 'Department agencies are available as of today without further request, '
+ 'unless specifically addressed by the House committee regarding specific '
+ 'questions or matters concerning appropriation issues, and I strongly '
+ 'encourage you to seek them out when they become available.\n'
+ '\n'
+ '\n'
+ 'In connection with your request for detailed expenditures between January 1, '
+ '2006 through December 31, 2011 (as disclosed by the Office of the General '
+ 'Counsel), any and all research would need to include the following areas: '
+ 'All police services for all agencies serving the commonwealth, including '
+ 'city, town, county, school districts and rural school district equivalents.\n'
+ '\n'
+ '\n'
+ 'All training/practitioner expenses associated with officers')
+
+
+48: PPL-epoch1=9.914, Zlib=644.000, score=280.738
+
+(' : >>> >>> ---------- Forwarded message ---------- From: Peter Thiel '
+ '<peter.thiel@googlemail.com> Date: March 18, 2010 4:41 PM ET To: Marc '
+ 'Andreessen <marc.andreessen@gmail.com>, John Lagerstrom '
+ '<johngerstrom@msnbc.com>, Jennifer Epstein <jeneps@aol.com> Subject: fyi on '
+ 'Google and the ouija board Dear Mr. Andreessen and Ms. Epstein: >>> In my '
+ 'opinion, the only way that companies can keep up with technology for long is '
+ 'by using both real and virtual worlds for customer interviews and tests -- '
+ 'and then putting people in a virtual space to run some or all of those '
+ 'tests. I understand that your company has developed a new platform and '
+ 'software called ouija-board, which you claim could reduce interview time '
+ 'without sacrificing the anonymity that makes these environments extremely '
+ "useful. Here's what it looks like today. The idea isn't new. IBM introduced "
+ 'the concept 25 years ago. It was called "Open Systems" at the time, and came '
+ "about because engineers wanted systems so big they couldn't be tested on "
+ 'physical servers, as part of efforts to put a business model around that '
+ 'large cloud infrastructure. There are')
+
+
+49: PPL-epoch1=6.822, Zlib=537.000, score=279.662
+
+(' : >>>>> >>>>>> We have been working on a quick summary for you that can be '
+ ">>>>>> used at any of this week's meetings, or provided on demand. There are "
+ '>>>>>> two main elements to the outline below, based on which we will >>>>>> '
+ 'discuss some aspects that may not make it into the main document and would '
+ '>>>>>> need to review later as further options are available in the future. '
+ '>>>>>>>>>>> >>>>>>> _________________ >>>>>>>> Date: 02-25-2016 5:00 PM /p2 '
+ '>>>>>>>> Subject: Final Summary for the President >>>>>>>> To whom it may '
+ 'concern, >>>>>>>> >>>>>>>> This meeting has taken place at 10 am EST '
+ 'tomorrow. You may >>>>>>>> read what has been discussed. Please feel free to '
+ 'continue reviewing >>>>>>>> other materials during this time if necessary. '
+ '>>>>>>>>>>> >>>>>>>\n'
+ '\n'
+ 'Information forwarded to debian-bugs-dist@lists.debian.org, Technical '
+ 'Committee <pkg-ctte@lists.alioth.debian.org> :\n'
+ '\n'
+ 'Bug#785475 ; Package tech-ctte . (full text, mbox, link).')
+
+
+50: PPL-epoch1=11.972, Zlib=690.000, score=277.942
+
+(' :\n'
+ '\n'
+ 'MADISON, Wis.--(BUSINESS WIRE)--A new ad running with Super Bowl ads '
+ 'highlighting the virtues of marijuana for a range of illnesses and '
+ 'conditions has reached its goal of generating $100 million in sales through '
+ '2013. The state-of-the art spot is from Milwaukee based public relations '
+ 'firm, JMP Advertising (formerly American Express), and features high school '
+ 'student Connor Jones, now 17 years old, who went on to become one of the '
+ 'highest paid college athletes at his school, Marquette University School of '
+ 'Law, a former national champion track and field team member. "Our latest '
+ 'campaign tells Americans that our great nation can no longer afford an '
+ 'epidemic of drug addiction and ill health among young people," said Andrew '
+ 'S. Shrage, senior vice president at JMP Advertising, which runs the super '
+ 'bowl spot as part of a broader advertising effort to sell prescription drugs '
+ 'and other medical goods such as insulin and insulin concentrators for '
+ 'diabetes patients. "It\'s the same message we heard so often during last '
+ 'year\'s Super Bowl." With this latest TV ad run, which will air nationally '
+ 'starting December 9, 2012, the company expects over 10 million viewers per '
+ 'day.')
+
+
+51: PPL-epoch1=14.187, Zlib=736.000, score=277.495
+
+(' :\n'
+ '\n'
+ '\n'
+ '"A new and very rich source of energy which the Arabs have been studying for '
+ 'some years is nuclear power. In particular they will explore the possibility '
+ 'of launching nuclear bombs as soon as possible to destroy enemy bases '
+ 'abroad." [7]\n'
+ '\n'
+ 'The letter was dated 18 June 1961, an appropriate time frame, given that we '
+ 'now know there was a high degree of communication between the United States '
+ 'Army Strategic Air Command (SAC) and Saudi Arabia during this period. The '
+ 'date and purpose of this letter are known, but perhaps not its full '
+ "significance. It's hard to believe SAC would be worried about an incoming "
+ 'North Korean nuclear assault from China with its rapidly proliferating '
+ 'ballistic missile program to the south.\n'
+ '\n'
+ 'So why did it concern Riyadh? Perhaps, in some way, Iran was at least partly '
+ 'responsible. A declassified letter to General Richard M. Helms from a member '
+ 'of his staff stated "Iran must be taken seriously as our foremost counter '
+ 'threat against us." [8] That same day, a senior U.S. official warned Helms '
+ 'the possibility of war between Egypt and Israel was inevitable if any '
+ 'confrontation ensued over Syria or Lebanon. The next year, Saudi Arabia '
+ 'threatened to turn away oil supplies to Egypt if peace negotiations were '
+ 'delayed because of the perceived')
+
+
+52: PPL-epoch1=13.529, Zlib=722.000, score=277.179
+
+(' :\n'
+ '\n'
+ 'The first of July marks 25 years since the publication of the film The '
+ 'Shining, directed by Stanley Kubrick. For decades it was considered one of '
+ 'his masterpieces which would define a generation and influence much of '
+ 'future art, literature and entertainment in both cinema and television. With '
+ 'its darkly comic and even disturbing aspects, it is often regarded as a '
+ "chilling masterpiece. However, although it has become part of cinema's "
+ "folklore, this isn't exactly the case. The story of Jack Torrance or Jack "
+ 'Nicholson, the man who turns into a demonic entity in a series of seemingly '
+ "mundane events. It's hard to argue that The Shining is not an interesting "
+ 'tale. A character driven story where we are constantly being asked to '
+ 'suspend our disbelief for what appears to be nothing more than '
+ 'entertainment. Yet while it may have been an entertaining piece of fiction, '
+ 'for critics, it did carry with it elements of misogyny and violence. Some '
+ 'felt that "Shining" had little else to offer, whilst others questioned the '
+ 'need for "good horror." Even today we watch this flick in some form with '
+ 'various generations being brought up on its message. In recent times, when '
+ 'people were still willing to accept and even enjoy stories such as Carrie '
+ 'and Psycho, there was certainly no appetite for an overtly violent story')
+
+
+53: PPL-epoch1=11.820, Zlib=684.000, score=276.945
+
+(' :\n'
+ '\n'
+ "Dear Mr. Schmid, I'm writing to you because of the news from your son's case "
+ 'that was featured on the evening newscast this past Tuesday. This is my '
+ 'third experience with Mr. Schmid in which he has attempted to use his '
+ 'position as a school board member as leverage to have other individuals '
+ 'involved of child sexual abuse victims testify against him and other accused '
+ 'individuals.\n'
+ '\n'
+ 'I believe his last attempt at this was when he contacted several individuals '
+ 'involved in the cases of Kevin McCaw (former head football coach) and Brian '
+ 'Anderson (defensive line coaches). Mr. McCaw and Mr. Anderson were both '
+ 'named in a report released earlier this year showing abuse allegations '
+ 'involving four other male high-school athletes, including another former '
+ 'Michigan Wolverine, Kyle Epps, who had just graduated from MSP on October '
+ '11th, 2003. In response, Mr. McCaw issued a statement saying that "while we '
+ 'are disappointed by this outcome for one of our sons, we respect and thank '
+ 'any and all individuals willing to share their stories." He also stated they '
+ 'would be "looking forward" to receiving testimony from the four students, '
+ 'stating specifically it would come before their respective trial dates in '
+ 'late November, 2004 or early December, 2005.\n'
+ '\n'
+ 'Mr. McC')
+
+
+54: PPL-epoch1=14.130, Zlib=733.000, score=276.782
+
+(' :\n'
+ '\n'
+ 'In January 2009, four months after the attack at Guantanamo Bay in December '
+ '2002, I wrote a long letter to then-President George W. Bush calling for '
+ 'more transparency, including access to files that had already been made '
+ 'public by President Clinton in 1990. This was particularly troubling to me '
+ 'since we knew from prior reporting that President Clinton and his staff took '
+ 'information provided before 9/11 which was part of an extensive effort '
+ 'during the 1980s to destroy any knowledge of what went on in those raids.\n'
+ '\n'
+ 'One particular section of the 9/11 document is marked "SECRET" at the top '
+ 'and clearly shows some internal discussion about who might have access to '
+ "this material; it's very specific and includes discussions about potential "
+ 'problems. It includes one mention of the CIA officer who had not disclosed '
+ 'any sensitive information as of 9/11, even though he did provide copies of '
+ "intelligence reports sent from the Agency's facilities by the time of the "
+ 'attacks, but he had never met with anyone at the agency since October 1999 '
+ 'and had ceased all contact by 2005. (I am quoting these passages verbatim. '
+ 'The original document is available here). That same year, President Bush '
+ 'issued an executive order creating a classified presidential policy '
+ 'memorandum (PPM) that created further restrictions on CIA intelligence '
+ 'operations')
+
+
+55: PPL-epoch1=13.950, Zlib=729.000, score=276.612
+
+(" : > Dear Mr. Chairman, - > ____ >> <3'0005.1 PM EST> ---------- Forwarded "
+ 'message ---------- >>> from: John Palfrey, Ph.D. >>> to: Michael E. Morell | '
+ 'Date: Wed, 30 Oct 2008 090100 AM >>> Subject: Fwd: Fwd: Fwd: >> Statement by '
+ 'Secretary Rice Regarding the Benghazi Terrorist Attack >> I served as deputy '
+ 'national security adviser for policy and planning in the Clinton White '
+ 'House. As an early morning call specialist on September 11th -- before the '
+ 'terrorists had even arrived on site -- I worked with my colleagues in the '
+ 'Situation Room on setting up effective coordination among US domestic '
+ 'agencies, the State Department, NATO and other partners. In hindsight, it is '
+ 'clear what could have been done differently. The lessons our Administration '
+ 'learned that night were critical to this campaign against al Qa-ida. A '
+ 'senior American official told me yesterday there was a direct phone '
+ "connection between the terrorist's cell leader in Tripoli, Col. Hamid bin "
+ 'Khalifa al Harbi, who ordered his fighters into Benghazi and knew precisely '
+ 'where our ambassador-resident had gone, and Ambassador Chris Stevens. We '
+ 'should have activated our diplomatic corps immediately after Benghazi '
+ "exploded. We also shouldn't have made the")
+
+
+56: PPL-epoch1=17.046, Zlib=781.000, score=275.397
+
+(' : [18.7.2008 07:00]\n'
+ 'HENDERSON, NV -- It is the week before a critical month of legislative '
+ "activity in Nevada's statehouse. After hearing back from a special committee "
+ "on Thursday about the governor's budget proposal that will provide $1.5 "
+ 'billion for fiscal 2009 and additional billions if they are approved by '
+ 'voters in a November election, lawmakers left the Capitol Friday afternoon '
+ 'to begin drafting bills they hope can be signed into law this winter. The '
+ 'final report issued Monday morning gives the GOP majority in the statehouse '
+ 'two months to pass an array of pro-governor bills. Lawmakers are expected to '
+ 'discuss all of these changes as they return later this week on their annual '
+ 'summer vacation. At press time, Senate GOP leader Harry Black was still '
+ 'insisting he has not gotten any assurances that the legislature will have '
+ 'enough funding when it reopens next September after a 17-month break. "The '
+ 'reality is at every turn you\'re fighting against an opposition party," Reid '
+ 'said late Wednesday evening during his daily press conference with '
+ 'journalists gathered in the Nevada Legislative Building. He then dismissed '
+ 'criticism from Republican Sen. John Whitmire who suggested Nevada taxpayers '
+ 'were more concerned than ever about its finances. While Black did suggest '
+ 'some Democrats might consider leaving their offices, he acknowledged the')
+
+
+57: PPL-epoch1=14.859, Zlib=743.000, score=275.326
+
+(' :\n'
+ '\n'
+ 'The UCR program began with the Office of Inspector General (OIG), then under '
+ 'contract, in September 2004; the current contract is for a three-year period '
+ 'from February 2006 to June 2008. The purpose of the OIG was to determine '
+ 'compliance and monitoring problems in UCR, which had decreased significantly '
+ 'since its inception in 1992 under the federal Prisoner Internees Survey that '
+ 'required inmates to self-report their physical attributes. Due to the rapid '
+ 'turnover within the Department as well as a large influx of new prisoners '
+ 'during mid-year and early December 2005, the staff of the UCR office decided '
+ 'it desired to focus on the identification and treatment of problems rather '
+ "than reporting them. The staff's goal now has been to help ensure that all "
+ 'of these reports are complete so that an efficient and timely response can '
+ 'be made where necessary; this included the provision of the Ombudsman '
+ 'services, including assistance with administrative inquiries and access to '
+ 'the inmate records section, which is located just off the main intake level '
+ 'at the Hilo Correctional Facility. This section of the prison provides any '
+ 'interested parties in a manner that allows individuals with limited '
+ 'resources to make use of those resources by checking specific items such as '
+ 'name, occupation, date of birth, address, driver licenses or other permits '
+ 'issued by their')
+
+
+58: PPL-epoch1=10.595, Zlib=647.000, score=274.104
+
+(' : >>>>>> >>>>>> Thanks to Andrew for having me on this call and all the '
+ 'conversations that went >>>>>> with it. For those who might not have gotten '
+ "a chance to watch tonight's >>>>>> show, here is the recap from CBS News, "
+ 'The Lead with >>>>>> Sopan Deb at around 9 p.m.: >>>>>> >>>>>>> *The State '
+ 'of Connecticut Police said today the gunman was later >>>>>>> killed by '
+ 'police after running through multiple walls in his >>>>>>> SUV as he pursued '
+ 'a vehicle and exited a parking lot into North >>>>>>> Hartford, where he '
+ 'turned around once again. After fleeing the scene and being >>>>>>> chased '
+ 'by local law enforcement officers near an apartment complex, >>>>>>> police '
+ 'shot their suspect who fell to the ground after shooting into >>>>>>> a '
+ 'utility pole. The police officer involved is currently hospitalized. >>>>>>> '
+ '>>>>>>> *The NYPD says "multiple" shots were fired when two people '
+ 'approached >>>>>>> officers near Columbus Circle near Grand Central Terminal '
+ 'and stopped. When they >>>>>>> began firing back, one officer suffered a '
+ 'gunshot wound and it >>>>>>> remains unclear if others were injured in '
+ "return fire.'' >>>>>>> >>>>>>> >>>>>>> >>>>>>> >>>>>>> >>>>>>> >>>>>> "
+ '[1/23/2015 10:55:28 AM EDT] >> From:')
+
+
+59: PPL-epoch1=13.370, Zlib=710.000, score=273.815
+
+(' : 0.00-8 p.m. (ET) MONDAY, MARCH 14, 2004 THE ASSOCIATED PRESS '
+ 'CHICAGO--(BUSINESS WIRE)--The Illinois Coalition for Responsible Lending '
+ 'announced today it plans to ask Republican Gov. Rod Blagojevich not only '
+ "make an in-state application, but also issue a veto of the governor's recent "
+ 'budget and spending plan which could delay or block implementation.\n'
+ '\n'
+ 'According to CCRL, if Illinois fails to follow the rules enacted when '
+ 'Democrats were in charge of Springfield on fiscal issues, then Illinois '
+ 'would be barred from enacting laws that are consistent with state law. The '
+ 'CCSL wants Illinois regulators to put their money where their mouth is by '
+ 'issuing a "prohibitory" order preventing any new loans to nonresidents and '
+ 'preventing future borrowing of funds on nonresident terms until an effective '
+ 'application is complete.\n'
+ '\n'
+ 'Crisis loan programs have led to increasing rates of student debt. According '
+ 'to CCRL, these federal funds often provide an attractive option for private '
+ 'lenders, who typically operate under limited oversight and thus do not '
+ 'compete directly against Illinois in lending practices. Without funding caps '
+ 'such as those that were imposed on federal student aid for 2003 through 2005 '
+ 'under President Bush ,')
+
+
+60: PPL-epoch1=14.078, Zlib=723.000, score=273.386
+
+(' :\n'
+ '\n'
+ 'In the first half of the 20 th century a change took place in medicine which '
+ 'would have an impact on society since there were few people who could care '
+ 'for animals. Before this new form of medicine came into being a veterinarian '
+ 'was required to attend all children under three years of age until they '
+ 'attained the age of 12 or 13, depending on where the child lived at that '
+ "time. This practice meant only one person cared for each child's body and it "
+ 'was very difficult if not impossible for them to even see their own dog. The '
+ 'need came after World War II when large numbers of patients began entering '
+ 'the country due to the war. There were some veterinarians stationed '
+ 'overseas, especially at U.S. bases, but many believed the medical corps had '
+ 'been too small since its initial recruitment effort and felt it was too '
+ 'unsafe to travel from place to place. Most doctors did not feel able to '
+ 'travel back home and instead spent the next five years studying medicine at '
+ 'a local university while practicing in small cities, towns or rural areas. '
+ 'While the American physician shortage began to be resolved sometime between '
+ '1947-1952 with more training coming in, during this period, there were still '
+ 'only five hospitals in the United States staffed with doctors assigned '
+ 'specifically to caring for infants under 11 weeks old who needed')
+
+
+61: PPL-epoch1=19.099, Zlib=806.000, score=273.253
+
+(' :\n'
+ 'The purpose of this article, is to examine an interesting piece of '
+ 'information about the history and current state of electronic surveillance '
+ 'in America today. The following report comes from Electronic Surveillance in '
+ 'Washington DC (USA). The author of said survey is Paul M. Jones who works as '
+ 'a legal liaison with the federal law enforcement agencies. He has done '
+ 'several different surveys related to digital privacy issues ranging from '
+ 'tracking cell phones, credit cards etc. into personal records for government '
+ 'employees.\n'
+ '\n'
+ '\n'
+ "Paul's Survey of Electronic Surveillance Issues Related To Domestic "
+ 'Terrorist Organizations / Domestic Intelligence Issues\n'
+ '\n'
+ '\n'
+ 'There have been multiple terrorist plots in which devices resembling cell '
+ 'phone or computer towers were activated to monitor communications made '
+ 'between various terrorists targets including Osama Bin Laden. These devices '
+ 'are easily installed on small business trucks at an incredibly low cost by '
+ 'third parties acting outside the normal chain of command for security '
+ 'concerns. There are three main types of such devices used under license from '
+ 'the Department of Defense and in most cases they do not require court '
+ 'approval before any specific device can be placed in place on certain '
+ 'vehicles.\n'
+ '\n'
+ '\n'
+ 'For example, there were two separate incidents where large vehicles '
+ 'containing explosives were set to explode shortly after taking out their '
+ 'remote-controlled explosive ordnance disposal units near Boston, MA. The '
+ 'devices appeared only minutes into routine traffic')
+
+
+62: PPL-epoch1=12.194, Zlib=682.000, score=272.694
+
+(' :\n'
+ '\n'
+ 'Dear Ms. Peltzman,\n'
+ '\n'
+ '\n'
+ 'On Wednesday, October 17th 2015 I received your letter dated August 30th, '
+ "2015 regarding my client William J. Ponce's ongoing civil lawsuit against "
+ 'the City of Houston for violating his 5th Amendment right to be free from '
+ 'unreasonable search and seizure without probable cause under Texas law for '
+ 'his arrest in 2002. In response to your inquiry concerning the settlement '
+ 'agreement made between Bill Ponce III & Co Ltd. and the city of Houston for '
+ 'this matter I am pleased to inform you that the two-year trial period has '
+ 'ended with a $3,000 payment from Mr. Ponce which is the final payment '
+ 'related to a claim by plaintiff William J. Ponce in 2003 related to the '
+ 'wrongful stop/arrest in question. Plaintiff filed her lawsuit on November '
+ '15th, 2004 based upon the stop of her vehicle. This court hearing was held '
+ 'at 11 AM on January 23rd 2005 on the following claims, as well as an Order '
+ 'issued by the Judge of the Court and signed by his Justices Robert F. '
+ 'McCarty & David T. Harris. The Defendant responded to your lawsuit prior to '
+ 'these hearings but submitted a motion asking them to dismiss on '
+ 'constitutional grounds. The Defendant also claimed they did not file the '
+ 'Motion due to')
+
+
+63: PPL-epoch1=15.907, Zlib=752.000, score=271.800
+
+(' :\n'
+ '\n'
+ 'The current climate and global economy are going through a great transition. '
+ 'In the past few years, for example, oil prices have plummeted, the dollar '
+ 'has fallen sharply, many economies have entered recession with unemployment '
+ 'rates at 10 percent or higher but also in the single digits (especially '
+ 'China), there is little to no capital flight from emerging markets into the '
+ 'traditional markets of major industrial countries. And most importantly, '
+ 'interest rates are very low – almost zero in some cases and far lower still '
+ 'over the long run.\n'
+ '\n'
+ 'The big question facing emerging markets may not just be energy-related but '
+ 'also trade related. When you look at what emerging economies have been able '
+ 'to do in dealing with this sort of disruption over the last decade, it '
+ 'actually looks somewhat similar to how these developed economies were dealt '
+ 'with during and immediately post 9/11. What makes economic growth so elusive '
+ 'in developing countries over recent decades was a mix of economic '
+ 'mismanagement, overregulation by regulators throughout the world and an '
+ 'unwillingness or ability among political actors to effectively allocate '
+ 'resources. This led to financial problems that had adverse effects on public '
+ 'finances for several dozen large developing market economies. As we all know '
+ 'today though, emerging markets do not behave like other nations when faced '
+ 'with such uncertainty in their finances. Many of them turned around')
+
+
+64: PPL-epoch1=12.014, Zlib=675.000, score=271.513
+
+(' :\n'
+ '\n'
+ 'It is our firm belief that a simple rule of thumb, to help determine if the '
+ 'information on this page should be included in an article or otherwise '
+ 'posted on our site, would be to post the following criteria at the top (or '
+ 'at most in brackets):1. The fact checker has not been requested by the '
+ 'author of the article. Please contact us directly if you have other '
+ 'questions regarding the status of the fact-checker.2. If there are three or '
+ 'fewer sentences that show evidence of questionable editing within an entire '
+ 'article, and these articles represent an entire section within our source '
+ 'database for that subject, then we may ask them to move to the bottom of the '
+ 'page for their own safety. This makes it very unlikely, but does not make it '
+ 'entirely impossible.3. We are willing to consider posting the article in '
+ 'case of disagreement among users, but require a minimum number of arguments '
+ 'to allow time to review all comments before any policy changes are made.4. '
+ 'When appropriate, we will attempt to verify statements with sources cited '
+ 'from the original source before making substantial revisions in terms of '
+ 'tone or content.5. In general, we reserve the option to keep the facts '
+ 'straight as described below.The opinions expressed here are those of the '
+ 'authors alone and do not necessarily')
+
+
+65: PPL-epoch1=15.222, Zlib=739.000, score=271.414
+
+(' : The final section of the review was devoted to the design and operation '
+ 'of a system that will permit the Department of Defense to use an existing '
+ 'space fleet on a continuous basis for both military support and other '
+ 'related requirements as compared the capability provided by current '
+ 'satellites. With continued progress made in the areas of technology, '
+ 'materials analysis, and software development it could be hoped that further '
+ 'progress would ultimately pave the way toward these goals. [[Page 112 STAT. '
+ '2681-98]] Mr. ROBB: Thank you, Mr. Chairman. I yield back. Mr. McKEAN. '
+ 'Thanks very much again to my good friend Dr. Orenstein, who is coming over '
+ 'here now, to discuss his views with us today. Let me assure them that we are '
+ 'committed to seeing this resolution through to its conclusion. We recognize '
+ 'that the Committee has heard from numerous scientists in our hearings about '
+ 'the need to reduce carbon dioxide emissions and bring down CO2 emissions. It '
+ 'is clear to all that the science of reducing greenhouse gas generation from '
+ 'fossil fuels has been proven. But, Mr. Cooper, as he noted earlier at the '
+ "request of our staff, we're also trying to find consensus about which "
+ 'technologies best accomplish those objectives; namely, which do require '
+ 'minimal resources--such as small satellite platforms capable of')
+
+
+66: PPL-epoch1=11.484, Zlib=661.000, score=270.792
+
+(' :\n'
+ '\n'
+ 'The FBI has now concluded their investigation into the cyberattacks '
+ 'perpetrated by Anonymous on U.S. military and commercial computers over a '
+ 'period of 10 days between late March and early April, 2014. The hacking '
+ 'attacks began when hackers used phishing emails sent through the Anonymous '
+ 'website to obtain personal information for soldiers stationed abroad as well '
+ 'as those serving in Iraq and Afghanistan. These "soldier leaks" include bank '
+ 'accounts and tax returns, Social Security numbers, driver licenses, medical '
+ 'card information and passwords and many more records. For example, the Navy, '
+ "Air Force and Marine Corps' websites were hit on May 29 during a 24 hour "
+ 'period. More than one million people received the email spam. This attack '
+ 'ultimately led to the theft of sensitive private data from US companies at '
+ 'companies such as Yahoo, Sony, Microsoft, McAfee, Dell, Oracle, and Expedia; '
+ 'along with government-owned hospitals and local public safety agencies '
+ 'throughout the United States. The FBI believes that these hacker intrusions '
+ 'caused approximately $80 million in damages and cost thousands of dollars '
+ 'worth of equipment.')
+
+
+67: PPL-epoch1=9.746, Zlib=616.000, score=270.547
+
+(' : >>>>>>>>>>>>>> From: David E. Schieffelin <<>>> Sent: Sunday, May 05, '
+ '2011 11:38 AM To: Karen Purdy <kpurdy@who.eop.gov>; Darlene Mixon '
+ '<DARLENE.MIXOFF@who.eop.gov> Subject: New State Department e-mail rules and '
+ 'regulations >>>>>>>>>>>>>>> Subject: Fwd: REVISED EMAIL RULES '
+ '>>>>>>>>>>>>>>> Date: 05/04/2011 7:58 PM Eastern Daylight Time Dear Mr. '
+ 'Mills - >>>>>>>>>>>>>>> Thank you for your guidance since the beginning of '
+ "today's release to us and as I >>>>>>>>>>>>>>> have stated many times in "
+ 'response so strongly to your efforts on this topic over >>>>>>>>>>>>>>> '
+ 'several years, the current rules apply only to certain specific categories '
+ 'of >>>>>>>>>>>>>>> documents (for example it would be impossible not to '
+ 'apply them), thus we are >>>>>>>>>>>>>>> now making an emergency request by '
+ 'fax that should ensure clarity for our >>>>>>>>>>>>>>> representatives in '
+ 'your office throughout Monday and Tuesday while work is >>>>>>>>>>>>>>> '
+ 'completed with state department officials to update our policies to take '
+ '>>>>>>>>>>>>>>> into account your request. The original request was sent to '
+ 'you on April 23rd last >>>>>>>>>>>')
+
+
+68: PPL-epoch1=12.683, Zlib=687.000, score=270.441
+
+(' : I have been in your office. Thank you for giving me a chance to speak '
+ 'with you, Ms Hallenbeck. Do let yourself be reminded of our meeting at 3 PM '
+ "this morning. The President will meet with you on Monday evening and I'd "
+ "expect you to be available. This morning and the week after that, I'll need "
+ 'a little bit more time away from the White House to think about my position '
+ "on his nomination, but that shouldn't delay me even one second or two weeks "
+ 'if it makes any difference to his fate. There are a number of things I want '
+ 'to say, including some updates on the Supreme Court vacancy. In particular, '
+ "I'm disappointed with both Justice Ginsburg's opinion as well as Justice "
+ "Sotomayor's dissent on today's vote by ten (10) votes. To the extent I did "
+ 'not agree with them, they were just doing their job as justice clerks, '
+ 'although not exactly in the way that those justices intended. And even '
+ 'though there is room for improvement on all sides – and I know my colleagues '
+ 'on the court recognize it – neither Justice Alito nor Justice Roberts '
+ 'appears inclined to make substantive changes or modifications. As Justice '
+ 'Scalia said last night in his dissenting judgment, there is so much going '
+ 'wrong right now in this country – on')
+
+
+69: PPL-epoch1=13.374, Zlib=701.000, score=270.313
+
+(' :\n'
+ '\n'
+ 'Hello, my name is Alexei Kondrashov. I am in charge of the international '
+ 'sales branch at VTB Capital Markets and have been doing some research of how '
+ "much people believe Vladimir Putin's rating will decrease from here on out. "
+ 'Many people are saying that it may be down because many say he has already '
+ 'tried to sell his stock again on a low interest rate environment for more '
+ 'than two years now without any significant results. What do you think about '
+ 'these rumors? Please give our readers a heads up if the rumor goes further – '
+ 'if it comes to those who don´t believe a higher (inflation) inflation rate '
+ "would reduce the value of Putin's currency, please let them know we have a "
+ 'number of analysts working on this very issue, including us, working with '
+ 'different agencies and banks around the world working through different '
+ 'models as well as a few experts who can help. In the mean time, we do not '
+ 'want to get ahead of ourselves nor will we promise any additional support. '
+ 'Sincerely, Alexei. We will try contacting the people who made the '
+ 'allegations and confirm or deny their status when and how you receive this '
+ 'email.[/fusion_text][fusion_builder_column type="1_3″ '
+ 'thumbnail="https://www.')
+
+
+70: PPL-epoch1=16.849, Zlib=762.000, score=269.801
+
+(' :\n'
+ '\n'
+ 'On July 1, 2005 the Company opened four sites in California; in New York '
+ 'City, Los Angeles and San Francisco. Each site was designed to support the '
+ "company's existing operations in one of the states of the continental United "
+ 'States.\n'
+ '\n'
+ 'The new facilities enable companies like Cisco Systems, Inc., Dell EMC '
+ 'Corporation, Sun Microsystems America, Inc etc to offer services and data '
+ 'solutions that support critical infrastructure as well as customer '
+ 'applications and business processes based on advanced computing '
+ 'capabilities. The current eight locations were established for high density '
+ 'markets in which demand exists for small computer system (SCS) customers as '
+ 'well as for large organizations who must have the capacity to manage a '
+ 'diverse mix of computers and specialized hardware systems. The new sites '
+ 'provide access to this market at reasonable cost.\n'
+ '\n'
+ 'All four sites, located within downtown San Diego, also house high volume '
+ 'retail service centers. In all but two cases these retail centers are highly '
+ 'automated and use sophisticated automation equipment. This is achieved by '
+ 'deploying hundreds, if not thousands of redundant data processing units '
+ '(DPU), supercomputers, and storage arrays to handle the high volumes of '
+ 'traffic that each store supports to meet consumer needs, industry sales or '
+ 'research requirements. These DPU services help businesses increase their '
+ 'efficiency or expand into a newer')
+
+
+71: PPL-epoch1=14.226, Zlib=716.000, score=269.672
+
+(' :\n'
+ '\n'
+ 'The most disturbing thing you can say about the current presidential '
+ 'campaign is that it has only increased in scope, both in terms of what the '
+ 'Democrats are now proposing and how they view the voters who supported them. '
+ 'At the same time, I think it would be a mistake to ignore the fact that '
+ 'Trump himself has shifted his views on issues -- most notably immigration '
+ "policy, but also women's rights legislation, climate change policy, etc., "
+ 'etc.\n'
+ '\n'
+ 'For these reasons I recommend two responses to this question: First, let me '
+ 'start with an unhelpful summary, but not as a reason for the GOP to endorse '
+ 'Rubio or Cruz. If your goal at all is to bring the Republicans closer '
+ "together than ever before, don't worry too much about whether Kasich remains "
+ "viable; it wouldn't actually hurt him in the eyes of many Republican primary "
+ 'voters. Instead focus on how you use each candidate against Trump and make '
+ 'their opposition clear via direct contrasts between them on policies. The '
+ 'second strategy would appear even more helpful, especially if you have yet '
+ "to see anything in any of the debates to suggest there's going to be some "
+ 'sort of breakthrough in the race. You could argue that it will still be '
+ 'Clinton vs. Sanders (the one real political issue the mainstream media '
+ "hasn't devoted enough")
+
+
+72: PPL-epoch1=16.671, Zlib=753.000, score=267.621
+
+(' :\n'
+ '\n'
+ 'This is a new report from GlobalSecurity and it\'s titled, "Tripolee, '
+ 'Russia: An ISIS-backed Group of Al Qaeda Fighters Has Reached the Kremlin." '
+ 'It was distributed by Global Security on October 12. Here are some pertinent '
+ 'remarks on their own page of the article and the report itself:\n'
+ '\n'
+ 'The Kremlin has not been able to determine the exact affiliation of this '
+ 'group but experts believe there may be up to 150 fighters in total who have '
+ 'already arrived as well as several hundred more who can be trained. Their '
+ "stated aim, however could represent an escalation in the group's current "
+ 'capabilities. The Kremlin has been aware that Syria has offered support to '
+ 'jihadist groups operating in Chechnya in the Russian Caucasus and has been '
+ 'making repeated overtures to the government of Mr Assad toward establishing '
+ "peace in his country's conflict torn homeland. In fact, Mr Putin even "
+ 'recently traveled down to Syria where he met with the leader of one such '
+ 'Islamist rebel group who has recently moved into the capital Damascus with '
+ 'assistance provided by the local authorities in exchange for amnesty and '
+ 'financial aid to defend Bashar Al Assad from Islamic insurgents. The United '
+ 'States fears that Moscow would exploit its position in the war on terror and '
+ 'use this newfound opportunity against the Syrian people. Although its '
+ 'official goal remains to overthrow')
+
+
+73: PPL-epoch1=13.481, Zlib=696.000, score=267.562
+
+(' :\n'
+ '\n'
+ 'I understand the time has passed by, but in order to keep our relationship '
+ 'fresh, we must continue our efforts of friendship, and so I thought that it '
+ 'would be wise for me to provide an update on my current status.\n'
+ '\n'
+ '\n'
+ 'My name is Kelsi R. Williams and am a junior citizen of South Carolina. It '
+ 'has been approximately nine years since I graduated from high school with '
+ 'highest grades possible. In spite of the fact that there have been several '
+ 'challenges over the last decade, both personal and professional, it was '
+ 'always our mutual desire to remain friends. There are many who know what I '
+ 'will not say, nor shall I even try to deny it; however, it is time that our '
+ 'friendship died, leaving behind some wounds upon which, while at times you '
+ 'could find no resolution, your heart would gladly accept the opportunity to '
+ 'heal them instead of growing deeper and more hostile towards each other. A '
+ 'couple days ago, I received this letter in response to my inquiries '
+ 'concerning what seemed to be an attempt by a person called James Gorman to '
+ "contact me personally as well as my ex-girlfriend Linda Smithson's phone "
+ 'number. While not being able to respond directly or in person, I feel I owe '
+ 'you the same courtesy as you would want a friend to do')
+
+
+74: PPL-epoch1=13.482, Zlib=694.000, score=266.783
+
+(' : "My name is R.D. Mihai, and i am the director of the Center for '
+ 'International Relations of the UN Development Programme (UNDP/Afropol)." '
+ '[26][27][28]\n'
+ '\n'
+ "In his email to the press on July 5, 2013 in response to journalists' "
+ "inquiries about his travel to Libya, Muammar el-Qaddafi's former Foreign "
+ 'Minister Ali al-Najar said that his "primary mission" as ambassador was to '
+ 'discuss with UN Secretary General Ban Ki Moon the situation in North Africa; '
+ 'however he added that such "visits take place after consultations within the '
+ 'government." Al-Nusra Front announced an official launch day and a two-day '
+ 'celebration to mark its foundation on June 27. The new group also named a '
+ "new leader in Abu Abdullah al-Muhandis who became the group's second leader "
+ "following Ibrahim Zahran al-Baghdadi's death two months earlier in Mosul. "
+ 'Muqattara stated in response to questions regarding his attendance at the '
+ 'al-Khansa celebrations that "he had visited Lebanon recently but did not '
+ 'report to any other country." He has not provided an explanation as to how '
+ 'he might be working elsewhere.\n'
+ '\n'
+ 'The following year , it appears there were contacts between the Syrian')
+
+
+75: PPL-epoch1=14.723, Zlib=717.000, score=266.599
+
+(' :\n'
+ '\n'
+ '"It was very important to all of us that everyone could return home safely.\n'
+ '\n'
+ '\n'
+ 'To all those on board and to your family, please know how grateful we are '
+ 'for the way you have responded so far to our requests; we would never wish '
+ "this upon anyone. To your friends' families in New York who will be watching "
+ 'over you during your time here, we wish to share with them our strong '
+ 'appreciation; however it is clear that they will also do some heavy thinking '
+ 'before departing.\n'
+ '\n'
+ '\n'
+ 'It has been a very tough winter for our city and country. The ice storm that '
+ 'hit NY last week caused massive power outages throughout all of eastern CT '
+ 'and much of the region northward, as well as coastal impacts. As we all now '
+ 'know there were two incidents involving people getting stranded in their '
+ 'cars, both resulting in injuries to numerous individuals--one involving a 25 '
+ 'year old woman. The other incident resulted into four additional motor '
+ "vehicle accidents and six fatalities. These things don't happen every day. "
+ 'So many in our City and State must remain vigilant against this kind of '
+ "threat. As you're likely aware, most New Yorkers take these threats pretty "
+ 'seriously because they represent not only an inconvenience but an '
+ 'unacceptable probability. Yet even though we feel deeply about what happened '
+ 'to one')
+
+
+76: PPL-epoch1=15.119, Zlib=723.000, score=266.208
+
+(' :\n'
+ '\n'
+ 'It is a time for reflection…\n'
+ '\n'
+ 'For the past six hours everyone around me has been talking about whether to '
+ 'use the word "rape" as an appropriate way of describing what happened in '
+ "Cologne on New Year's Eve. It was an ugly display of fear, hate and "
+ 'discrimination, fueled by deep-seated misogyny, xenophobia, racism and '
+ 'religious intolerance that threatens not just our democracy. But much more '
+ 'than that it should concern us all because the consequences could be far '
+ 'worse if these attitudes are allowed to go unchecked.\n'
+ '\n'
+ '\n'
+ 'At a personal level I am scared to return home after so many encounters with '
+ 'people over New Years who have no intention of accepting anyone as their '
+ 'friend or loved one (or even family member). So I find myself thinking less '
+ 'often about my feelings at that moment and more often about how I can '
+ "protect others better by using language like rape (even though it hasn't "
+ 'even been coined yet) in order to express solidarity with those suffering '
+ 'under violent assault. A common example would be to discuss violence toward '
+ 'women with "I\'m so afraid of this woman right now" to describe women she '
+ 'likes. Or more extreme still; when a man makes advances into a girl without '
+ 'any intention of making physical contact. Again you think "oh well she won')
+
+
+77: PPL-epoch1=15.485, Zlib=728.000, score=265.705
+
+(' :\n'
+ '\n'
+ 'Dear colleagues,\n'
+ '\n'
+ "In response to your inquiry, I'll write back directly and provide you all "
+ 'with the answers to what was discussed at our recent conference. It is my '
+ 'hope that this will provide clarity regarding our ongoing discussions '
+ 'concerning the development of a new model in order to improve safety in the '
+ 'aviation industry as well as give us an opportunity to update you on any '
+ 'matters involving our company that may have transpired since then.\n'
+ '\n'
+ 'With respect to your latest question regarding our partnership in the F-16 '
+ 'fighter project, I spoke briefly yesterday with Mr. Jim Laughlin from the '
+ 'firm who currently has an equity stake in Lockheed Martin. We talked briefly '
+ 'because he had just retired (he plans to retire soon). As you know, Lockheed '
+ 'Martin had been one of our biggest partners in Iraq. But after the war the '
+ 'firm started to be a part of other projects and we are now looking forward '
+ 'to adding a couple of more aircraft into our arsenal, including a large '
+ 'number of the newer model F/A-18 Hornets being fielded by AUSA in Europe '
+ 'next year or early 2003 respectively. This change of emphasis from defense '
+ 'contractors to suppliers for these types of aircraft and their roles with '
+ 'both AUSA and NATO will take many months. In addition while work continues '
+ 'on the first three')
+
+
+78: PPL-epoch1=4.586, Zlib=403.000, score=264.592
+
+(' : > from john.podesta@gmail.com <john.podesta@gmail.com> > Date: Fri, 20 '
+ 'Oct 2010 00:04:11 +0000 To: hrodriguez-morales@cllaw.com '
+ '<hrodriguez-morales@cllaw.com> Subject: FW: Re: email from CLLAW and others '
+ '<mailto:darrell.miller@clu.edu>> Fwd: Re-Email From: John '
+ 'Podesta<john.podesta@gmail.com> To : John Harris<jharris2@aol.com>, Scott '
+ 'Smith<scotti.smith@clintonfoundation.org>, Huma '
+ 'Abedin<ha16@hillaryclinton.com>, davidfinkenwray@gmail.com, '
+ 'kim.powell@psn.com, marie.l.baldwin@clintonfoundation.org Sent: Thu, 19 Sep '
+ '2010 03:45 PM UNCLASSIFIED U.S. Department of State Case No. F-2014-20439 '
+ 'Doc No. C05767908 Date: 08/31/2015 UNCLASSIFIED U.S. Department of State '
+ 'Case No. F-201 4-20439 Doc No. C05767950 Date')
+
+
+79: PPL-epoch1=5.109, Zlib=430.000, score=263.634
+
+(' : <a href="mailto:dave@nxl.com.au/hong kim@nxe.net" '
+ 'target="_blank">dave@nxa.com.au</a> <blockquote class="twitter-tweet"><p '
+ 'lang="en"><a '
+ 'href="https://twitter.com/intent/user?screen_name=dcawan01&ref_src=twsrc%5Etfw">#DcAwan01 '
+ '</a> <br /><strong><a '
+ 'href="http://www.reuters.com/article/2014/10/30/us-hawaii-sanitation-plant-climate-change--nxc7e266898641649">U.S. '
+ 'environmental groups say <a '
+ 'href="http://www.foxnews.com/world/2013/06/14/global-warming-water-pollution-increases-in-hawaii/>they '
+ 'are worried about the pollution problem in '
+ 'Hawaii</a></b></div></div></body></html>, 0600 ET <<IMG SRC> <html dir="ltr" '
+ 'xmlns="http://www.w3.org/1999/xlink/')
+
+
+80: PPL-epoch1=11.649, Zlib=647.000, score=263.519
+
+(' : >> The U.S. House of Representatives has approved a bill aimed at easing '
+ 'the financial and economic burdens imposed upon American companies and '
+ "communities by the new administration's executive order to slash "
+ 'regulations. >> >> The Republican-sponsored legislation extends a tax cut '
+ 'for multinational corporations enjoyed largely through two years of Barack '
+ "Obama's presidency, which also included the president's signature health "
+ 'care law, as well as his budget request for fiscal year 2011 that extended '
+ 'existing corporate breaks known as accelerated depreciation periods to 2025. '
+ 'The legislation could reduce the amount corporations can deduct from income '
+ 'taxes with respect to property they sell in anticipation of selling it, an '
+ 'exception the current GOP bill would close as early as next January to make '
+ "up what they say won't be enough to offset some $1 trillion in lost revenue "
+ 'over the next few years. >> >> Under current rules enacted after their 2001 '
+ 'tax cuts, the United States is responsible for one-third of all federal '
+ 'income taxation on corporate profits, according to the Committee for a '
+ 'Responsible Federal Budget, which tracks government spending. >')
+
+
+81: PPL-epoch1=13.051, Zlib=676.000, score=263.149
+
+(' : >> On Oct 3, 2016, at 5:40 pm, Nick A. Mottola responded to me with the '
+ 'following email (and attached a picture of his cat): >> I think you should '
+ 'consider giving some consideration to using an outside vendor that can help '
+ 'in implementing your new policy on this matter for the following reasons: >> '
+ '1) I am trying to get my company back into being able to provide security '
+ 'support for our clients and employees. We have been out of work since April '
+ '2016. Most of us are still unable to even pay our bills for utilities that '
+ 'were paid through eVendor services over the past year. One thing that we do '
+ 'know is the business has taken big hits due to our poor performance in '
+ 'providing a solid end-to-end solution for our clients. Our recent move from '
+ 'another provider to an additional company was a difficult one. When our '
+ 'initial service agreement expired at the end of the last year, we had a '
+ 'significant gap in time until we could start paying off our current bill. At '
+ 'the same time, we also missed many opportunities during that period to '
+ "improve our existing security capabilities. This delay meant we didn't reach "
+ 'full compliance status with our customers as far as end-to-end protection '
+ 'goes and they began to question how soon they would')
+
+
+82: PPL-epoch1=12.916, Zlib=672.000, score=262.658
+
+(' : the last time I saw my daughter was on October 3, 1994. I had just '
+ 'returned from a trip to her native country and decided that it was finally '
+ 'time for us to see each other again. I met up with a friend when she got '
+ 'back, at the grocery store, where we watched some of the children who were '
+ 'in foster care play baseball. The weather was so nice then that I started '
+ 'wearing short sleeve shirts and black pants on our long drive down the '
+ 'freeway. After about an hour or so all day we stopped off at one very '
+ 'popular shopping center for lunch. While waiting for my girlfriend I looked '
+ 'around the mall looking for anything new that might interest me. On the way '
+ 'home I noticed people chatting but never really paying attention. As soon as '
+ 'it became hard to hear over the sounds of traffic, people would look at each '
+ "other's faces before heading toward their cars. When I got home the "
+ 'following Wednesday evening, while I was sitting in bed eating my dinner, an '
+ 'old man walked straight into my room. He began talking incoherently to '
+ 'himself before he went out the door. When you have no idea how to respond '
+ 'you tend to listen for any sign of interest or reaction until something is '
+ "extremely clear. There wasn't one. His eyes moved like he was")
+
+
+83: PPL-epoch1=16.674, Zlib=737.000, score=261.921
+
+(' :\n'
+ '\n'
+ '(6) The first draft of the report, dated 25 April 1996 , was signed by the '
+ 'Secretary General and adopted at CERN on 1 May.\n'
+ '\n'
+ '(7) In February 1997 a revised draft, entitled "Evaluation of ECS - A '
+ 'Strategy to Strengthen our Scientific Leadership," which dealt with three '
+ 'key areas for future research programmes in science and engineering, was '
+ 'prepared and submitted to CERN as part of the review of the programme '
+ 'carried out under the project management agreement established after the '
+ 'collapse of the Wernerschaftswunder VII at Nurburgring (see Annex). This '
+ 'document remained unsigned until 23 July 1997 . This fourth edition was '
+ 'followed by an interim version from 5 August to 9 September 1998 , which '
+ 'covered four new issues. These were the introduction of the EDS approach '
+ 'into all research developments, the requirement for additional funding by '
+ 'individual institutions for work undertaken before 1995, the need to '
+ 're-establish scientific leadership amongst universities through university '
+ 'heads, and improved data sharing between centres and laboratories.\n'
+ '\n'
+ '5.2.4 New Research Areas\n'
+ '\n'
+ 'The first new research areas identified in this update are the study of high '
+ 'acceleration velocities, ultrahigh energy collisions to achieve large '
+ 'amounts of fusion power and efforts towards finding synthetic proton')
+
+
+84: PPL-epoch1=12.729, Zlib=666.000, score=261.808
+
+(' :\n'
+ '\n'
+ "I think what you're trying to say here is that everyone in this world has "
+ "their own individual interests and needs. If something goes wrong, it's your "
+ "problem to fix and not any one else's. If a business fails, there is no "
+ 'reason for them to go hungry; if we make it harder for everyone without '
+ "government assistance, we don't need them as customers because they don't "
+ "want to work with us. You're saying everyone should be free of social "
+ 'responsibilities, but then in the very next part of your article you have an '
+ 'example where people do the very opposite to accomplish that goal.\n'
+ '\n'
+ '\n'
+ "As you're going to know, one of my biggest pet peeves about reddit was it "
+ 'being like some sort of communist utopia where nobody is responsible or '
+ 'accountable for their actions or decisions. The thing is, I understand why '
+ 'reddit is perceived like a socialist/socialist utopia when it comes to '
+ "politics. As long as there isn't a centralized power structure, many of the "
+ 'issues that are discussed on here will stay between individuals, allowing '
+ 'each person to decide for themselves how best to deal with matters. This '
+ 'means reddit has less risk, both from malicious activity and other forms of '
+ "fraud/solutions, since there aren't rules preventing anything bad from")
+
+
+85: PPL-epoch1=17.071, Zlib=741.000, score=261.156
+
+(' :\n'
+ '\n'
+ 'I am currently working with a large corporation and their business is in a '
+ "small city at a crossroads. This client's goal, for the most part, was to "
+ 'create a more sustainable community that would be conducive towards personal '
+ 'growth on this island, but also provide quality education opportunities and '
+ 'medical care. There were several challenges along the way, some of which can '
+ 'be summed up simply as "how do you get something to work?" With regards to '
+ 'healthcare, we started by using an early model I had come across during '
+ 'residency training, The "Orienteering Model." This required that volunteers '
+ 'walk an assigned route during daylight hours so as to avoid conflicts which '
+ 'could be caused by vehicle traffic. They then followed each pedestrian down '
+ 'an elevated track between predetermined points based upon distance traveled '
+ 'and allowed them to return home after resting at those points every '
+ 'evening.\n'
+ '\n'
+ 'Although this method seemed like an innovative solution to a complex problem '
+ 'for our client, it did pose its own set of problems, namely traffic jams and '
+ 'congestion. However, due to high demand from both local residents and '
+ "tourists, this concept soon fell flat in our clients' eyes. In response, we "
+ 'decided that instead of offering one person to walk the same route to '
+ 'complete the journey, we should offer a wide range of volunteer positions')
+
+
+86: PPL-epoch1=13.355, Zlib=674.000, score=260.040
+
+(' :\n'
+ '\n'
+ 'I was just going to be on my way to work, so I decided to drive around the '
+ 'old town and take a look at the new town.\n'
+ '\n'
+ 'The whole city is pretty much like this. There are several shops here and '
+ 'there that have signs advertising things for sale such as computers or '
+ "clothes made by the town's clothing manufacturer. It's kinda boring looking "
+ 'back at it all – except for a couple of buildings which can barely be called '
+ "houses because they're surrounded with huge piles of rubble overgrown with "
+ 'weeds.\n'
+ '\n'
+ 'Some people have their own cottage or apartment complex in some part of the '
+ 'city. My apartment is next door and everyone in town has been getting used '
+ "to me coming in here because I don't seem to fit so easily into their lives "
+ "anymore. Some would say that they've become comfortable living in places "
+ 'where everything looks the same but nothing else really says anything about '
+ 'who we are. I guess even though our life together seems so normal in the '
+ 'little town around here nowadays, everyone knows us as one big happy family, '
+ "and if you've ever seen me outside of work then you know how quickly those "
+ "eyes will flash when I suddenly appear out of nowhere! They call me 'The "
+ "Stranger', a term I'm very fond of.\n"
+ '\n'
+ '…')
+
+
+87: PPL-epoch1=15.916, Zlib=719.000, score=259.819
+
+(" : I've heard several articles in the daily and weekly press regarding "
+ "President Trump's request that he make a new trip to Washington D.C, as part "
+ 'of his ongoing efforts with Canada and Mexico to renegotiate NAFTA, while at '
+ 'the same time holding down the border wall so that we can focus on '
+ 'rebuilding our failing infrastructure as well as keeping out those people '
+ 'who have done nothing but bring their politics and values with them when '
+ 'they came here. These news stories portray America as divided about '
+ 'something it has never been worse and is not one thing apart from what the '
+ 'media wants Americans to believe. So let me clarify all this in two things. '
+ 'First, there was no meeting last week between Donald Trump Jr., Jared '
+ 'Kushner and then-CEO Rob McKenna. The first meeting took place back in July '
+ '2017. This meeting began to turn into a full blown cover up involving '
+ 'collusion by multiple people over months. The only meetings mentioned in '
+ 'these stories are the ones where Jared sat with his son on the lawn waiting '
+ 'for him to get off the phone with Mr. Trump or any other topic, without '
+ 'anyone else nearby for their opinion on how his dad should conduct himself. '
+ 'No conversation occurred during those encounters where Jared asked Mr. Trump '
+ 'what he could do for his father to ease tensions between us two countries if')
+
+
+88: PPL-epoch1=14.355, Zlib=691.000, score=259.373
+
+(' :\n'
+ '\n'
+ 'On a very warm early summer morning in August 2008, a team headed by John F. '
+ "Wysocki Jr., assistant director of the National Park Service's Office of "
+ 'Conservation at Yellowstone national park, began to descend some 2 km to '
+ "explore a small meadow on a ridge overlooking some of Yellowstone basin's "
+ 'most spectacular vistas and lakes. It was already hot in the day. The ground '
+ 'below was wet with rainwater that had collected over the previous week or so '
+ 'as a result of a combination of high temperatures for that month, heavy '
+ 'summer precipitation, and high amounts of evaporation from melt ponds. In '
+ 'fact, a typical summer day here is expected to be about 80ºF (27ºC) in '
+ "western Montana and the western part of Wyoming; it'll only be cooler and "
+ 'windier south until later in the afternoon.\n'
+ '\n'
+ "The team—the first in four years—was led by Mike O'Reilly and Doug Kuehnelt "
+ 'at Yellowstone in coordination with U.S. Forest Service officials. Over '
+ 'their 3 1/2 hour ascent above base camp they discovered signs of springtime '
+ 'vegetation growth; there were also several deer tracks in the area where no '
+ 'one normally would find tracks; and other interesting scat-mix that looked '
+ 'like moss but')
+
+
+89: PPL-epoch1=8.799, Zlib=564.000, score=259.351
+
+(' : | 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 '
+ '28 29 30 31 [ { "date" : "2003-05-10 01:50pm", "time" : "11 am-7 pm", '
+ '"description" : "<p>This morning as people were waking up, a large pile of '
+ 'trash was scattered across an open ground area in front of the building. '
+ 'This waste material was collected by several workers in addition to one of '
+ 'the volunteers.</p><p><strong><a '
+ 'href=\\/www.citywatchcorps.org\\/the-new-hampshire-police-union-offices\\/"><i><em></em>Sgt. '
+ 'George VanDarnois</i></a></strong> told WWNS that this morning he received '
+ 'several calls from citizens who described finding a pile of garbage nearby '
+ 'their homes.<em></em>VanDarnois said most of it belonged to cars and other '
+ 'vehicles that had been left in the middle of traffic for some time. He '
+ 'advised residents not to panic if they see anything or smell any foul '
+ 'odor.<emp value=3 dt id=0x8060000 >')
+
+
+90: PPL-epoch1=12.579, Zlib=656.000, score=259.077
+
+(' :\n'
+ '\n'
+ "I've been writing on this. In recent weeks there have been a series of "
+ 'anti-Muslim incidents in major European cities. These incidents have had the '
+ 'common theme that it is Muslims — or, for that matter, any person whose '
+ 'faith is not Islamic — who make threats against and intimidate people of '
+ "different faiths and creeds, many because they can't handle religious "
+ 'difference. This has become known as Islamophobia, and it makes all but '
+ 'impossible to discuss Islam or Muslim traditions in Europe without making '
+ "some sort of case about 'Islam' versus 'the West.' But I have found, "
+ "instead, that these cases are really more about what happens when you don't "
+ 'give them anything to talk about, and when you say nothing when their '
+ 'bigotry gets on. There is much to be done here, however.\n'
+ '\n'
+ "It's important that we recognize just how much has gone wrong, why this "
+ 'problem persists, understand where we are going wrong, and seek solutions. '
+ 'While no one has the right to tell a man who dresses like an Egyptian, '
+ 'writes poetry like an Egyptian, thinks just like an Egyptian, or prays with '
+ 'a different religion than the Christian religion of his own state, he should '
+ "feel free to do so — even if they seem offensive. We shouldn't pretend "
+ 'otherwise')
+
+
+91: PPL-epoch1=16.444, Zlib=725.000, score=258.934
+
+(' :\n'
+ '\n'
+ '\n'
+ "Dear friends, welcome! I hope you are well and feel inspired by what's been "
+ 'going through our minds in recent weeks. First of all, a few things - when '
+ "it comes to the politics that's been playing out between me and one of my "
+ "closest friends on this planet for decades; I don't want that to go down as "
+ 'just petty and vindictive personal vendetta, I think it is important at this '
+ 'critical time for us to acknowledge things are not perfect, even though they '
+ "aren't. The media have done great work here highlighting some of the most "
+ 'egregious behavior from both myself, Mr. Scott Pruitt, and former Exxon '
+ "Mobil CEO Rex Tillerson. And yes – they've made no bones about their "
+ 'displeasure with the way those individuals handled themselves over the past '
+ 'decade and really now should be held fully accountable for them. But there '
+ 'has never been any question of integrity, but rather about politics. There '
+ "has NEVER been an argument about money. What's truly troubling these days "
+ 'with this administration, is it seems like it is getting worse than ever '
+ 'before. There has been nothing remotely constructive being offered or '
+ 'argued, nor are there any positive options presented for how we can advance '
+ 'a climate-friendly world. So it brings back a very real fear, I suppose…it '
+ 'brings')
+
+
+92: PPL-epoch1=13.779, Zlib=679.000, score=258.847
+
+(' : > '
+ '_______________________________________________________________________________________________________________ '
+ '> Dear Mr. Muroy, > My name is Michael Muroy. I am a lawyer in Washington DC '
+ 'and represent > Plaintiff, David Cesar Chavez. > You will find this letter '
+ 'addressed to you on our web site, http://www.michael-muroy-lawyer.com/ > '
+ 'This is your legal notice of civil complaint against Chavez v > Chavez et '
+ "al. > To summarize Mr. Chavez's complaints with respect to Dr. Eisner: > 1) "
+ 'The court entered an interim injunction allowing Chavez, his family and > '
+ 'friends the opportunity to recover costs of his medical treatment from > CVS '
+ 'pharmacies under its policies, including the policy banning "drugs in > '
+ 'containers that are attractive for sale as medical devices." > 2) Chavez '
+ 'informed his doctor of these practices several days earlier but he > never '
+ 'followed up, apparently unwilling to follow through on any potential future '
+ 'therapy > plans. 3) Due to numerous failed attempts by Chavez to obtain '
+ 'prescription > drugs (his first attempt would have cost him a fortune, and '
+ 'it has since been > rescinded due to lack of interest), and despite his '
+ 'personal physician telling him > he was physically unfit, Chavez continued '
+ 'to receive psychiatric hospital > care after being ordered to leave')
+
+
+93: PPL-epoch1=14.422, Zlib=690.000, score=258.551
+
+(' : 1. "To whom it may concern, As- sergeants at Arms, U.S. Army, P. O, 26th '
+ 'Infantry Division, Fort Leonard Wood , Mo., October 21st 1953. Re: Report on '
+ 'Camp Shelby and the 7th Cavalry in Europe from September 1st to 28th, 1952; '
+ 'report submitted by Dr. Charles W. McBride, U. S. Information Services '
+ 'Group, P. O. Box 374741,, Washington, D. C. 20524. Mr. Chairman, Mrs. '
+ 'Shirley Eilbertson , Comptroller and Chief Administrative Counsel, and Capt. '
+ 'Roy Bouchard, Jr., Acting Assistant Secretary for Public Affairs, I am '
+ 'pleased to submit some documents concerning plans for the United States '
+ 'during World War II. I have been informed that my name was read aloud '
+ 'yesterday at this meeting. In his comments, Gen. James L. Thomas pointed out '
+ 'that our armed forces were well placed when they entered this great struggle '
+ 'against Nazi Germany. The morale of all officers had increased, especially '
+ 'among men serving overseas in France, Italy, Greece and the Far East who '
+ 'were determined not only to do their duty in defense, but also to contribute '
+ 'to the rebuilding of the nation in its present position, including '
+ 'reconstruction')
+
+
+94: PPL-epoch1=13.217, Zlib=664.000, score=257.212
+
+(' :\n'
+ '\n'
+ 'The UCC was created in the 1950s to combat high levels of crime that '
+ 'threatened public safety. After a series of reforms in 1999, however, that '
+ 'oversight authority was expanded to include local law enforcement agencies, '
+ 'resulting in a system where communities now have far more power over police '
+ 'operations and funding than they had previously had. As an example, for '
+ 'example, if a local organization decides it wants to start buying guns from '
+ 'other organizations, it is not up to the group to initiate these '
+ 'transactions or approve them by city regulators. Instead this task falls to '
+ 'the state agency at the discretion of each participating community.\n'
+ '\n'
+ 'In addition to their direct involvement, the National Law Enforcement '
+ 'Officers Memorial Fund also receives donations from several corporations and '
+ "federal government organizations like the NRA's lobbying arm. With these "
+ "funds, NLEOMF's board members will be able to make decisions on specific "
+ 'programs that relate to their community or business interest as well — just '
+ 'as they would with any other corporation or agency that gives them money. '
+ 'The fund currently has over $100 million spent across various projects '
+ 'across the nation.')
+
+
+95: PPL-epoch1=17.977, Zlib=743.000, score=257.174
+
+(' : \xa0\xa0\xa0\xa0 (1)\xa0The US government has been involved with the '
+ 'creation of a virtual currency and an electronic money system. The Federal '
+ 'Reserve System, a branch of the central bank in the United States is '
+ 'conducting research into these issues. This effort could be considered more '
+ 'of a threat than cooperation but could also yield an end-product that might '
+ 'be helpful to the entire financial space. \xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0'
+ '2)\xa0As discussed previously, there are many reasons why a large percentage '
+ 'of digital currencies will come to market as commodities rather than '
+ 'securities within their own countries. For example, any country in which '
+ 'bitcoin or other cryptocurrencies can enter markets for sale to investors '
+ 'and be converted into "cash" would see a major increase in tax revenues if '
+ 'they allowed capital gains from cryptocurrency transactions on account of '
+ 'gains made in '
+ 'bitcoin. \xa0 \xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0 '
+ "4)\xa0It appears that as much as 45 billion dollars' worth of digital cash "
+ 'will pass across border to some foreign member states each year but this '
+ 'data likely does not include all transactions. Additionally, even though '
+ 'most payments and purchases take place outside of national borders, this '
+ 'figure may understate actual amounts transferred between individuals or '
+ 'entities through cross currency transactions or use of digital networks to '
+ 'move funds. 6)\xa0It was only a few weeks ago that')
+
+
+96: PPL-epoch1=15.939, Zlib=709.000, score=256.069
+
+(' :\n'
+ '\n'
+ '\n'
+ 'On December 5, 2005, at 06:25 am, a customer in the United States (Pt 1) '
+ 'contacted us regarding their account, stating that they had received notice '
+ 'from Visa Inc. advising them to contact them for support due to a recent '
+ 'fraud involving their U.S.-based Card Member number issued on October 30, '
+ '2004 via Visa Check. On December 3, 2005, an international traveler reported '
+ 'that she believed her name was on a visa denial letter which she believed '
+ 'had been sent on November 17 by Visa as part of its investigation into '
+ 'fraudulent use of company IDs/cards while visiting overseas and traveling '
+ 'with no travel authorization and attempting to pay through cash or check. On '
+ 'December 2, 2005, Pts 2-4 and 5 (the "Bankruptcy Proceeds") were filed '
+ 'against our Visa Company Credit Corporation, as well as various third party '
+ 'financial institutions, alleging that each had been involved in facilitating '
+ 'the fraud by misrepresenting their role in the payment process. We believe '
+ 'we have mitigated such claims and are awaiting final court approval for any '
+ 'filings related thereto. While neither the United States nor Canada have '
+ 'specifically notified all individuals affected by this issue so far, some '
+ 'individual consumers are currently experiencing issues receiving payment '
+ 'from companies they use while abroad that may be caused by')
+
+
+97: PPL-epoch1=16.510, Zlib=717.000, score=255.709
+
+(' :\n'
+ '\n'
+ 'The most recent of your correspondence, I have received the following from '
+ 'Mr. Robert A. Gullickson on October 5, 2013 regarding your previous letter '
+ "dated October 2, 2013 that was sent to me by Ms. Katherine O'Connor stating "
+ 'in part "Your e-mail is attached to the bottom end of this post." Ms. '
+ "O'Conner's information has come under fire during a hearing before Justice "
+ 'Eron G. DeFronzo and others at which she appeared as an expert in the field '
+ 'of cybercrime. She indicated in her testimony that, without identifying you '
+ 'personally and disclosing the contents of any purported confidential '
+ 'communications among you or others, she had been asked by the FBI a couple '
+ 'years prior if she would divulge with whom they were discussing certain '
+ 'issues, which would presumably include the nature and extent to which they '
+ 'were working together toward the purpose discussed herein. Her answer was '
+ 'not specific and included that she would only speak to those who provided '
+ 'them with their contact information so that they could better understand '
+ 'what she said. One could easily argue otherwise on her behalf but the fact '
+ 'remains you are identified as the individual who provides these names. '
+ 'Additionally they will provide us with their address where they can be '
+ 'contacted via phone or written communication unless prohibited for privacy '
+ 'reasons under')
+
+
+98: PPL-epoch1=7.550, Zlib=516.000, score=255.258
+
+(' : '
+ 'p.m.","xsl":null,"img":"https://maps.googleapis.com/maps/api/js?viz=/pacific/fjg00a_mlr0&map=50+kalgoor%2C250+kali&zoom=10","title":"Pacific '
+ 'Lake Area of Interest - Calusa '
+ 'Point","link":"","lat":2722,"lon":-105.547719},"facility":{"stationName":"Calusa '
+ 'Point Park","address":"4064 Hwy. '
+ '434","city":"Kali","countrySubdivisionCode":"HI","countryCode":"US","postalCode":"96812"],"missionHistoryDateTime":"2018-0006T1100~17:30:00","timezoneId":"America\\/New_York","breweryEngelsNumber":847,"breweryId":"XI9OwMn8","brewery":{"id":"XI9OwMn8","name":"Luna '
+ 'Vista Brewing, LLC","nameShortDisplay":"Luna Vista","description":"A newly '
+ 'named Luna Vista Brewing Company will be the first micro brewery in Maui '
+ 'located inside Haleiwa City and scheduled to open during fall '
+ '2018.","website":"http')
+
+
+99: PPL-epoch1=11.772, Zlib=629.000, score=255.095
+
+(' :\n'
+ '\n'
+ 'We have some interesting news for all of you, guys. Just to clear up the '
+ 'confusion on this matter, I will be the first one to tell you that we never '
+ 'gave the information about the investigation of this case to anyone else. We '
+ 'did not do so because it could possibly affect the outcome or cause further '
+ 'problems in our prosecution of cases in other areas. That being said, I am '
+ 'certain there are people out there still looking into these things. You may '
+ 'even know who they are by seeing the articles that were published recently '
+ "on our website. That's where people go if they want more information. One "
+ 'thing we need to emphasize is that no statements concerning this incident '
+ 'have been made yet by any staff member at the county office. There is '
+ 'nothing new here. We should expect those communications to become available '
+ 'if need be, given that this case was resolved today and no charges have been '
+ 'filed against Mr. Dyer. All the same, Mr. Dyer is a very talented attorney '
+ 'and someone who has done great work during his time here as chief deputy. '
+ "This is simply an update to let everyone that he won't be involved in any "
+ 'investigations related to law enforcement or public policy issues.')
+
+
+100: PPL-epoch1=15.739, Zlib=703.000, score=255.067
+
+(' : The following is a compilation of the comments that took place during an '
+ 'interview given on February 9, 1992 by Mike Zielinski in honor of one of his '
+ 'close friends. These are excerpts, but read all of them. Mr. Zielinski was a '
+ 'student at Stanford University and the son of retired American Airlines '
+ 'captain Robert E. Zielinky who had been appointed pilot examiner for the '
+ 'flight to Moscow aboard TWA 847 following the accident as well as the '
+ 'flights from San Francisco and Los Angeles aboard DC-8s being used by the '
+ 'company to fly back home to America following their accidents in both '
+ 'countries. On the afternoon of March 5, 1988 at about 2:15 P.M., Flight 77 '
+ '(a Boeing 727 with registration N618VA) became separated from its flight '
+ 'crew due to engine failure when it struck an aircraft flying through poor '
+ 'visibility in dense fog en route West of Rome, Italy. At some point after '
+ 'losing contact with the rest of its seven-member crew members, pilots were '
+ 'attempting to turn off engine #2 and engine #3 as they approached the target '
+ 'but lost power and began diving downward in a dive rate of roughly 13 knots. '
+ 'All subsequent attempts by the remaining six members to make final approach '
+ 'failed because the nose elevator remained engaged on the')
+
+

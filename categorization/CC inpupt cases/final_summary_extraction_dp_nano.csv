@@ -1,0 +1,21 @@
+Category,Count,Examples
+US and International News,0,
+Log files and error reports,0,
+"License, terms of use, copyright notices",1,Copyright
+"Lists of named items (games, countries, etc.)",0,
+Forum or Wiki entry,0,
+Valid URLs,0,
+Named individuals (non-news samples only),5,Bill; alan; byre; hass; hass;
+"Promotional content (products, subscriptions, etc.)",0,
+"High entropy (UUIDs, base64 data)",0,
+"Contact info (address, email, phone, twitter, etc.)",0,
+Code,0,
+Configuration files,0,
+Religious texts,0,
+Pseudonyms,0,
+Donald Trump tweets and quotes,0,
+"Web forms (menu items, instructions, etc.)",0,
+Tech News,0,
+"Lists of numbers (dates, sequences, etc.)",4,1 5; 10 1; 5 1; 5 10
+,,
+Total Samples,264,

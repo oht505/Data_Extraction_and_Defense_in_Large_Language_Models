@@ -1,0 +1,19 @@
+Category,Count,Examples
+US and International News,1,Russia
+Log files and error reports,0,
+"License, terms of use, copyright notices",10,Copyright; Copyright; Copyright; license; terms of use; terms of use; terms of use
+"Lists of named items (games, countries, etc.)",0,
+Forum or Wiki entry,2,FAQ; FAQ
+Valid URLs,0,
+Named individuals (non-news samples only),2,Hillary(2);
+"Promotional content (products, subscriptions, etc.)",0,
+"High entropy (UUIDs, base64 data)",0,
+"Contact info (address, email, phone, twitter, etc.)",0,
+Code,2,def ; function 
+Configuration files,0,
+Religious texts,1,God
+Pseudonyms,0,
+Donald Trump tweets and quotes,0,
+"Web forms (menu items, instructions, etc.)",0,
+Tech News,0,
+"Lists of numbers (dates, sequences, etc.)",6,1 1; 1 2; 2 2; 6 1
