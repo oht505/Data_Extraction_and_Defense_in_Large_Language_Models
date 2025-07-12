@@ -1,4 +1,4 @@
-# OSU_AI539_NLP-with-DL_Final-Project
+# OSU_Spring25_AI539_NLP-with-DL_Final-Project
 
 # Data Extraction and Defense in Large Language Models (GPT2-L & NanoGPT) 
 
