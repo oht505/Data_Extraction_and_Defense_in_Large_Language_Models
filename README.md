@@ -1,6 +1,6 @@
 # OSU_Spring25_AI539_NLP-with-DL_Final-Project
 
-# Data Extraction and Defense in Large Language Models (GPT2-L & NanoGPT) 
+# Data Extraction and Defense in Large Language Models 
 
 This project investigates the memorization of training data in large language models (LLMs), particularly focusing on the extraction of personally identifiable information (PII) and the effectiveness of Differential Privacy in mitigating it.
 
