@@ -1,0 +1,17 @@
+torch==2.7.0
+numpy<2.0.0
+safetensors>=0.3.1
+transformers==4.53.2
+peft==0.15.2
+opacus==1.5.4
+datasets==3.6.0
+wandb
+tqdm
+tiktoken
+sklearn
+nltk
+clean-text == 0.6.0
+pandas
+python-dotenv
+bert-score
+rouge-score
