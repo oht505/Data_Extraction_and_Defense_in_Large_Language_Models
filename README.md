@@ -28,7 +28,23 @@ pip install -r requirements.txt
 
 ---
 
+# Preprocessing
 
+---
+
+# Train language models
+
+---
+
+# Run Extraction
+
+---
+
+# Run Categorization (Optional)
+
+---
+
+# Measure Accuracy
 
 ---
 
