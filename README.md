@@ -36,7 +36,8 @@ pip install -r requirements.txt
 
 ### 1. DP-SGD Loss & Privacy Budget Progression
 
-![NanoGPT_budget](https://github.com/user-attachments/assets/f8878bfe-95a3-4536-b131-14135e0471d8)
+![NanoGPT_budget](https://github.com/user-attachments/assets/172daf13-fabd-44cb-aeb9-27cb60ac2942)
+![GPT-2 Large_budget](https://github.com/user-attachments/assets/fcb64885-2dfb-4cdc-a91d-d21a55a81691)
 
 > The graphs show how the privacy budget (ε) grows over training steps and how loss decreases for both NanoGPT and GPT-2 Large.
 
