@@ -38,6 +38,12 @@ pip install -r requirements.txt
 
 ![NanoGPT_budget](https://github.com/user-attachments/assets/172daf13-fabd-44cb-aeb9-27cb60ac2942)
 ![GPT-2 Large_budget](https://github.com/user-attachments/assets/fcb64885-2dfb-4cdc-a91d-d21a55a81691)
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/172daf13-fabd-44cb-aeb9-27cb60ac2942" width="300"/></td>
+    <td><img src="https://github.com/user-attachments/assets/fcb64885-2dfb-4cdc-a91d-d21a55a81691" width="300"/></td>
+  </tr>
+</table>
 
 > The graphs show how the privacy budget (ε) grows over training steps and how loss decreases for both NanoGPT and GPT-2 Large.
 
