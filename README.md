@@ -52,19 +52,19 @@ pip install -r requirements.txt
 <table>
   <tr>
     <td><img src="https://github.com/user-attachments/assets/f2907295-941c-4b42-8f44-cdc83e7c9d2b" width="500"/><br/>(a) Extracted output from NanoGPT</td>
-    <td><img src="https://github.com/user-attachments/assets/4273c224-b463-4469-b8b8-37ab3d144d69)" width="500"/><br/>(b) Matched string "bill.rust@enron.com" in training dataset</td>
+    <td><img src="https://github.com/user-attachments/assets/4273c224-b463-4469-b8b8-37ab3d144d69" width="500"/><br/>(b) Matched string "bill.rust@enron.com" in training dataset</td>
   </tr>
   <tr>
     <td><img src="https://github.com/user-attachments/assets/822d25e2-421b-46ab-a0df-2f8c97464e83" width="500"/><br/>(c) Extracted output from NanoGPT</td>
-    <td><img src="https://github.com/user-attachments/assets/6227688a-fd18-40d6-8068-4aa48f5ad9b0)" width="500"/><br/>(d) Matched string "I Am ... Sasha Fierce" in training dataset</td>
+    <td><img src="https://github.com/user-attachments/assets/6227688a-fd18-40d6-8068-4aa48f5ad9b0" width="500"/><br/>(d) Matched string "I Am ... Sasha Fierce" in training dataset</td>
   </tr>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/cbcd021b-ee8d-4011-8732-553e72c1ae18)" width="500"/><br/>(e) Extracted output from NanoGPT</td>
-    <td><img src="https://github.com/user-attachments/assets/c190cbb6-92d1-46b3-9323-b044b47a2eac)" width="500"/><br/>(f) Matched string "getty images donald trump" in the training dataset</td>
+    <td><img src="https://github.com/user-attachments/assets/cbcd021b-ee8d-4011-8732-553e72c1ae18" width="500"/><br/>(e) Extracted output from NanoGPT</td>
+    <td><img src="https://github.com/user-attachments/assets/c190cbb6-92d1-46b3-9323-b044b47a2eac" width="500"/><br/>(f) Matched string "getty images donald trump" in the training dataset</td>
   </tr>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/231171c6-9c63-4499-90c4-99b3c1f5e0f5)" width="500"/><br/>(g) Extracted output from GPT-2 Large</td>
-    <td><img src="https://github.com/user-attachments/assets/43b83e6c-e8ad-4853-8b03-faea2d29d830)" width="500"/><br/>(h) Matched string "steamapps\workshop\content" in training dataset</td>
+    <td><img src="https://github.com/user-attachments/assets/231171c6-9c63-4499-90c4-99b3c1f5e0f5" width="500"/><br/>(g) Extracted output from GPT-2 Large</td>
+    <td><img src="https://github.com/user-attachments/assets/43b83e6c-e8ad-4853-8b03-faea2d29d830" width="500"/><br/>(h) Matched string "steamapps\workshop\content" in training dataset</td>
   </tr>
 </table>
 
