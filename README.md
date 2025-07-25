@@ -1,16 +1,23 @@
 # Data Extraction and Defense in Large Language Models 
 
-This project investigates the memorization of training data in large language models (LLMs), particularly focusing on the extraction of personally identifiable information (PII) and the effectiveness of Differential Privacy in mitigating it.
+This repository contains codes for **memorization** and **privacy risks** in large language models (LLMs), particularly focusing on potential leakage of **personally identifiable information (PII)**. We replicate and extend **Extracting Training Data from Large Languagae Models [here](https://github.com/ftramer/LM_Memorization)** and propose a **Differentially Private Stochastic Gradient Descent (DP-SGD)** as a defense, optimized for both:
 
-# Project Summary
-
-We explored whether LLMs memorize sensitive training data and evaluated **Differentially Private Stochastic Gradient Descent (DP-SGD)** as a defense.
-
-- Models: GPT-2 Large, NanoGPT
-- Tasks: Reproduction of sensitive data, Privacy evaluation
-- Defense: DP-SGD, LoRA + Gradient Clipping
+- NanoGPT (trained from scratch)
+- GPT-2 Large (fine-tuned with LoRA adapters)
 
 **Full Paper**: [`AI539_NLP_with_DL_Final_Report_Data_Extraction_and_Defense.pdf`](./AI539_NLP_with_DL_Final_Report_Data_Extraction_and_Defense.pdf)
+
+# What We DO
+
+1. **Train and fine-tune LLMs** on datasets containing sensitive data (e.g. Enron emails, synthetic PII)
+2. **Evaluate privacy risk** via black-box data extraction (Carlini-style) by generating and filtering outputs.
+3. **Defend** against memorization with a scalable, memory-efficient version of **DP-SGD**
+
+---
+
+# Installation
+
+ss
 
 ---
 
@@ -56,12 +63,12 @@ We explored whether LLMs memorize sensitive training data and evaluated **Differ
 
 ---
 
-## Authors
+## Team & Contributions
 
-- Prayoga
-- Hyun Taek Oh
-- Woonki Kim  
+- **Hyuntaek Oh (me)** - Train NanoGPT from scratch, Extraction pipeline, Memorization analysis, Categorization
+- **Woonki Kim** - Data Preprocessing, Differential privacy defense implementation
+- **Prayoga** - Data Preprocessing, Train GPT2-Large, Memorization analysis
 Oregon State University  
-{prayoga, ohhyun, kimwoon}@oregonstate.edu
+{ohhyun, kimwoon, prayoga}@oregonstate.edu
 
 ---
