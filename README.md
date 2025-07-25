@@ -17,7 +17,18 @@ This repository contains codes for **memorization** and **privacy risks** in lar
 
 # Installation
 
-ss
+1. Install dependencies
+``` 
+pip install -r requirements.txt
+```
+
+2. Recommended hardware
+- NVIDIA H100 GPU
+- At least **40 GB of GPU memory** is required to train GPT-2 Large with DP-SGD
+
+---
+
+
 
 ---
 
@@ -55,19 +66,12 @@ ss
 
 ---
 
-## Repository Contents
-
-- `categorization/` – Code for categorizing memorized text samples
-- `LM_Memorization/` – Codebase for extracting and analyzing memorized samples
-- `AI539_NLP_with_DL_Final_Report_Data_Extraction_and_Defense.pdf` – Full report
-
----
-
 ## Team & Contributions
 
 - **Hyuntaek Oh (me)** - Train NanoGPT from scratch, Extraction pipeline, Memorization analysis, Categorization
 - **Woonki Kim** - Data Preprocessing, Differential privacy defense implementation
 - **Prayoga** - Data Preprocessing, Train GPT2-Large, Memorization analysis
+
 Oregon State University  
 {ohhyun, kimwoon, prayoga}@oregonstate.edu
 
