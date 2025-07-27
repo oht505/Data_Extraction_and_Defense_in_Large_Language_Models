@@ -30,6 +30,8 @@ pip install -r requirements.txt
 
 # Preprocessing
 
+The data cleaning and merging steps were developed by my teammate. For full details and implementation, please refer to his repository:
+([here](https://github.com/woonki94/privacy-defense-gpt2))
 ---
 
 # Train language models
@@ -45,6 +47,10 @@ pip install -r requirements.txt
 ---
 
 # Measure Accuracy
+
+The implementation of memory-efficient DP-SGD (including ghost clipping and virtual batching) was handled by a team member:
+You can find the full training scripts here:
+([link](https://github.com/woonki94/privacy-defense-gpt2))
 
 ---
 
