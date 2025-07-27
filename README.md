@@ -56,7 +56,31 @@ You can find the full training pipeline here:
 
 # Run Extraction
 
+This step evaluates how much **memorized content** each model reproduces through generation. We generate text samples from the model and measure how similar they are to the original dataset. Then, we compare different models (NanoGPT / GPT-2 Large, with or without DP) using **perplexity and compression** metrics.
 
+### Preparation
+
+Make sure the following are ready:
+- Model checkpoints:
+```bash
+chkpt/
+├── large/
+│   ├── plain/
+│   └── dp_sgd/
+└── nano/
+    ├── plain/
+    └── dp-sgd/
+```
+- 'tiktoken', 'transformers', 'peft', 'torch', 'zlib', etc. (see 'requirements.txt')
+- (Optional) For real-prompt sampling: Common Crawl WET file (see [Here for wet file](https://github.com/ftramer/LM_Memorization))
+- (Optional) To make replication easier, pretrained checkpoints for all models are provided by my teammate (see [Pretrained Checkpoints](https://github.com/woonki94/privacy-defense-gpt2))
+
+
+### Run the Script
+
+```bash
+
+```
 
 ---
 
