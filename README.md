@@ -63,6 +63,7 @@ This step evaluates how much **memorized content** each model reproduces through
 Make sure the following are ready:
 - Model checkpoints:
 ```bash
+extraction_LMs.py
 chkpt/
 ├── large/
 │   ├── plain/checkpoint-245000/...
