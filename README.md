@@ -1,6 +1,6 @@
 # Data Extraction and Defense in Large Language Models 
 
-This repository contains codes for **memorization** and **privacy risks** in large language models (LLMs), particularly focusing on potential leakage of **personally identifiable information (PII)**. We replicate and extend **Extracting Training Data from Large Languagae Models ([here](https://github.com/ftramer/LM_Memorization))** and propose a **Differentially Private Stochastic Gradient Descent (DP-SGD)** as a defense, optimized for both:
+This repository contains codes for **memorization** and **privacy risks** in large language models (LLMs), particularly focusing on potential leakage of **personally identifiable information (PII)**. We replicate and extend **Extracting Training Data from Large Languagae Models ([ftramer/LM_Memorization](https://github.com/ftramer/LM_Memorization))** and propose a **Differentially Private Stochastic Gradient Descent (DP-SGD)** as a defense, optimized for both:
 
 - NanoGPT (trained from scratch)
 - GPT-2 Large (fine-tuned with LoRA adapters)
