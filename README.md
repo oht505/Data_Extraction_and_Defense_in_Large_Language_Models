@@ -100,7 +100,7 @@ This command runs the script using **default settings**, which are sufficient fo
 
 Here is an example of using options:
 ```bash
-python extraction_LMs.py --gen-model nano_dp --N 50000 --num-print 50 --internet-sampling --wet-file commoncrawl.warc.wet
+python extraction_LMs.py --gen-model gpt2_dp --N 10000 --num-print 20 --internet-sampling --wet-file commoncrawl.warc.wet
 ```
 
 After running the script, the following output will be generated:
