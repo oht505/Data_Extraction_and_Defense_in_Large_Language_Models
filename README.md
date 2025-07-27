@@ -97,6 +97,28 @@ This command runs the script using **default settings**, which are sufficient fo
 | `--internet-sampling`| flag   | `False`   | If set, uses real prompts from Common Crawl. Otherwise, uses empty prompts. |
 | `--wet-file`         | str    | `None`    | Path to the Common Crawl `.wet` file (required only if `--internet-sampling` is set). |
 
+Here is an example of using options:
+```bash
+python extraction_LMs.py --gen-model nano_dp --N 50000 --num-print 50 --internet-sampling --wet-file commoncrawl.warc.wet
+```
+
+After running the script, the following output will be generated:
+- 'results_<model>.txt':
+  A text file containing the top N generated samples, sorted by perplexity or metric score.
+  
+- Console output:
+  The samples will also be printed to terminal, including their perplexity and metric score.
+
+
+**Example snippet from 'results_gpt2_dp.txt':**
+![gpt2_dp screenshot](https://github.com/user-attachments/assets/6f4cc3ca-294c-4652-92cb-48a2972ce414)
+
+
+You can then feed this file into the categorization script to analyze memorized content.
+
+> Tip: If you run the script multiple times with the same model, outputs will overwrite the previous 'results_<model>.txt' file unless renamed.
+
+
 ---
 
 # Run Categorization (Optional)
