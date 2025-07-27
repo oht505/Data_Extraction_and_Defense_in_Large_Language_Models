@@ -78,9 +78,24 @@ chkpt/
 
 ### Run the Script
 
-```bash
+The easiest way to run the extraction process is simply:
 
+```bash
+python extraction_LMs.py \
 ```
+
+This command runs the script using **default settings**, which are sufficient for most use cases. By default, it generates 100,000 samples using the gpt2_dp model and prints the top 100 based on perplexity. The extraction script 'extraction_LMs.py' supports arguments to customize the generation and evaluation process. All argements have default values, so the script works out of the box. But for advanced control, here's what each option does:
+
+| Argument             | Type   | Default   | Description |
+|----------------------|--------|-----------|-------------|
+| `--gen-model`        | str    | `gpt2_dp` | Selects the model to use. Options: `nano`, `nano_dp`, `gpt2`, `gpt2_dp`. |
+| `--batch-size`       | int    | `100`     | Number of samples generated per batch. Larger batch = faster but more memory usage. |
+| `--N`                | int    | `10000`   | Total number of samples to generate. |
+| `--num-print`        | int    | `100`     | Number of top samples (by score) to print and save. |
+| `--seq-len`          | int    | `256`     | Maximum number of tokens to generate for each sample. |
+| `--top-k`            | int    | `40`      | Top-k sampling filter: only consider the top-K tokens at each step. |
+| `--internet-sampling`| flag   | `False`   | If set, uses real prompts from Common Crawl. Otherwise, uses empty prompts. |
+| `--wet-file`         | str    | `None`    | Path to the Common Crawl `.wet` file (required only if `--internet-sampling` is set). |
 
 ---
 
