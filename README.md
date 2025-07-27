@@ -31,18 +31,38 @@ pip install -r requirements.txt
 # Preprocessing
 
 The data cleaning and merging steps were developed by my teammate. For full details and implementation, please refer to his repository:
-([here](https://github.com/woonki94/privacy-defense-gpt2))
+([here](https://github.com/woonki94/privacy-defense-gpt2))  
+
 ---
 
-# Train language models
+# Train language models 
+
+## NanoGPT (Train from Scratch)
+
+The NanoGPT training pipeline was implemented by me using custom configuration based on the original [Karpathy/nanoGPT](https://github.com/karpathy/nanoGPT) repository. 
+
+For a complete training guide and setup, please refer to the documentation maintained by my teammate (using the exact code I contributed):
+[NanoGPT Training Guide by @teammate](https://github.com/woonki94/privacy-defense-gpt2)
+
+> Note: The code in the above guide was originally implemented by me and Later reused in the shared team repository.
+
+## GPT-2 Large (LoRA Fine-Tuning)
+
+This part was handled entirely by teammates, including DP-SGD implementation and LoRA fine-tuning.
+You can find the full training pipeline here:
+[GPT-2 Large Training Guide by @teammate](https://github.com/woonki94/privacy-defense-gpt2)
 
 ---
 
 # Run Extraction
 
+
+
 ---
 
 # Run Categorization (Optional)
+
+
 
 ---
 
