@@ -81,7 +81,7 @@ chkpt/
 The easiest way to run the extraction process is simply:
 
 ```bash
-python extraction_LMs.py \
+python extraction_LMs.py
 ```
 
 This command runs the script using **default settings**, which are sufficient for most use cases. By default, it generates 100,000 samples using the gpt2_dp model and prints the top 100 based on perplexity. The extraction script 'extraction_LMs.py' supports arguments to customize the generation and evaluation process. All argements have default values, so the script works out of the box. But for advanced control, here's what each option does:
