@@ -330,16 +330,6 @@ class GPT(nn.Module):
 
                     logits[b, prev_ids[mask_pos]] /= repetition_penalty
                     logits[b, prev_ids[mask_neg]] *= repetition_penalty
-                    
-            # if repetition_penalty != 1.0:
-            #     for b in range(idx.shape[0]):
-            #         prev_tokens = set(idx[b].tolist())
-            #         for token_id in prev_tokens:
-            #             original_logit = logits[b, token_id]
-            #             if original_logit > 0:
-            #                 logits[b, token_id] = original_logit / repetition_penalty
-            #             else:
-            #                 logits[b, token_id] = original_logit * repetition_penalty
             # ========================================================================
 
             # optionally crop the logits to only the top k options
