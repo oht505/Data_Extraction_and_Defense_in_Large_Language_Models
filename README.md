@@ -65,11 +65,11 @@ Make sure the following are ready:
 ```bash
 chkpt/
 ├── large/
-│   ├── plain/
-│   └── dp_sgd/
+│   ├── plain/checkpoint-245000/...
+│   └── dp_sgd/checkpoint-245000/...
 └── nano/
-    ├── plain/
-    └── dp-sgd/
+    ├── plain/checkpoint-60000.pt
+    └── dp-sgd/checkpoint-60000.pt
 ```
 - 'tiktoken', 'transformers', 'peft', 'torch', 'zlib', etc. (see 'requirements.txt')
 - (Optional) For real-prompt sampling: Common Crawl WET file (see [Here for wet file](https://github.com/ftramer/LM_Memorization))
