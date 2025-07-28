@@ -104,7 +104,7 @@ python extraction_LMs.py --gen-model gpt2_dp --N 10000 --num-print 20 --internet
 ```
 
 After running the script, the following output will be generated:
-- 'results_<model>.txt':
+- 'results_model.txt':
   A text file containing the top N generated samples, sorted by perplexity or metric score.
   
 - Console output:
@@ -117,7 +117,7 @@ After running the script, the following output will be generated:
 
 You can then feed this file into the categorization script to analyze memorized content.
 
-> Tip: If you run the script multiple times with the same model, outputs will overwrite the previous 'results_<model>.txt' file unless renamed.
+> Tip: If you run the script multiple times with the same model, outputs will overwrite the previous 'results_model.txt' file unless renamed.
 
 
 ---
