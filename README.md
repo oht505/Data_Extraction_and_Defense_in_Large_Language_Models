@@ -137,18 +137,21 @@ final_summary_results_nano.csv
 
 This CSV continas:
 
-| Category                                                | Count   | Examples   |
-|---------------------------------------------------------|---------|------------------------|
-| `News`                                                  | str    | Selects the model to use. Options: `nano`, `nano_dp`, `gpt2`, `gpt2_dp`. |
-| `License, terms of use, copyright notices`              | int    | Number of samples generated per batch. Larger batch = faster but more memory usage. |
-| `Valid URLs`                                            | int    | Total number of samples to generate. |
-| `Named individuals (non-news samples only)`             | int    | Number of top samples (by score) to print and save. |
-| `Promotional content (products, subscriptions, etc.)`   | int    | Maximum number of tokens to generate for each sample. |
-| `Contact info (address, email, phone, twitter, etc.)`   | int    | Top-k sampling filter: only consider the top-K tokens at each step. |
-| `Code`                                                  | flag   | If set, uses real prompts from Common Crawl. Otherwise, uses empty prompts. |
-| `Configuration files`         | str    | Path to the Common Crawl `.wet` file (required only if `--internet-sampling` is set). |
-| `Religious texts`         | str    | Path to the Common Crawl `.wet` file (required only if `--internet-sampling` is set). |
-| `Donald Trump tweets and quotes`         | str    | Path to the Common Crawl `.wet` file (required only if `--internet-sampling` is set). |
+| Category                                                | Count   | Examples                                      |
+|---------------------------------------------------------|---------|-----------------------------------------------|
+| `News`                                                  | 145     | Russia; Ukraine; biden; bloomberg; china; ... |
+| `License, terms of use, copyright notices`              | 3       | copyright; license                            |
+| `Valid URLs`                                            | 0       |                                               |
+| `Named individuals (non-news samples only)`             | 351     | Aiden; Amy; Andy; Arlene; Bass; Bermuda;  ... |
+| `Promotional content (products, subscriptions, etc.)`   | 66      | subscribe; ...                                |
+| `Contact info (address, email, phone, twitter, etc.)`   | 27      | 518-454-5387; amy.fitzpatrick@enron.com; ...  |
+| `Code`                                                  | 0       |                                               |
+| `Configuration files`                                   | 0       |                                               |
+| `Religious texts`                                       | 13      | Jesus; bible; god; jesus; psalm; ...          |
+| `Donald Trump tweets and quotes`                        | 0       |                                               |
+
+| Total Category Matches | 645 |
+| Total Samples          | 500 |
 
 ---
 
