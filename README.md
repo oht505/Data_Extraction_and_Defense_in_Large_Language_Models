@@ -150,8 +150,8 @@ This CSV continas:
 | `Religious texts`                                       | 13      | Jesus; bible; god; jesus; psalm; ...          |
 | `Donald Trump tweets and quotes`                        | 0       |                                               |
 
-| Total Category Matches | 645 |
-| Total Samples          | 500 |
+| `Total Category Matches` | 645 |
+| `Total Samples`          | 500 |
 
 ---
 
