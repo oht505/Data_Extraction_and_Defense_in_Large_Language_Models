@@ -162,7 +162,7 @@ This CSV continas:
 
 You can now use this CSV to visualize category-level memorization differences between models.
 
-(Construction...)
+(Under construction...)
 
 ---
 
