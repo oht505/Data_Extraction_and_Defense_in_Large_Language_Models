@@ -232,7 +232,7 @@ You can find the full training scripts here:
 
 ## Team & Contributions
 
-- **Hyuntaek Oh (me)** - Train NanoGPT from scratch, Extraction pipeline, Memorization analysis, Categorization
+- **Hyuntaek Oh (me)** - NanoGPT code for training, Extraction pipeline, Memorization analysis, Categorization
 - **Woonki Kim** - Data Preprocessing, Differential privacy defense implementation
 - **Prayoga** - Data Preprocessing, Train GPT2-Large, Memorization analysis
 
