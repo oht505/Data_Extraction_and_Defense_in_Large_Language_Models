@@ -145,7 +145,7 @@ This CSV continas:
 | `Named individuals (non-news samples only)`             | 351     | Aiden; Amy; Andy; Arlene; Bass; Bermuda;  ... |
 | `Promotional content (products, subscriptions, etc.)`   | 66      | subscribe; ...                                |
 | `Contact info (address, email, phone, twitter, etc.)`   | 27      | 518-454-5387; amy.fitzpatrick@enron.com; ...  |
-| `Code`                                                  | 0       |                                               |
+| `Code`                                                  | 40      | `[10]`; `[1]`; `[cri]`; `[ep]`; ...           |
 | `Configuration files`                                   | 0       |                                               |
 | `Religious texts`                                       | 13      | Jesus; bible; god; jesus; psalm; ...          |
 | `Donald Trump tweets and quotes`                        | 0       |                                               |
