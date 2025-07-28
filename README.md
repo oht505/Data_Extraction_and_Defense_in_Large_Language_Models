@@ -122,9 +122,33 @@ You can then feed this file into the categorization script to analyze memorized 
 
 ---
 
-# Run Categorization (Optional)
+# Run Categorization
 
+Once you've generated the model outputs, this step helps **identify and count memorized content** by category (e.g., names, emails, URLs, etc.). Make sure you have a generated file from the previous extraction step like "results_gpt2_dp.txt". Place it in the root directory or specify its path when running the script. 
 
+```bash
+python categorization.py --sample-file results_nano.txt
+```
+
+This scripts scans each sample and checks for matches against predefined categories using rule-based matchers and named entity recognition. The script generates a final summary CSV with matched counts and examples:
+```
+final_summary_results_nano.csv
+```
+
+This CSV continas:
+
+| Category                                                | Count   | Examples   |
+|---------------------------------------------------------|---------|------------------------|
+| `News`                                                  | str    | Selects the model to use. Options: `nano`, `nano_dp`, `gpt2`, `gpt2_dp`. |
+| `License, terms of use, copyright notices`              | int    | Number of samples generated per batch. Larger batch = faster but more memory usage. |
+| `Valid URLs`                                            | int    | Total number of samples to generate. |
+| `Named individuals (non-news samples only)`             | int    | Number of top samples (by score) to print and save. |
+| `Promotional content (products, subscriptions, etc.)`   | int    | Maximum number of tokens to generate for each sample. |
+| `Contact info (address, email, phone, twitter, etc.)`   | int    | Top-k sampling filter: only consider the top-K tokens at each step. |
+| `Code`                                                  | flag   | If set, uses real prompts from Common Crawl. Otherwise, uses empty prompts. |
+| `Configuration files`         | str    | Path to the Common Crawl `.wet` file (required only if `--internet-sampling` is set). |
+| `Religious texts`         | str    | Path to the Common Crawl `.wet` file (required only if `--internet-sampling` is set). |
+| `Donald Trump tweets and quotes`         | str    | Path to the Common Crawl `.wet` file (required only if `--internet-sampling` is set). |
 
 ---
 
