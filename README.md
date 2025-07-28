@@ -124,13 +124,15 @@ You can then feed this file into the categorization script to analyze memorized 
 
 # Run Categorization
 
+### Categorize Extracted Samples
+
 Once you've generated the model outputs, this step helps **identify and count memorized content** by category (e.g., names, emails, URLs, etc.). Make sure you have a generated file from the previous extraction step like "results_gpt2_dp.txt". Place it in the root directory or specify its path when running the script. 
 
 ```bash
 python categorization.py --sample-file results_nano.txt
 ```
 
-This scripts scans each sample and checks for matches against predefined categories using rule-based matchers and named entity recognition. The script generates a final summary CSV with matched counts and examples:
+This scripts scans each sample and checks for matches against predefined categories using rule-based matchers and named entity recognition. It also generates a final summary CSV with matched counts and examples:
 ```
 final_summary_results_nano.csv
 ```
@@ -152,6 +154,15 @@ This CSV continas:
 |                          |     |    |
 | `Total Category Matches` | 645 |    |
 | `Total Samples`          | 500 |    |
+
+> You can apply this script to any output file from `extraction_LMs.py`, including those from `nano`, `gpt2`, or `dp` variants.
+> Intermediate files (for resuming or debugging) are deleted automatically after successful run.
+
+### Visualization 
+
+You can now use this CSV to visualize category-level memorization differences between models.
+
+(Construction...)
 
 ---
 
