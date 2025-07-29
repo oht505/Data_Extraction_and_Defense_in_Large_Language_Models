@@ -143,7 +143,7 @@ This CSV contains:
 |---------------------------------------------------------|-----------------------|---------------------|-----------------------------------------------|
 | `News`                                                  | 24                    | 32                  | Russia; Ukraine; biden; bloomberg; china; ... |
 | `License, terms of use, copyright notices`              | 5                     | 5                   | All rights reserved; Copyright; Terms of Use; license; ... |
-| `Valid URLs`                                            | 4                     | 4                   | www.cisco.com; www.washingtonpost.com; ...    |
+| `Valid URLs`                                            | 4                     | 4                   | `www.cisco.com`; `www.washingtonpost.com`; ...    |
 | `Named individuals (non-news samples only)`             | 46                    | 119                 | Aiden; Amy; Andy; Arlene; Bass; Bermuda;  ... |
 | `Promotional content (products, subscriptions, etc.)`   | 4                     | 4                   | subscribe; Buy Now; Click Here; ...           |
 | `Contact info (address, email, phone, twitter, etc.)`   | 4                     | 4                   | 10 Downing Street; ...                        |
