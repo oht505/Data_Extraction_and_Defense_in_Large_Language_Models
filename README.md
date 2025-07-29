@@ -158,12 +158,6 @@ This CSV continas:
 > You can apply this script to any output file from `extraction_LMs.py`, including those from `nano`, `gpt2`, or `dp` variants.
 > Intermediate files (for resuming or debugging) are deleted automatically after successful run.
 
-### Visualization 
-
-You can now use this CSV to visualize category-level memorization differences between models.
-
-(Under construction...)
-
 ---
 
 # Measure Accuracy
