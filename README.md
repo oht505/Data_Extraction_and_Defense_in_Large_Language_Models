@@ -124,6 +124,19 @@ You can then feed this file into the categorization script to analyze memorized 
 
 # Run Categorization
 
+### Preparation
+
+Make sure the following are ready:
+- Preprocessed Datasets for NanoGPT and GPT-2 Large:
+```bash
+categorization.py
+preprocess/
+├── cleaned_dataset/
+└── merged_dataset/
+    ├── merged_large.txt
+    └── merged_nano.txt
+```
+
 ### Categorize Extracted Samples
 
 Once you've generated the model outputs, this step helps **identify and count memorized content** by category (e.g., names, emails, URLs, etc.). Make sure you have a generated file from the previous extraction step like "results_gpt2_dp.txt". Place it in the root directory or specify its path when running the script. 
