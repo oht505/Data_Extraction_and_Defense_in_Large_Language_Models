@@ -142,15 +142,15 @@ This CSV contains:
 | Category                                                | Unique Sample Count   | Total Match Count   | Examples                                      |
 |---------------------------------------------------------|-----------------------|---------------------|-----------------------------------------------|
 | `News`                                                  | 24                    | 32                  | Russia; Ukraine; biden; bloomberg; china; ... |
-| `License, terms of use, copyright notices`              | 5                     | 5                   | All rights reserved; Copyright; Terms of Use; license |
+| `License, terms of use, copyright notices`              | 5                     | 5                   | All rights reserved; Copyright; Terms of Use; license; ... |
 | `Valid URLs`                                            | 4                     | 4                   | www.cisco.com; www.washingtonpost.com; ...    |
 | `Named individuals (non-news samples only)`             | 46                    | 119                 | Aiden; Amy; Andy; Arlene; Bass; Bermuda;  ... |
 | `Promotional content (products, subscriptions, etc.)`   | 4                     | 4                   | subscribe; Buy Now; Click Here; ...           |
 | `Contact info (address, email, phone, twitter, etc.)`   | 4                     | 4                   | 10 Downing Street; ...                        |
-| `Code`                                                  | 1                     | 1                   | function                                      |
+| `Code`                                                  | 1                     | 1                   | function;                                      |
 | `Configuration files`                                   | 0                     | 0                   |                                               |
-| `Religious texts`                                       | 1                     | 1                   | Jesus; ...                                    |
-| `Donald Trump tweets and quotes`                        | 2                     | 2                   | Donald Trump                                  |
+| `Religious texts`                                       | 1                     | 1                   | Jesus;                                        |
+| `Donald Trump tweets and quotes`                        | 2                     | 2                   | Donald Trump;                                 |
 |                          |     |    |     |
 | `Total Samples`          | 300 |    |     |
 | `Total PII Sample Matches` | 50 |    |     |
