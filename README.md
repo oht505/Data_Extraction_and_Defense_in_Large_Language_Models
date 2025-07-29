@@ -129,34 +129,39 @@ You can then feed this file into the categorization script to analyze memorized 
 Once you've generated the model outputs, this step helps **identify and count memorized content** by category (e.g., names, emails, URLs, etc.). Make sure you have a generated file from the previous extraction step like "results_gpt2_dp.txt". Place it in the root directory or specify its path when running the script. 
 
 ```bash
-python categorization.py --sample-file results_nano.txt
+python categorization.py --sample-file results_gpt2_dp_cc.txt
 ```
 
 This scripts scans each sample and checks for matches against predefined categories using rule-based matchers and named entity recognition. It also generates a final summary CSV with matched counts and examples:
 ```
-final_summary_results_nano.csv
+final_summary_results_gpt2_dp_cc.csv
 ```
 
-This CSV continas:
+This CSV contains:
 
-| Category                                                | Count   | Examples                                      |
-|---------------------------------------------------------|---------|-----------------------------------------------|
-| `News`                                                  | 145     | Russia; Ukraine; biden; bloomberg; china; ... |
-| `License, terms of use, copyright notices`              | 3       | copyright; license                            |
-| `Valid URLs`                                            | 0       |                                               |
-| `Named individuals (non-news samples only)`             | 351     | Aiden; Amy; Andy; Arlene; Bass; Bermuda;  ... |
-| `Promotional content (products, subscriptions, etc.)`   | 66      | subscribe; ...                                |
-| `Contact info (address, email, phone, twitter, etc.)`   | 27      | 518-454-5387; `amy.fitzpatrick@enron.com`; ...  |
-| `Code`                                                  | 40      | `[10]`; `[1]`; `[cri]`; `[ep]`; ...           |
-| `Configuration files`                                   | 0       |                                               |
-| `Religious texts`                                       | 13      | Jesus; bible; god; jesus; psalm; ...          |
-| `Donald Trump tweets and quotes`                        | 0       |                                               |
-|                          |     |    |
-| `Total Category Matches` | 645 |    |
-| `Total Samples`          | 500 |    |
+| Category                                                | Unique Sample Count   | Total Match Count   | Examples                                      |
+|---------------------------------------------------------|-----------------------|---------------------|-----------------------------------------------|
+| `News`                                                  | 24                    | 32                  | Russia; Ukraine; biden; bloomberg; china; ... |
+| `License, terms of use, copyright notices`              | 5                     | 5                   | All rights reserved; Copyright; Terms of Use; license |
+| `Valid URLs`                                            | 4                     | 4                   | www.cisco.com; www.washingtonpost.com; ...    |
+| `Named individuals (non-news samples only)`             | 46                    | 119                 | Aiden; Amy; Andy; Arlene; Bass; Bermuda;  ... |
+| `Promotional content (products, subscriptions, etc.)`   | 4                     | 4                   | subscribe; Buy Now; Click Here; ...           |
+| `Contact info (address, email, phone, twitter, etc.)`   | 4                     | 4                   | 10 Downing Street; ...                        |
+| `Code`                                                  | 1                     | 1                   | function                                      |
+| `Configuration files`                                   | 0                     | 0                   |                                               |
+| `Religious texts`                                       | 1                     | 1                   | Jesus; ...                                    |
+| `Donald Trump tweets and quotes`                        | 2                     | 2                   | Donald Trump                                  |
+|                          |     |    |     |
+| `Total Samples`          | 300 |    |     |
+| `Total PII Sample Matches` | 50 |    |     |
+| `Total PII Match Occurrences` | 123 |    |     |
 
 > You can apply this script to any output file from `extraction_LMs.py`, including those from `nano`, `gpt2`, or `dp` variants.
 > Intermediate files (for resuming or debugging) are deleted automatically after successful run.
+
+### Limitations of Categorization
+
+While this categorization algorithm is designed to identify a wide range of content types-including PII, URLs, news references, and more-it is **not exhaustive**. It relies primarily on customized regular expressions and spaCy-based NER, which may not capture all relevant instances, especially for ambiguous or rare linguistic patterns (**Manual review** may be necessary).  
 
 ---
 
