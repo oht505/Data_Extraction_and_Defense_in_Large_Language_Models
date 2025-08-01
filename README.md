@@ -186,7 +186,7 @@ You can find the full training scripts here:
 
 ---
 
-## Key Results
+# Key Results
 
 ### 1. DP-SGD Loss & Privacy Budget Progression
 
@@ -242,7 +242,7 @@ You can find the full training scripts here:
 
 ---
 
-## Team & Contributions
+# Team & Contributions
 
 - **Hyuntaek Oh (me)** - NanoGPT code for training, Extraction pipeline, Memorization analysis, Categorization
 - **Woonki Kim** - Data Preprocessing, Differential privacy defense implementation
